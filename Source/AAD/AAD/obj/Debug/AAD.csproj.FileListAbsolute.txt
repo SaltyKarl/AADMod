@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\Assemblies\AAD.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\Assemblies\AAD.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\AAD\AAD\obj\Debug\AAD.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\AAD\AAD\obj\Debug\AAD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\AAD\AAD\obj\Debug\AAD.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\AAD\AAD\obj\Debug\AAD.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Source\AAD\AAD\obj\Debug\AAD.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Assemblies\AAD.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AADMod\Assemblies\AAD.pdb

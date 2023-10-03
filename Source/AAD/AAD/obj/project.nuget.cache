@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "H1zF9zDhPgcq4moqbMl3GjAELN7LB4VvOIgszH1oYAa7beYukGiQxkcFwE+s53uf/hvweFg36bQrBS+RR8+QKA==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AADMod\\Source\\AAD\\AAD\\AAD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

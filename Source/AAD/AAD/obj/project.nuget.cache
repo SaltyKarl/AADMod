@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BhsYKMoU04yES4wut7kIVmL/93SAE+ZYLe+CPgUMgYZdeNh634awM5Yij6YOhPUrR17QYaNJLIAArvdn7Qk7Zw==",
+  "dgSpecHash": "hACuutcmJyiy4BxO7w/8fZ+I7+qfabDb3u1mBy5jphuYz8gcfQJZID400VdNzRGqpBBWYLsOMD7le7NpJeKCZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\switenko.GROUP\\Desktop\\GitHub\\AADMod\\Source\\AAD\\AAD\\AAD.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AADMod\\Source\\AAD\\AAD\\AAD.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
   ],
   "logs": []
 }

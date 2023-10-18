@@ -46,6 +46,11 @@ public class HediffComp_AADAbilityGiver : HediffComp
             }
         }
     }
+
+    public override IEnumerable<Gizmo> CompGetGizmos()
+    {
+        return base.CompGetGizmos();
+    }
 }
 
 public class HediffCompProperties_AADAbilityGiver : HediffCompProperties

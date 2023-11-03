@@ -13,6 +13,7 @@ public class Comp_ShieldRegen : ThingComp
     {
         get
         {
+            
             var cellCount = GenRadial.NumCellsInRadius(Props.radius);
             for (var i = 0; i < cellCount; i++)
             {
@@ -22,7 +23,7 @@ public class Comp_ShieldRegen : ThingComp
                 {
                     var thing = thingList[t];
                     var shield = thing.TryGetComp<CompShield>();
-                    if (shield != null && shield.ParentHolder is Pawn)
+                    if (shield is { ParentHolder: Pawn })
                     {
                         yield return shield;
                     }

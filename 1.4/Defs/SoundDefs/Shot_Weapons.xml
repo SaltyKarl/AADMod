@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>AAD_Explosion</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_Explosion</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>60</min>
+					<max>90</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_PortalStart</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_PortalStart</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.936413</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_PortalEnd</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_PortalDeath</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.936413</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_SunbeamStart</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_SunbeamStart</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>70</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.936413</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotH1</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_weaponfire1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>
+					<max>80</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotH2</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_weaponfire2</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>
+					<max>80</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.865690</min>
+					<max>1.345345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotLancer</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>JME_Cool_Gunshot1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>70</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.936413</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotSMG</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>JME_Cool_Gunshot2</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotHMG</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>JME_Cool_Gunshot3</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_ShotDC</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>JME_Cool_Gunshot4</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

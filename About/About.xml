@@ -2,10 +2,7 @@
 <ModMetaData>
 	<name>Armament of Air and Darkness</name>
 	<description>Iconian tech for destruction and subjugation.</description>
-	<authors>
-		<li>Telefonmast(Maxim)</li>
-		<li>Aelflead Wayne</li>
-	</authors>
+	<author>Telefonmast(Maxim), Aelflead Wayne</author>
 	<packageId>heraldarms.aad</packageId>
 	<supportedVersions>
 		<li>1.4</li>

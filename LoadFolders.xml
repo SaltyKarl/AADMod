@@ -3,7 +3,8 @@
   	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
-		<li IfModActive="CETeam.CombatExtended">CE</li>
-		<li IfModActive="OskarPotocki.VFE.Pirates">VFEP</li>
+		<li>Common</li>
+		<li IfModActive="CETeam.CombatExtended">Patches/CE</li>
+		<li IfModActive="IssacZhuang.MuzzleFlash">Patches/Muzzle Flash</li>
 	</v1.4>
 </loadFolders>

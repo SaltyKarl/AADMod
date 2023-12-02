@@ -18,6 +18,16 @@
 		<race>
 			<baseHealthScale>6.48</baseHealthScale>
 		</race>
+		<comps>
+			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+				<minDrawSize>2.8</minDrawSize>
+				<maxDrawSize>3.1</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>5.0</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef ParentName="MechCentipedeBase">
@@ -51,6 +61,7 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
+		<combatPower>600</combatPower>
 		<weaponTags>
 			<li>AAD_HMGM</li>
 		</weaponTags>
@@ -89,13 +100,23 @@
 			</lifeStageAges>
 			<baseHealthScale>1.15</baseHealthScale>
 		</race>
+		<comps>
+			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+				<minDrawSize>1.5</minDrawSize>
+				<maxDrawSize>1.8</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>1.5</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef ParentName="LightMechanoidKind">
 		<defName>Mech_MilitorHerald</defName>
 		<label>militor assaultor</label>
 		<race>Mech_MilitorHerald</race>
-		<combatPower>65</combatPower>
+		<combatPower>90</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages Inherit="False">
 			<li MayRequire="Ludeon.RimWorld.Biotech">
@@ -126,7 +147,7 @@
 			</li>
 		</lifeStages>
 		<weaponTags>
-			<li>AAD_QBSM</li>
+			<li>AADQuadShot</li>
 		</weaponTags>
 	</PawnKindDef>
 
@@ -198,12 +219,22 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<comps>
+			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+				<minDrawSize>2.0</minDrawSize>
+				<maxDrawSize>2.3</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>2.0</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Mech_PikemanHerald</defName>
 		<label>pikeman demoralizer</label>
-		<labelPlural>pikemen demoralizer</labelPlural>
+		<labelPlural>pikemen demoralizers</labelPlural>
 		<race>Mech_PikemanHerald</race>
 		<combatPower>165</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
@@ -235,7 +266,7 @@
 		</lifeStages>
 		<weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
-			<li>AAD_LanceM</li>
+			<li>AADLanceM</li>
 		</weaponTags>
 	</PawnKindDef>
 
@@ -249,12 +280,20 @@
 			<baseHealthScale>9</baseHealthScale>
 		</race>
 		<comps Inherit="False">
-			<li Class="CompProperties_TargetingBeam"></li>
+			<li Class="CompProperties_TargetingBeam" />
 			<li Class="CompProperties_TurretGun">
-			  <turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
-			  <angleOffset>-90</angleOffset>
+				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
+				<angleOffset>-90</angleOffset>
 			</li>
-		  </comps>
+			<li Class="CompProperties_Shield">
+				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+				<minDrawSize>2.5</minDrawSize>
+				<maxDrawSize>2.8</maxDrawSize>
+				<energyLossPerDamage>0.01</energyLossPerDamage>
+				<energyOnReset>10.0</energyOnReset>
+				<blocksRangedWeapons>false</blocksRangedWeapons>
+			</li>
+		</comps>
 		<statBases>
 			<BandwidthCost>10</BandwidthCost>
 			<EMPResistance>0.8</EMPResistance>

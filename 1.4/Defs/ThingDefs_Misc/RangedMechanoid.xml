@@ -102,6 +102,7 @@
 		</projectile>
 	</ThingDef>
 
+	<!--Wrath Effect and Mote-->
 	<EffecterDef>
 		<defName>AAD_MiniTorpedo</defName>
 		<children>
@@ -153,10 +154,11 @@
 		</mote>
 		<graphicData>
 			<texPath>Things/Motes/Explosion_Dots</texPath>
-			<shaderType>TransparentPostLight</shaderType>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 	</ThingDef>
 
+	<!--Quad Shotgun-->
 	<ThingDef ParentName="LightMechanoidGunRanged" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>AAD_Gun_MiniShotgun</defName>
 		<label>Quad mini shotgun</label>
@@ -187,7 +189,7 @@
 				<range>18.9</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<soundCast>AAD_ShotH2</soundCast>
+				<soundCast>AAD_ShotDC</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
 			</li>
@@ -234,15 +236,121 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>AAD_Bullet_MiniShotgun</defaultProjectile>
 				<range>18.9</range>
-				<soundCast>AAD_ShotH2</soundCast>
+				<soundCast>AAD_ShotDC</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>6</muzzleFlashScale>
-				<defaultCooldownTime>0.1</defaultCooldownTime>
+				<defaultCooldownTime>1</defaultCooldownTime>
 				<linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
 			</li>
 		</verbs>
+	</ThingDef>
+	<!--Demoralizer-->
+	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
+		<defName>AAD_Gun_ChargeBlasterHeavy</defName>
+		<label>Herald Demoralizer</label>
+		<description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
+		<graphicData>
+			<texPath>Things/Item/WeaponsM/MechCannon_HBlaster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.55</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>22</Mass>
+			<AccuracyTouch>0.225</AccuracyTouch>
+			<AccuracyShort>0.325</AccuracyShort>
+			<AccuracyMedium>0.325</AccuracyMedium>
+			<AccuracyLong>0.225</AccuracyLong>
+			<RangedWeapon_Cooldown>10.4</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AAD_Bullet_ChargeBlasterHeavy</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>29.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>72</burstShotCount>
+				<soundCast>AAD_ShotHMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>AAD_HMGM</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>AAD_Bullet_ChargeBlasterHeavy</defName>
+		<label>demoralizer shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Projectile_Normal1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+	<!--Scalpel-->
+	<ThingDef ParentName="LightMechanoidGunRanged">
+		<defName>AAD_Gun_ChargeLance</defName>
+		<label>Herald Scalpel</label>
+		<description>A pulse-charged rail-assisted lance weapon. It fires a single shot at high velocity, charging it with unstable energy as it leaves the acceleration rail.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/WeaponsM/MechCannon_Lance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>8</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>AAD_Bullet_ChargeLance</defaultProjectile>
+				<warmupTime>1.7</warmupTime>
+				<range>35.9</range>
+				<soundCast>AAD_ShotHMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>AADLanceM</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>AAD_Bullet_ChargeLance</defName>
+		<label>Scalpel shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Projectile_Normal5</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>120</speed>
+		</projectile>
 	</ThingDef>
 
 </Defs>

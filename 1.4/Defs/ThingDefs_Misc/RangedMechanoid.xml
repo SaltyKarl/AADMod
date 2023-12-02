@@ -246,10 +246,10 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	<!--Demoralizer-->
+	<!--Rain of Pain-->
 	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
 		<defName>AAD_Gun_ChargeBlasterHeavy</defName>
-		<label>Herald Demoralizer</label>
+		<label>Rain of Pain</label>
 		<description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
 		<graphicData>
 			<texPath>Things/Item/WeaponsM/MechCannon_HBlaster</texPath>
@@ -287,7 +287,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>AAD_Bullet_ChargeBlasterHeavy</defName>
-		<label>demoralizer shot</label>
+		<label>Rain of Pain shot</label>
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

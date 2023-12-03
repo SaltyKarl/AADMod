@@ -25,7 +25,7 @@
 		<description>ToDo</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>Things/Item/WeaponsH/Melee_Spear</texPath>
+			<texPath>Things/Item/WeaponsH/Melee_Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>

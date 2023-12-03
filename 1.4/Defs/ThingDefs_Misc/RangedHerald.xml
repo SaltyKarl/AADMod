@@ -298,7 +298,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>AAD_Gun_BR</defName>
+		<defName>AAD_Gun_AMR</defName>
 		<label>ToDo</label>
 		<description>ToDo</description>
 		<techLevel>Spacer</techLevel>

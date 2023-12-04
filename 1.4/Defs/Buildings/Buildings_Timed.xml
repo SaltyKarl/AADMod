@@ -28,8 +28,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-
+	<!--Mine-->
 	<ThingDef ParentName="TrapIEDBase">
 		<defName>AAD_APMine</defName>
 		<label>Herald Gravimetric Mine</label>
@@ -37,7 +36,6 @@
 		<graphicData>
 			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
 		</graphicData>
-		<costList />
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.9</explosiveRadius>

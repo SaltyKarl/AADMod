@@ -39,7 +39,7 @@
 			<AccuracyLong>0.6</AccuracyLong>
 			<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<recipeUsers Inherit="false">
@@ -317,7 +317,7 @@
 			<AccuracyLong>0.8</AccuracyLong>
 			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 			<recipeUsers Inherit="false">

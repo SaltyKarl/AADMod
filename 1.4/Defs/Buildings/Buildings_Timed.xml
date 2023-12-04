@@ -118,7 +118,7 @@
 		<thingClass>Building_TurretGun</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/Null</texPath>
+			<texPath>Buildings/Null</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4, 4)</drawSize>
 			<drawOffset>(0,0,-0.16)</drawOffset>
@@ -171,7 +171,7 @@
 		<label>Stellar Beam Sweaper</label>
 		<description>...</description>
 		<graphicData>
-			<texPath>Things/Buildings/AlienLaserTurret_Top</texPath>
+			<texPath>Buildings/AlienLaserTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4, 4)</drawSize>
 		</graphicData>

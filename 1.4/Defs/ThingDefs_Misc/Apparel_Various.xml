@@ -39,13 +39,13 @@
 			<li>ApparelMisc</li>
 		</thingCategories>
 		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-			</bodyPartGroups>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<wornGraphicPath>TThings/Item/HeraldPack/Herald_Pack</wornGraphicPath>
+			<wornGraphicPath>Things/Item/HeraldPack/Herald_Pack</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
 			<layers>
-				<li>Shell</li>
+				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>Apparel_Yttakin</li>
@@ -152,7 +152,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Item/HeraldSuit/Hearld_Suit_UI</texPath>
+			<texPath>Things/Item/HeraldSuit/Herald_Suit_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -193,7 +193,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HeraldSuit/Hearld_Suit</wornGraphicPath>
+			<wornGraphicPath>Things/Item/HeraldSuit/Herald_Suit</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -233,7 +233,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</texPath>
+			<texPath>Things/Item/TKetHelmet/TKet_Helmet_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.9, 0.9)</drawSize>
 		</graphicData>
@@ -263,7 +263,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Item/TKetHelmet/TKet_Helmet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -296,7 +296,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Item/HeraldArmor/Hearld_Armor_UI</texPath>
+			<texPath>Things/Item/HeraldArmor/Herald_Armor_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.25</uiIconScale>
@@ -335,7 +335,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HeraldArmor/Hearld_Armor</wornGraphicPath>
+			<wornGraphicPath>Things/Item/HeraldArmor/Herald_Armor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

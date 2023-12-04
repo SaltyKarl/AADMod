@@ -31,7 +31,7 @@
 			<WorkToMake>46000</WorkToMake>
 			<Mass>2.5</Mass>
 		</statBases>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<costList>
 			<Steel>30</Steel>
 			<Plasteel>70</Plasteel>

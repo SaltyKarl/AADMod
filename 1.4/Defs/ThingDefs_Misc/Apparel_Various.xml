@@ -1,6 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== Herald Pack ==================== -->
+
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>AAD_Apparel_HeraldPack</defName>
+		<label>Herald pack</label>
+		<description>ToDo</description>
+		<graphicData>
+			<texPath>Things/Item/HeraldPack/Herald_Pack_UI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.5</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<RangedCooldownFactor>-0.2</RangedCooldownFactor>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>40</Plasteel>
+		</costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<wornGraphicPath>TThings/Item/HeraldPack/Herald_Pack</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Apparel_Yttakin</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+				<li>Nudist</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
 	<!-- ==================== Power Armors ==================== -->
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">

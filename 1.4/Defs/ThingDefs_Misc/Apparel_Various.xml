@@ -48,7 +48,8 @@
 				<li>Belt</li>
 			</layers>
 			<tags>
-				<li>Apparel_Yttakin</li>
+				<li>HeraldT1</li>
+				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -117,7 +118,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>SpacerMilitary</li>
+				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -201,7 +202,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>SpacerMilitary</li>
+				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -267,6 +268,9 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
+			<tags>
+				<li>HeraldT1</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -343,6 +347,9 @@
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
+			<tags>
+				<li>HeraldT1</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_AmbushPortal</defName>
+		<label>Ambush portal</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/AmbushPortal</iconPath>
+		<castTime>60</castTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetPawns>true</canTargetPawns>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<teleportCaster>true</teleportCaster>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployShieldRecharger</defName>
+		<label>Deploy shield recharger</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployShieldRecharger</iconPath>
+		<castTime>60</castTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<thingDef>AAD_ShieldRegen</thingDef>
+				<count>1</count>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+</Defs>

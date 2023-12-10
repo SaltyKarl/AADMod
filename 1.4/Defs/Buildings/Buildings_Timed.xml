@@ -14,6 +14,7 @@
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>5</Mass>
@@ -22,7 +23,7 @@
 			<li Class="CompProperties_Lifespan">
 				<lifespanTicks>15000</lifespanTicks> <!--2500 * 6 (6hours)-->
 			</li>
-			<li Class="AAD.CompProperties_ShieldRegen">
+			<li Class="AADMod.CompProperties_ShieldRegen">
 				<radius>9.9</radius>
 				<energyChargeRate>0.1</energyChargeRate>
 			</li>

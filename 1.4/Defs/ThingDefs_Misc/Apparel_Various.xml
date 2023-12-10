@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== Herald Pack ==================== -->
@@ -61,6 +61,13 @@
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
+		<comps>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployShieldRecharger</li>
+				</abilities>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- ==================== Power Armors ==================== -->
@@ -212,6 +219,7 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 			<li Class="CompProperties_Biocodable" />
 		</comps>
@@ -358,6 +366,12 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
+			</li>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_AmbushPortal</li>
+				</abilities>
 			</li>
 			<li Class="CompProperties_Biocodable" />
 		</comps>
@@ -465,6 +479,7 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 		</comps>
 		<modExtensions>

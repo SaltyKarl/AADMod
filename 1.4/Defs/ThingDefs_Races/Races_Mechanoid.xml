@@ -292,6 +292,7 @@
 				<energyLossPerDamage>0.01</energyLossPerDamage>
 				<energyOnReset>10.0</energyOnReset>
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 		</comps>
 		<statBases>

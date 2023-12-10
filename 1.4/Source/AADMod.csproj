@@ -69,6 +69,7 @@
     <Compile Include="AADMod.cs" />
     <Compile Include="AAD_DefOf.cs" />
     <Compile Include="Ability_Portal.cs" />
+    <Compile Include="CompDestroyOnCasterDowned.cs" />
     <Compile Include="CompShieldEMPImmune.cs" />
     <Compile Include="Comp_ShieldRegen.cs" />
     <Compile Include="HotSwappableAttribute.cs" />

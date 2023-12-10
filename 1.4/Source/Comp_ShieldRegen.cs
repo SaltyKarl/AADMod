@@ -14,6 +14,7 @@ public class Comp_ShieldRegen : ThingComp
     {
         get
         {
+            if (parent.Map is null) yield break;
             var cellCount = GenRadial.NumCellsInRadius(Props.radius);
             for (var i = 0; i < cellCount; i++)
             {
@@ -22,21 +23,24 @@ public class Comp_ShieldRegen : ThingComp
                 for (var t = 0; t < thingList.Count; t++)
                 {
                     var thing = thingList[t];
-                    var shield = thing.TryGetComp<CompShield>();
-                    if (shield is not null)
+                    if (thing.Faction == parent.Faction)
                     {
-                        yield return shield;
-                    }
-                    else if (thing is Pawn pawn)
-                    {
-                        if (pawn.apparel?.WornApparel != null)
+                        var shield = thing.TryGetComp<CompShield>();
+                        if (shield is not null)
                         {
-                            foreach (var apparel in pawn.apparel.WornApparel)
+                            yield return shield;
+                        }
+                        else if (thing is Pawn pawn)
+                        {
+                            if (pawn.apparel?.WornApparel != null)
                             {
-                                shield = apparel.TryGetComp<CompShield>();
-                                if (shield is not null)
+                                foreach (var apparel in pawn.apparel.WornApparel)
                                 {
-                                    yield return shield;
+                                    shield = apparel.TryGetComp<CompShield>();
+                                    if (shield is not null)
+                                    {
+                                        yield return shield;
+                                    }
                                 }
                             }
                         }

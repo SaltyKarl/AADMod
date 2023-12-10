@@ -222,6 +222,11 @@
 				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeploySolarBeamTurret</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>

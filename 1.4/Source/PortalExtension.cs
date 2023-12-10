@@ -39,7 +39,6 @@ namespace AADMod
                 {
                     pawnTarget.stances?.stunner.StunFor(180, ability.pawn);
                 }
-
             }
             else
             {
@@ -48,6 +47,11 @@ namespace AADMod
                     if (thing.def.CanHaveFaction)
                     {
                         thing.SetFaction(ability.pawn.Faction);
+                    }
+                    var comp = thing.TryGetComp<CompDestroyOnCasterDowned>();
+                    if (comp != null)
+                    {
+                        comp.caster = ability.pawn;
                     }
                     GenPlace.TryPlaceThing(thing, cellToTeleport, ability.pawn.Map, ThingPlaceMode.Direct);
                 }

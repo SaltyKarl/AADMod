@@ -22,11 +22,13 @@
 		<comps>
 			<li Class="CompProperties_Lifespan">
 				<lifespanTicks>15000</lifespanTicks> <!--2500 * 6 (6hours)-->
+				<expireEffect>AAD_TeleportEffect</expireEffect>
 			</li>
 			<li Class="AADMod.CompProperties_ShieldRegen">
 				<radius>9.9</radius>
 				<energyChargeRate>0.1</energyChargeRate>
 			</li>
+			<li Class="AADMod.CompProperties_DestroyOnCasterDowned"></li>
 		</comps>
 	</ThingDef>
 	<!--Mine-->
@@ -163,6 +165,13 @@
 			<turretTopOffset>(0, 0)</turretTopOffset>
 		</building>
 		<uiIconScale>0.95</uiIconScale>
+		<comps>
+			<li Class="AADMod.CompProperties_DestroyOnCasterDowned"></li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>60000</lifespanTicks>
+				<expireEffect>AAD_TeleportEffect</expireEffect>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase"> <!-- Should reorganize this XML relation at some point -->

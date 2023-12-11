@@ -139,6 +139,12 @@
 		</apparel>
 		<comps>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployCentipedes</li>
+					<li>AAD_DeployDiaboluses</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -225,6 +231,7 @@
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
 					<li>AAD_DeploySolarBeamTurret</li>
+					<li>AAD_DeployAntiprotonMines</li>
 				</abilities>
 			</li>
 		</comps>
@@ -291,6 +298,11 @@
 		</apparel>
 		<comps>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployPikemen</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -430,6 +442,13 @@
 				<li>WarcasketHerald</li>
 			</tags>
 		</apparel>
+		<comps>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployMilitors</li>
+				</abilities>
+			</li>
+		</comps>
 	</VFEPirates.WarcasketDef>
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase" MayRequire="OskarPotocki.VFE.Pirates">

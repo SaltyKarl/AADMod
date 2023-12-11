@@ -66,4 +66,113 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployAntiprotonMines</defName>
+		<label>Deploy antiproton mines</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployAntiprotonMines</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>2500</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<thingDef>AAD_APMine</thingDef>
+				<count>5</count>
+				<pattern>
+					<li>(0, 0)</li>
+					<li>(2, 0)</li>
+					<li>(-2, 0)</li>
+					<li>(1, 1)</li>
+					<li>(-1, 1)</li>
+				</pattern>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployMilitors</defName>
+		<label>Deploy militors</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployMilitors</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>2500</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_MilitorHerald</pawnKind>
+				<count>6</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployPikemen</defName>
+		<label>Deploy Pikemen</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployPikemen</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>2500</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_PikemanHerald</pawnKind>
+				<count>4</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployCentipedes</defName>
+		<label>Deploy Centipedes</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployCentipedes</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>2500</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_CentipedeHerald</pawnKind>
+				<count>2</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployDiaboluses</defName>
+		<label>Deploy Diaboluses</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployDiaboluses</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>2500</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_DiabolusHerald</pawnKind>
+				<count>2</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
 </Defs>

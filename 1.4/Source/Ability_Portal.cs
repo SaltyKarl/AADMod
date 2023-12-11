@@ -11,10 +11,18 @@ namespace AADMod
             base.Tick();
             if (this.maintainedEffecters.Any())
             {
-                AdjustPos(this.maintainedEffecters[0].first, -0.01f);
-                if (this.maintainedEffecters.Count > 1)
+                var extension = this.def.GetModExtension<PortalExtension>();
+                if (extension.teleportCaster)
                 {
+                    AdjustPos(this.maintainedEffecters[0].first, -0.01f);
                     AdjustPos(this.maintainedEffecters[1].first, 0.01f);
+                }
+                else
+                {
+                    foreach (var item in this.maintainedEffecters)
+                    {
+                        AdjustPos(item.first, -0.01f);
+                    }
                 }
             }
         }

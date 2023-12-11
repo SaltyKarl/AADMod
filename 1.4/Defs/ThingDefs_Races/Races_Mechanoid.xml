@@ -229,6 +229,14 @@
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AADMod.RemoveComps">
+				<compProps>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+				</compProps>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">

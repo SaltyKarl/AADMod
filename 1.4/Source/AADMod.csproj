@@ -72,9 +72,18 @@
     <Compile Include="CompDestroyOnCasterDowned.cs" />
     <Compile Include="CompShieldEMPImmune.cs" />
     <Compile Include="Comp_ShieldRegen.cs" />
+    <Compile Include="FloatMenuMakerMap_CanTakeOrder_Patch.cs" />
+    <Compile Include="Hediff_MechControllable.cs" />
     <Compile Include="HotSwappableAttribute.cs" />
+    <Compile Include="MechanitorUtility_EverControllable_Patch.cs" />
+    <Compile Include="MechanitorUtility_GetMechGizmos_Patch.cs" />
+    <Compile Include="MechanitorUtility_InMechanitorCommandRange_Patch.cs" />
+    <Compile Include="PawnComponentsUtility_AddAndRemoveDynamicComponents.cs" />
+    <Compile Include="Pawn_IsColonyMechPlayerControlled_Patch.cs" />
     <Compile Include="PortalExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveComps.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

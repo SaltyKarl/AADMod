@@ -255,7 +255,7 @@
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<defaultDamage>5</defaultDamage>
-		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<defaultArmorPenetration>2</defaultArmorPenetration>
 		<buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
 	</DamageDef>

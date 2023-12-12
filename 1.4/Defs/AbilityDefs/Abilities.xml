@@ -170,7 +170,7 @@
 		<modExtensions>
 			<li Class="AADMod.PortalExtension">
 				<pawnKind>Mech_DiabolusHerald</pawnKind>
-				<count>2</count>
+				<count>1</count>
 				<durationTicks>60000</durationTicks>
 			</li>
 		</modExtensions>

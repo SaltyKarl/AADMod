@@ -125,7 +125,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>HeraldT2</li>
+				<li>HeraldT1</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -141,8 +141,7 @@
 			<li Class="CompProperties_Biocodable" />
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
-					<li>AAD_DeployCentipedes</li>
-					<li>AAD_DeployDiaboluses</li>
+					<li>AAD_DeployPikemen</li>
 				</abilities>
 			</li>
 		</comps>
@@ -289,7 +288,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>HeraldT1</li>
+				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -300,7 +299,8 @@
 			<li Class="CompProperties_Biocodable" />
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
-					<li>AAD_DeployPikemen</li>
+					<li>AAD_DeployCentipedes</li>
+					<li>AAD_DeployDiaboluses</li>
 				</abilities>
 			</li>
 		</comps>

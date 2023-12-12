@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef ParentName="HeavyMechanoidRecipe">
+		<defName>Mech_CentipedeHerald_B</defName>
+		<label>gestate centipede crusher</label>
+		<description>Gestate a centipede crusher mech.</description>
+		<gestationCycles>10</gestationCycles>
+		<researchPrerequisite>UltraMechtech</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>510</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>510</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_CentipedeHerald_B>1</Mech_CentipedeHerald_B>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_CentipedeHerald_B</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HeavyMechanoidRecipe">
+		<defName>Mech_DiabolusHerald_B</defName>
+		<label>gestate diabolus annihilator</label>
+		<description>Gestate a diabolus annihilator mech.</description>
+		<gestationCycles>16</gestationCycles>
+		<researchPrerequisite>UltraMechtech</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>600</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>600</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SignalChip</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_DiabolusHerald_B>1</Mech_DiabolusHerald_B>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_DiabolusHerald_B</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="LightMechanoidRecipe">
+		<defName>Mech_MilitorHerald_B</defName>
+		<label>gestate militor assaultor</label>
+		<description>Gestate a militor assaultor mechanoid.</description>
+		<gestationCycles>2</gestationCycles>
+		<researchPrerequisite>UltraMechtech</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_MilitorHerald_B>1</Mech_MilitorHerald_B>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_MilitorHerald_B</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MediumMechanoidRecipe">
+		<defName>Mech_PikemanHerald_B</defName>
+		<label>gestate pikeman demoralizer</label>
+		<description>Gestate a pikeman demoralizer mechanoid.</description>
+		<gestationCycles>4</gestationCycles>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>140</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_PikemanHerald_B>1</Mech_PikemanHerald_B>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_PikemanHerald_B</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+</Defs>

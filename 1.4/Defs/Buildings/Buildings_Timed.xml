@@ -9,11 +9,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Buildings/ShieldRegenerator</texPath>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Mass>5</Mass>
@@ -21,11 +22,13 @@
 		<comps>
 			<li Class="CompProperties_Lifespan">
 				<lifespanTicks>15000</lifespanTicks> <!--2500 * 6 (6hours)-->
+				<expireEffect>AAD_TeleportEffect</expireEffect>
 			</li>
-			<li Class="AAD.CompProperties_ShieldRegen">
+			<li Class="AADMod.CompProperties_ShieldRegen">
 				<radius>9.9</radius>
 				<energyChargeRate>0.1</energyChargeRate>
 			</li>
+			<li Class="AADMod.CompProperties_DestroyOnCasterDowned" />
 		</comps>
 	</ThingDef>
 	<!--Mine-->
@@ -40,7 +43,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.9</explosiveRadius>
 				<explosiveDamageType>AAD_BombSuper</explosiveDamageType>
-				<explosionEffect>AAD_MiniTorpedo</explosionEffect>
+				<explosionEffect>AAD_MiniMine</explosionEffect>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<wickTicks>15</wickTicks>
 				<startWickOnDamageTaken>
@@ -50,7 +53,7 @@
 				</startWickOnDamageTaken>
 			</li>
 		</comps>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+		<specialDisplayRadius>1.9</specialDisplayRadius>
 	</ThingDef>
 	<!--Mine Effect and Mote-->
 	<EffecterDef>
@@ -59,7 +62,7 @@
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<moteDef>AAD_MiniMineExplosion</moteDef>
-				<scale>2.5</scale>
+				<scale>1.5</scale>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
 				<attachToSpawnThing>true</attachToSpawnThing>
@@ -67,7 +70,7 @@
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<moteDef>AAD_MiniMineExplosionDots</moteDef>
-				<scale>3</scale>
+				<scale>2</scale>
 				<color>(1, 1, 1, 0.5)</color>
 				<burstCount>1</burstCount>
 				<spawnLocType>OnSource</spawnLocType>
@@ -118,20 +121,13 @@
 		<graphicData>
 			<texPath>Buildings/Null</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4, 4)</drawSize>
-			<drawOffset>(0,0,-0.16)</drawOffset>
-			<damageData>
-				<rect>(0.3,0.3,1.4,1.4)</rect>
-			</damageData>
-			<shadowData>
-				<volume>(1.5,0.35,1.4)</volume>
-				<offset>(0,0,-0.05)</offset>
-			</shadowData>
+			<drawSize>(1.5, 1.5)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<stealable>false</stealable>
-		<rotatable>true</rotatable>
-		<size>(4,4)</size>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
 		<statBases>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -162,16 +158,23 @@
 			<turretTopOffset>(0, 0)</turretTopOffset>
 		</building>
 		<uiIconScale>0.95</uiIconScale>
+		<comps>
+			<li Class="AADMod.CompProperties_DestroyOnCasterDowned" />
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>60000</lifespanTicks>
+				<expireEffect>AAD_TeleportEffect</expireEffect>
+			</li>
+		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase"> <!-- Should reorganize this XML relation at some point -->
-		<defName>Gun_SolarBeamTurret</defName> <!-- Should be called ChargeBlasterLightTurret, but we keep this defName for compatibility -->
+	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
+		<defName>Gun_SolarBeamTurret</defName>
 		<label>Stellar Beam Sweaper</label>
 		<description>...</description>
 		<graphicData>
 			<texPath>Buildings/AlienLaserTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4, 4)</drawSize>
+			<drawSize>(1.5, 1.5)</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyLong>0.08</AccuracyLong>
@@ -201,7 +204,7 @@
 				<beamChanceToAttachFire>0.85</beamChanceToAttachFire>
 				<beamFireSizeRange>0.55~0.85</beamFireSizeRange>
 				<beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
-				<beamStartOffset>0.8</beamStartOffset>
+				<beamStartOffset>0</beamStartOffset>
 				<beamLineFleckChanceCurve>
 					<points>
 						<li>(0, 0)</li>
@@ -232,10 +235,6 @@
 			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
 			<shaderType>MoteBeam</shaderType>
 			<shaderParameters>
-				<_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
-				<_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
-				<_ScrollSpeedA>-4 </_ScrollSpeedA>
-				<_ScrollSpeedB>3</_ScrollSpeedB>
 				<_Intensity>2</_Intensity>
 			</shaderParameters>
 		</graphicData>

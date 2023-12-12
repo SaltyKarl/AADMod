@@ -1,36 +1,53 @@
 <?xml  version="1.0"  encoding="utf-8"?>
 <Defs>
 
-  <FleckDef ParentName="FleckBase_Thrown">
+  <ThingDef ParentName="MoteBase">
     <defName>FleckAADTeleportRing</defName>
     <altitudeLayer>VisEffects</altitudeLayer>
-    <fadeInTime>0.03</fadeInTime>
-    <fadeOutTime>1.3</fadeOutTime>
-    <solidTime>0.08</solidTime>
+	<mote>
+		<fadeInTime>0.03</fadeInTime>
+		<fadeOutTime>1.3</fadeOutTime>
+		<solidTime>0.08</solidTime>
+	</mote>
     <graphicData>
-      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
       <texPath>Effects/SmokeEffect</texPath>
       <drawSize>2.6</drawSize>
     </graphicData>
-  </FleckDef>
-
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>FleckAADInkEffect</defName>
+    <altitudeLayer>VisEffects</altitudeLayer>
+	<mote>
+		<fadeInTime>0.03</fadeInTime>
+		<fadeOutTime>1.3</fadeOutTime>
+		<solidTime>0.08</solidTime>
+	</mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <texPath>Effects/InkEffect</texPath>
+      <drawSize>2.6</drawSize>
+    </graphicData>
+  </ThingDef>
+  
   <EffecterDef>
     <defName>AAD_TeleportEffect</defName>
     <children>
       <li>
         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-        <fleckDef>FleckAADTeleportRing</fleckDef>
+        <moteDef>FleckAADTeleportRing</moteDef>
         <burstCount>1~1</burstCount>
         <scale>1~1</scale>
-        <rotation>180~180</rotation>
+        <rotationRate>180~180</rotationRate>
         <spawnLocType>OnSource</spawnLocType>
       </li>
       <li>
         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-        <fleckDef>FleckAADTeleportRing</fleckDef>
+        <moteDef>FleckAADInkEffect</moteDef>
         <burstCount>1~1</burstCount>
         <scale>1.5~1.5</scale>
-        <rotation>90~90</rotation>
+        <rotationRate>90~90</rotationRate>
         <spawnLocType>OnSource</spawnLocType>
       </li>
     </children>

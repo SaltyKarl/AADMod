@@ -28,6 +28,14 @@
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AADMod.RemoveComps">
+				<compProps>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+				</compProps>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="MechCentipedeBase">
@@ -110,6 +118,14 @@
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AADMod.RemoveComps">
+				<compProps>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+				</compProps>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="LightMechanoidKind">
@@ -229,6 +245,14 @@
 				<blocksRangedWeapons>false</blocksRangedWeapons>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AADMod.RemoveComps">
+				<compProps>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+				</compProps>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -292,6 +316,7 @@
 				<energyLossPerDamage>0.01</energyLossPerDamage>
 				<energyOnReset>10.0</energyOnReset>
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 		</comps>
 		<statBases>
@@ -305,6 +330,14 @@
 			<EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
 			<MechEnergyLossPerHP>0.125</MechEnergyLossPerHP>
 		</statBases>
+		<modExtensions>
+			<li Class="AADMod.RemoveComps">
+				<compProps>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+				</compProps>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="MechDiabolusKind" MayRequire="Ludeon.Rimworld.Biotech">

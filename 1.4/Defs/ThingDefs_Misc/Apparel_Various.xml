@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== Herald Pack ==================== -->
@@ -61,6 +61,13 @@
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
+		<comps>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployShieldRecharger</li>
+				</abilities>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- ==================== Power Armors ==================== -->
@@ -118,7 +125,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>HeraldT2</li>
+				<li>HeraldT1</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -132,6 +139,11 @@
 		</apparel>
 		<comps>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployPikemen</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -212,8 +224,15 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeploySolarBeamTurret</li>
+					<li>AAD_DeployAntiprotonMines</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -269,7 +288,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>HeraldT1</li>
+				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -278,6 +297,12 @@
 		</apparel>
 		<comps>
 			<li Class="CompProperties_Biocodable" />
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployCentipedes</li>
+					<li>AAD_DeployDiaboluses</li>
+				</abilities>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -358,6 +383,12 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
+			</li>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_AmbushPortal</li>
+				</abilities>
 			</li>
 			<li Class="CompProperties_Biocodable" />
 		</comps>
@@ -411,6 +442,13 @@
 				<li>WarcasketHerald</li>
 			</tags>
 		</apparel>
+		<comps>
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+				<abilities>
+					<li>AAD_DeployMilitors</li>
+				</abilities>
+			</li>
+		</comps>
 	</VFEPirates.WarcasketDef>
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase" MayRequire="OskarPotocki.VFE.Pirates">
@@ -465,6 +503,7 @@
 		<comps>
 			<li Class="CompProperties_Shield">
 				<blocksRangedWeapons>false</blocksRangedWeapons>
+				<compClass>AADMod.CompShieldEMPImmune</compClass>
 			</li>
 		</comps>
 		<modExtensions>

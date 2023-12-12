@@ -251,4 +251,54 @@
 		</subSounds>
 	</SoundDef>
 
+	<SoundDef>
+		<defName>AAD_PortalStart</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_PortalStart</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AAD_PortalEnd</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>4</maxVoices>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Iconian_PortalDeath</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.895690</min>
+					<max>1.105345</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 </Defs>

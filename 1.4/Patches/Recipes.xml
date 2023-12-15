@@ -34,7 +34,7 @@
 		<xpath>Defs/RecipeDef[defName="ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
 		<value>
 			<li>Corpse_Mech_CentipedeHerald_B</li>
-			<li>Corpse_DiabolusHerald_B</li>
+			<li>Corpse_Mech_DiabolusHerald_B</li>
 		</value>
 	</Operation>
 </Patch>

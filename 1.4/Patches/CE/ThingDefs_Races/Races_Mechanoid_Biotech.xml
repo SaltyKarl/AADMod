@@ -96,6 +96,18 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="Mech_MilitorHerald_B"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>4</min>
+								<max>5</max>
+							</primaryMagazineCount>
+						</li>
+					</value>
+				</li>
+
 				<!-- Pikeman - Herald -->
 
 				<li Class="PatchOperationReplace">
@@ -185,6 +197,18 @@
 					<xpath>Defs/PawnKindDef[defName="Mech_PikemanHerald_B"]/combatPower</xpath>
 					<value>
 						<combatPower>270</combatPower>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[defName="Mech_PikemanHerald_B"]</xpath>
+					<value>
+						<li Class="CombatExtended.LoadoutPropertiesExtension">
+							<primaryMagazineCount>
+								<min>8</min>
+								<max>10</max>
+							</primaryMagazineCount>
+						</li>
 					</value>
 				</li>
 

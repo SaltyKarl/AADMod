@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_ShotgunBlast</defName>
-		<label>charged shotgun blast</label>
+		<label>Mace blast</label>
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Shotgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -21,9 +21,9 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>AAD_Gun_Mace</defName>
-		<label>ToDo</label>
-		<description>ToDo</description>
-		<techLevel>Spacer</techLevel>
+		<label>Mace of Defiler</label>
+		<description>An elegant instrument of destruction, Looks heavy but can be lifted by a human child, with onboard spatial and graviometric manipulators to contain and direct large amount of anti-proton directionally, also Serves as an excellent melee weapon.</description>
+		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/WeaponsH/Melee_Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -87,7 +87,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>25</power>
+				<power>50</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -97,7 +97,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_ChargedBlast</defName>
-		<label>charged blast</label>
+		<label>Staff blast</label>
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -112,9 +112,9 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>AAD_Gun_AR</defName>
-		<label>ToDo</label>
-		<description>ToDo</description>
-		<techLevel>Spacer</techLevel>
+		<label>Herald anti-proton Staff.</label>
+		<description>The basic Herald weapons, Usually welded by constructs.</description>
+		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/WeaponsH/Range_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -190,7 +190,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_HeavyChargedBlast</defName>
-		<label>heavy charged blast</label>
+		<label>Staff blast</label>
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -205,9 +205,9 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>AAD_Gun_BR</defName>
-		<label>ToDo</label>
-		<description>ToDo</description>
-		<techLevel>Spacer</techLevel>
+		<label>Staff of Harbinger</label>
+		<description>Before the fall, only iconian warriors ever carries such a staff and few have seen one, far more people got to see it after the fall but not many ever get to tell the tale.</description>
+		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/WeaponsH/Range_Advanced</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -264,7 +264,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -273,7 +273,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>9</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
@@ -283,7 +283,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SuperChargedBlast</defName>
-		<label>super charged blast</label>
+		<label>Scepter blast</label>
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -299,9 +299,9 @@
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>AAD_Gun_AMR</defName>
-		<label>ToDo</label>
-		<description>ToDo</description>
-		<techLevel>Spacer</techLevel>
+		<label>Scepter of the Herald</label>
+		<description>This used to be a musical instrument, the Herald would play their master's favorite songs and entire choirs will perform with it, but now it only signals the ends of civilizations.</description>
+		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/WeaponsH/Melee_StaffS</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

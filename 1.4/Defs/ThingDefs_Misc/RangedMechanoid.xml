@@ -159,11 +159,14 @@
 	</ThingDef>
 
 	<!--Quad Shotgun-->
-	<ThingDef ParentName="LightMechanoidGunRanged" MayRequire="Ludeon.Rimworld.Biotech">
+	<ThingDef ParentName="BaseGun">
 		<defName>AAD_Gun_MiniShotgun</defName>
-		<label>Quad mini shotgun</label>
-		<description>A compact, short-range shotgun designed to be mounted on a light combat mechanoid.</description>
+		<label>Black Thunder</label>
+		<description>A heavily modified Mini-shotgun, now fires anti-proton packets with it's 4 barrels.</description>
 		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
 		<graphicData>
 			<texPath>Things/Item/WeaponsM/MechCannon_Slugger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -216,7 +219,7 @@
 	<ThingDef ParentName="BaseWeaponTurret" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>AAD_Gun_MiniShotgunTurret</defName>
 		<label>Quad mini shotgun</label>
-		<description>A compact, short-range shotgun designed to be mounted on a light combat mechanoid.</description>
+		<description>A heavily modified Mini-shotgun, now fires anti-proton packets with it's 4 barrels.</description>
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<graphicData>
@@ -250,7 +253,7 @@
 	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
 		<defName>AAD_Gun_ChargeBlasterHeavy</defName>
 		<label>Herald Stormer</label>
-		<description>A pulse-charged rapid-fire blaster for area suppressive fire. Heavy cooling allows long, deadly bursts.</description>
+		<description>Charge Blaster, but with the firing cooling and all the important parts on the other side of the gateway network.</description>
 		<graphicData>
 			<texPath>Things/Item/WeaponsM/MechCannon_HBlaster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -303,7 +306,7 @@
 	<ThingDef ParentName="LightMechanoidGunRanged">
 		<defName>AAD_Gun_ChargeLance</defName>
 		<label>Herald Scalpel</label>
-		<description>A pulse-charged rail-assisted lance weapon. It fires a single shot at high velocity, charging it with unstable energy as it leaves the acceleration rail.</description>
+		<description>Charge Lance, but with a mile lone acceleration system on the gateway network.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/WeaponsM/MechCannon_Lance</texPath>

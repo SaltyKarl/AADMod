@@ -13,7 +13,7 @@
 				<!-- === ThingCategoryDef === -->
 				<ThingCategoryDef>
 					<defName>AmmoAADAntiprotonCells</defName>
-					<label>Antiproton cells</label>
+					<label>Anti-proton cells</label>
 					<parent>AmmoAdvanced</parent>
 					<iconPath>Things/Ammo/Antiproton/APAmmo_c</iconPath>
 				</ThingCategoryDef>
@@ -21,7 +21,7 @@
 				<!-- === AmmoSetDefs === -->
 				<CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_AAD_SmallAntiprotonScatter</defName>
-					<label>antiproton cells</label>
+					<label>anti-proton cells</label>
 					<ammoTypes>
 						<Ammo_AAD_AntiprotonCell>Bullet_AAD_SmallAntiprotonScatter</Ammo_AAD_AntiprotonCell>
 					</ammoTypes>
@@ -29,7 +29,7 @@
 
 				<CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_AAD_AntiprotonScatter</defName>
-					<label>antiproton cells</label>
+					<label>anti-proton cells</label>
 					<ammoTypes>
 						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonScatter</Ammo_AAD_AntiprotonCell>
 					</ammoTypes>
@@ -37,7 +37,7 @@
 
 				<CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_AAD_AntiprotonShot</defName>
-					<label>antiproton cells</label>
+					<label>anti-proton cells</label>
 					<ammoTypes>
 						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonShot</Ammo_AAD_AntiprotonCell>
 					</ammoTypes>
@@ -45,7 +45,7 @@
 
 				<CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_AAD_AntiprotonHeavyShot</defName>
-					<label>antiproton cells</label>
+					<label>anti-proton cells</label>
 					<ammoTypes>
 						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonHeavyShot</Ammo_AAD_AntiprotonCell>
 					</ammoTypes>
@@ -53,7 +53,7 @@
 
 				<CombatExtended.AmmoSetDef>
 					<defName>AmmoSet_AAD_AntiprotonSuperShot</defName>
-					<label>antiproton cells</label>
+					<label>anti-proton cells</label>
 					<ammoTypes>
 						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonSuperShot</Ammo_AAD_AntiprotonCell>
 					</ammoTypes>
@@ -61,7 +61,7 @@
 
 				<!-- === Ammo === -->
 				<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase" Name="AADAntiprotonCellsBase" Abstract="True">
-					<description>Plasma containment power cells</description>
+					<description>Anti-proton cells</description>
 					<statBases>
 						<Mass>0.01</Mass>
 						<Bulk>0.015</Bulk>
@@ -93,7 +93,7 @@
 
 				<ThingDef Class="CombatExtended.AmmoDef" ParentName="AADAntiprotonCellsBase">
 					<defName>Ammo_AAD_AntiprotonCell</defName>
-					<label>antiproton cell</label>
+					<label>anti-proton cell</label>
 					<graphicData>
 						<texPath>Things/Ammo/Antiproton/APAmmo</texPath>
 						<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
@@ -111,7 +111,7 @@
 
 				<ThingDef ParentName="BaseAADAntiprotonBullet">
 					<defName>Bullet_AAD_SmallAntiprotonScatter</defName>
-					<label>antiproton shot</label>
+					<label>anti-proton shot</label>
 					<graphicData>
 						<texPath>Things/Projectiles/Projectile_Shotgun_Pellet</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
@@ -136,7 +136,7 @@
 
 				<ThingDef ParentName="BaseAADAntiprotonBullet">
 					<defName>Bullet_AAD_AntiprotonScatter</defName>
-					<label>antiproton shot</label>
+					<label>anti-proton shot</label>
 					<graphicData>
 						<texPath>Things/Projectiles/Projectile_Shotgun_Pellet</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
@@ -160,7 +160,7 @@
 				<!-- === Staff shots === -->
 				<ThingDef ParentName="BaseAADAntiprotonBullet">
 					<defName>Bullet_AAD_AntiprotonShot</defName>
-					<label>antiproton shot</label>
+					<label>anti-proton shot</label>
 					<graphicData>
 						<texPath>Things/Projectiles/Projectile_Normal1</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
@@ -181,7 +181,7 @@
 				<!-- === Stormer-Harbinger shots === -->
 				<ThingDef ParentName="BaseAADAntiprotonBullet">
 					<defName>Bullet_AAD_AntiprotonHeavyShot</defName>
-					<label>antiproton shot</label>
+					<label>anti-proton shot</label>
 					<graphicData>
 						<texPath>Things/Projectiles/Projectile_Normal2</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
@@ -202,7 +202,7 @@
 				<!-- === Scalpel-Scepter shots === -->
 				<ThingDef ParentName="BaseAADAntiprotonBullet">
 					<defName>Bullet_AAD_AntiprotonSuperShot</defName>
-					<label>antiproton shot</label>
+					<label>anti-proton shot</label>
 					<graphicData>
 						<texPath>Things/Projectiles/Projectile_Normal3</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
@@ -224,9 +224,9 @@
 				<!-- === Recipe === -->
 				<RecipeDef ParentName="ChargeAmmoRecipeBase">
 					<defName>MakeAmmo_AAD_AntiprotonCell</defName>
-					<label>make Antiproton Cells</label>
-					<description>Craft 500 shots worth of Antiproton Cells.</description>
-					<jobString>Making Antiproton Cells.</jobString>
+					<label>make Anti-proton Cells</label>
+					<description>Craft 500 shots worth of Anti-proton Cells.</description>
+					<jobString>Making Anti-proton Cells.</jobString>
 					<workAmount>500</workAmount>
 					<ingredients>
 						<li>

@@ -15,7 +15,7 @@
 					<defName>AmmoAADAntiprotonCells</defName>
 					<label>Anti-proton cells</label>
 					<parent>AmmoAdvanced</parent>
-					<iconPath>Things/Ammo/Antiproton/APAmmo_c</iconPath>
+					<iconPath>Things/Ammo/AntiprotonAmmo/APAmmo_c</iconPath>
 				</ThingCategoryDef>
 
 				<!-- === AmmoSetDefs === -->
@@ -95,7 +95,7 @@
 					<defName>Ammo_AAD_AntiprotonCell</defName>
 					<label>anti-proton cell</label>
 					<graphicData>
-						<texPath>Things/Ammo/Antiproton/APAmmo</texPath>
+						<texPath>Things/Ammo/AntiprotonAmmo</texPath>
 						<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
 					</graphicData>
 				</ThingDef>

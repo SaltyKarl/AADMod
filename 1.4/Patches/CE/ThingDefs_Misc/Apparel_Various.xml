@@ -332,11 +332,13 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]/equippedStatOffsets</xpath>
+					<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]</xpath>
 					<value>
-						<AimingAccuracy>0.15</AimingAccuracy>
-						<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-						<SmokeSensitivity>-1</SmokeSensitivity>
+						<equippedStatOffsets>
+							<AimingAccuracy>0.15</AimingAccuracy>
+							<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+							<SmokeSensitivity>-1</SmokeSensitivity>
+						</equippedStatOffsets>
 					</value>
 				</li>
 

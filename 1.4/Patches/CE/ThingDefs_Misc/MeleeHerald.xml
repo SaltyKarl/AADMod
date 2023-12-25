@@ -60,11 +60,13 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]/equippedStatOffsets</xpath>
+					<xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]</xpath>
 					<value>
-						<MeleeCritChance>0.13</MeleeCritChance>
-						<MeleeParryChance>1.16</MeleeParryChance>
-						<MeleeDodgeChance>0.9</MeleeDodgeChance>
+						<equippedStatOffsets>
+							<MeleeCritChance>0.13</MeleeCritChance>
+							<MeleeParryChance>1.16</MeleeParryChance>
+							<MeleeDodgeChance>0.9</MeleeDodgeChance>
+						</equippedStatOffsets>
 					</value>
 				</li>
 

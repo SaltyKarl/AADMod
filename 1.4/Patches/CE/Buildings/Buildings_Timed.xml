@@ -8,6 +8,13 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Gun_SolarBeamTurret"]/verbs/li/range</xpath>
+					<value>
+						<range>55</range>
+					</value>
+				</li>
+
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/DamageDef[defName="AAD_SolarBeam"]</xpath>
 					<value>

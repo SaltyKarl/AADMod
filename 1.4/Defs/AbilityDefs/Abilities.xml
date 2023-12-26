@@ -8,7 +8,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/AmbushPortal</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>15000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -22,7 +22,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployShieldRecharger</defName>
 		<label>Deploy shield recharger</label>
@@ -30,7 +30,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployShieldRecharger</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>15000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -44,7 +44,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeploySolarBeamTurret</defName>
 		<label>Deploy solar turret</label>
@@ -52,7 +52,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeploySolarBeamTurret</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>540000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -66,7 +66,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployAntiprotonMines</defName>
 		<label>Deploy antiproton mines</label>
@@ -74,7 +74,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployAntiprotonMines</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>60000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -104,7 +104,7 @@
 		<iconPath>UI/Abilities/DeployMilitors</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Self</targetMode>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>300000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<modExtensions>
@@ -115,7 +115,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployPikemen</defName>
 		<label>Deploy Pikemen</label>
@@ -124,7 +124,7 @@
 		<iconPath>UI/Abilities/DeployPikemen</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Self</targetMode>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>420000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<modExtensions>
@@ -135,7 +135,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployCentipedes</defName>
 		<label>Deploy Centipedes</label>
@@ -144,7 +144,7 @@
 		<iconPath>UI/Abilities/DeployCentipedes</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Self</targetMode>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>540000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<modExtensions>
@@ -155,7 +155,7 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
-	
+
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployDiaboluses</defName>
 		<label>Deploy Diaboluses</label>
@@ -164,7 +164,7 @@
 		<iconPath>UI/Abilities/DeployDiaboluses</iconPath>
 		<castTime>60</castTime>
 		<targetMode>Self</targetMode>
-		<cooldownTime>2500</cooldownTime>
+		<cooldownTime>660000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<modExtensions>

@@ -39,6 +39,7 @@
 		<graphicData>
 			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
 		</graphicData>
+		<designationCategory Inherit="False" />
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.9</explosiveRadius>
@@ -255,8 +256,8 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<defaultDamage>5</defaultDamage>
 		<defaultArmorPenetration>2</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
 	</DamageDef>
 
 </Defs>

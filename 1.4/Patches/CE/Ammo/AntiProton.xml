@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+
+				<!-- === ThingCategoryDef === -->
+				<ThingCategoryDef>
+					<defName>AmmoAADAntiprotonCells</defName>
+					<label>Anti-proton cells</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>Things/Ammo/AntiprotonAmmo/APAmmo_c</iconPath>
+				</ThingCategoryDef>
+
+				<!-- === AmmoSetDefs === -->
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AAD_SmallAntiprotonScatter</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AAD_SmallAntiprotonScatter</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AAD_AntiprotonScatter</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonScatter</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AAD_AntiprotonShot</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonShot</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AAD_AntiprotonHeavyShot</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonHeavyShot</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AAD_AntiprotonSuperShot</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AAD_AntiprotonSuperShot</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
+				<!-- === Ammo === -->
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase" Name="AADAntiprotonCellsBase" Abstract="True">
+					<description>Anti-proton cells</description>
+					<statBases>
+						<Mass>0.01</Mass>
+						<Bulk>0.015</Bulk>
+						<MarketValue>0.5</MarketValue>
+					</statBases>
+					<tradeTags>
+						<li>CE_AutoEnableTrade</li>
+						<li>CE_AutoEnableCrafting_FabricationBench</li>
+					</tradeTags>
+					<thingCategories>
+						<li>AmmoAADAntiprotonCells</li>
+					</thingCategories>
+					<ammoClass>Plasma</ammoClass>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>20</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>0.5</explosiveRadius>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>2</Fragment_Large>
+								<Fragment_Small>10</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="AADAntiprotonCellsBase">
+					<defName>Ammo_AAD_AntiprotonCell</defName>
+					<label>anti-proton cell</label>
+					<graphicData>
+						<texPath>Things/Ammo/AntiprotonAmmo</texPath>
+						<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+					</graphicData>
+				</ThingDef>
+
+				<!-- === Projectiles === -->
+				<ThingDef Name="BaseAADAntiprotonBullet" ParentName="BaseBulletCE" Abstract="true">
+					<thingClass>CombatExtended.BulletCE</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Burn</damageDef>
+						<speed>150</speed>
+					</projectile>
+				</ThingDef>
+
+				<ThingDef ParentName="BaseAADAntiprotonBullet">
+					<defName>Bullet_AAD_SmallAntiprotonScatter</defName>
+					<label>anti-proton shot</label>
+					<graphicData>
+						<texPath>Things/Projectiles/Projectile_Shotgun_Pellet</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<drawSize>(0.7,0.7)</drawSize>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<speed>100</speed>
+						<damageAmountBase>4</damageAmountBase>
+						<armorPenetrationSharp>6</armorPenetrationSharp>
+						<armorPenetrationBlunt>6</armorPenetrationBlunt>
+						<pelletCount>6</pelletCount>
+						<spreadMult>17.8</spreadMult>
+						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>1</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+
+				<ThingDef ParentName="BaseAADAntiprotonBullet">
+					<defName>Bullet_AAD_AntiprotonScatter</defName>
+					<label>anti-proton shot</label>
+					<graphicData>
+						<texPath>Things/Projectiles/Projectile_Shotgun_Pellet</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<speed>120</speed>
+						<damageAmountBase>12</damageAmountBase>
+						<armorPenetrationSharp>20</armorPenetrationSharp>
+						<armorPenetrationBlunt>20</armorPenetrationBlunt>
+						<pelletCount>20</pelletCount>
+						<spreadMult>71.2</spreadMult>
+						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>3</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+				<!-- === Staff shots === -->
+				<ThingDef ParentName="BaseAADAntiprotonBullet">
+					<defName>Bullet_AAD_AntiprotonShot</defName>
+					<label>anti-proton shot</label>
+					<graphicData>
+						<texPath>Things/Projectiles/Projectile_Normal1</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageAmountBase>14</damageAmountBase>
+						<armorPenetrationSharp>10</armorPenetrationSharp>
+						<armorPenetrationBlunt>10</armorPenetrationBlunt>
+						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>3</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+				<!-- === Stormer-Harbinger shots === -->
+				<ThingDef ParentName="BaseAADAntiprotonBullet">
+					<defName>Bullet_AAD_AntiprotonHeavyShot</defName>
+					<label>anti-proton shot</label>
+					<graphicData>
+						<texPath>Things/Projectiles/Projectile_Normal2</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageAmountBase>17</damageAmountBase>
+						<armorPenetrationSharp>12</armorPenetrationSharp>
+						<armorPenetrationBlunt>15</armorPenetrationBlunt>
+						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>3</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+				<!-- === Scalpel-Scepter shots === -->
+				<ThingDef ParentName="BaseAADAntiprotonBullet">
+					<defName>Bullet_AAD_AntiprotonSuperShot</defName>
+					<label>anti-proton shot</label>
+					<graphicData>
+						<texPath>Things/Projectiles/Projectile_Normal3</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageAmountBase>25</damageAmountBase>
+						<armorPenetrationSharp>18</armorPenetrationSharp>
+						<armorPenetrationBlunt>25</armorPenetrationBlunt>
+						<empShieldBreakChance>0.25</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>4</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+
+				<!-- === Recipe === -->
+				<RecipeDef ParentName="ChargeAmmoRecipeBase">
+					<defName>MakeAmmo_AAD_AntiprotonCell</defName>
+					<label>make Anti-proton Cells</label>
+					<description>Craft 500 shots worth of Anti-proton Cells.</description>
+					<jobString>Making Anti-proton Cells.</jobString>
+					<workAmount>500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>Steel</li>
+							<li>Plasteel</li>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_AAD_AntiprotonCell>500</Ammo_AAD_AntiprotonCell>
+					</products>
+				</RecipeDef>
+
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

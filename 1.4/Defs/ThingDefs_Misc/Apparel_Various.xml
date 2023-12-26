@@ -181,7 +181,7 @@
 			<Insulation_Cold>34</Insulation_Cold>
 			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>14</EquipDelay>
-			<EnergyShieldRechargeRate>0.45</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
@@ -341,7 +341,7 @@
 			<Insulation_Cold>36</Insulation_Cold>
 			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>17</EquipDelay>
-			<EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>2.0</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
@@ -452,7 +452,7 @@
 	</VFEPirates.WarcasketDef>
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase" MayRequire="OskarPotocki.VFE.Pirates">
-		<defName>VFEP_Warcasket_Herald</defName>
+		<defName>AAD_Warcasket_Herald</defName>
 		<label>Herald warcasket</label>
 		<shortDescription>ToDo</shortDescription>
 		<description>ToDo</description>
@@ -467,7 +467,7 @@
 			<Insulation_Cold>80</Insulation_Cold>
 			<Insulation_Heat>80</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
-			<EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.3</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>

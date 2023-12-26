@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Herald Mace -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>AAD_Gun_Mace</defName>
+					<statBases>
+						<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+						<ShotSpread>0.15</ShotSpread>
+						<SwayFactor>1.25</SwayFactor>
+						<Bulk>6.7</Bulk>
+						<SightsEfficiency>1</SightsEfficiency>
+						<MeleeCounterParryBonus>0.6</MeleeCounterParryBonus>
+					</statBases>
+					<Properties>
+						<recoilAmount>1.5</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_AAD_AntiprotonScatter</defaultProjectile>
+						<warmupTime>0.6</warmupTime>
+						<range>16</range>
+						<ammoConsumedPerShotCount>4</ammoConsumedPerShotCount>
+						<soundCast>AAD_ShotDC</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>20</magazineSize>
+						<reloadTime>4</reloadTime>
+						<ammoSet>AmmoSet_AAD_AntiprotonScatter</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aiAimMode>Snapshot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>CE_AI_BROOM</li>
+					</weaponTags>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.78</cooldownTime>
+								<chanceFactor>0.10</chanceFactor>
+								<armorPenetrationBlunt>1.000</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>50</power>
+								<cooldownTime>2.45</cooldownTime>
+								<armorPenetrationBlunt>160</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<!-- Herald Staff -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>AAD_Gun_AR</defName>
+					<statBases>
+						<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+						<SightsEfficiency>1</SightsEfficiency>
+						<ShotSpread>0.07</ShotSpread>
+						<SwayFactor>1.5</SwayFactor>
+						<Bulk>10.0</Bulk>
+						<MeleeCounterParryBonus>1.4</MeleeCounterParryBonus>
+					</statBases>
+					<Properties>
+						<recoilAmount>1.0</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_AAD_AntiprotonShot</defaultProjectile>
+						<warmupTime>1.1</warmupTime>
+						<range>55</range>
+						<burstShotCount>6</burstShotCount>
+						<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+						<soundCast>AAD_ShotSMG</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>30</magazineSize>
+						<reloadTime>4</reloadTime>
+						<ammoSet>AmmoSet_AAD_AntiprotonShot</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aimedBurstShotCount>3</aimedBurstShotCount>
+						<aiUseBurstMode>TRUE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>CE_AI_AR</li>
+					</weaponTags>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_AR"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.78</cooldownTime>
+								<chanceFactor>0.10</chanceFactor>
+								<armorPenetrationBlunt>1.000</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9</power>
+								<cooldownTime>1.84</cooldownTime>
+								<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>AAD_Gun_BR</defName>
+					<statBases>
+						<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+						<SightsEfficiency>1</SightsEfficiency>
+						<ShotSpread>0.07</ShotSpread>
+						<SwayFactor>1.5</SwayFactor>
+						<Bulk>10.0</Bulk>
+						<MeleeCounterParryBonus>1.5</MeleeCounterParryBonus>
+					</statBases>
+					<Properties>
+						<recoilAmount>1.0</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_AAD_AntiprotonHeavyShot</defaultProjectile>
+						<warmupTime>1.1</warmupTime>
+						<range>62</range>
+						<burstShotCount>5</burstShotCount>
+						<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+						<ammoConsumedPerShotCount>2</ammoConsumedPerShotCount>
+						<soundCast>AAD_ShotHMG</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>40</magazineSize>
+						<reloadTime>4</reloadTime>
+						<ammoSet>AmmoSet_AAD_AntiprotonHeavyShot</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aimedBurstShotCount>2</aimedBurstShotCount>
+						<aiUseBurstMode>TRUE</aiUseBurstMode>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>CE_AI_AR</li>
+					</weaponTags>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_BR"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>8</power>
+								<cooldownTime>1.78</cooldownTime>
+								<chanceFactor>0.10</chanceFactor>
+								<armorPenetrationBlunt>2.000</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>15</power>
+								<cooldownTime>1.84</cooldownTime>
+								<armorPenetrationBlunt>5.0</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<!-- Herald Scepter -->
+
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>AAD_Gun_AMR</defName>
+					<statBases>
+						<Bulk>15.00</Bulk>
+						<SwayFactor>2.00</SwayFactor>
+						<ShotSpread>0.03</ShotSpread>
+						<SightsEfficiency>2.84</SightsEfficiency>
+						<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+						<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+					</statBases>
+					<Properties>
+						<recoilAmount>2.5</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>True</hasStandardCommand>
+						<defaultProjectile>Bullet_AAD_AntiprotonSuperShot</defaultProjectile>
+						<warmupTime>1.6</warmupTime>
+						<range>86</range>
+						<ammoConsumedPerShotCount>4</ammoConsumedPerShotCount>
+						<soundCast>AAD_ShotHMG</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>20</magazineSize>
+						<reloadTime>4</reloadTime>
+						<ammoSet>AmmoSet_AAD_AntiprotonSuperShot</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>SniperRifle</li>
+					</weaponTags>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_AMR"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>handle</label>
+								<capacities>
+									<li>Poke</li>
+								</capacities>
+								<power>4</power>
+								<cooldownTime>1.78</cooldownTime>
+								<chanceFactor>0.10</chanceFactor>
+								<armorPenetrationBlunt>1.000</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+								<label>head</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>9</power>
+								<cooldownTime>1.84</cooldownTime>
+								<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+								<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

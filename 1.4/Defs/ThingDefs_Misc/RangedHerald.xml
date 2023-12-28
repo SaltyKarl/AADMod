@@ -9,6 +9,7 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Shotgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -101,6 +102,7 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -194,6 +196,7 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -287,6 +290,7 @@
 		<graphicData>
 			<texPath>Things/Projectiles/Projectile_Normal3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>

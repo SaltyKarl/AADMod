@@ -250,10 +250,14 @@
 		</verbs>
 	</ThingDef>
 	<!--Rain of Pain-->
-	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
+	<ThingDef ParentName="BaseGun">
 		<defName>AAD_Gun_ChargeBlasterHeavy</defName>
 		<label>Herald Stormer</label>
 		<description>Charge Blaster, but with the firing cooling and all the important parts on the other side of the gateway network.</description>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
 		<graphicData>
 			<texPath>Things/Item/WeaponsM/MechCannon_HBlaster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -268,7 +272,6 @@
 			<AccuracyLong>0.225</AccuracyLong>
 			<RangedWeapon_Cooldown>10.4</RangedWeapon_Cooldown>
 		</statBases>
-		<techLevel>Ultra</techLevel>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

@@ -74,6 +74,26 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]/statBases</xpath>
+					<value>
+						<Bulk>10</Bulk>
+						<MeleeCounterParryBonus>2.25</MeleeCounterParryBonus>
+						<ToughnessRating>25</ToughnessRating>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MeleeCritChance>0.85</MeleeCritChance>
+							<MeleeParryChance>0.16</MeleeParryChance>
+							<MeleeDodgeChance>0.9</MeleeDodgeChance>
+						</equippedStatOffsets>
+					</value>
+				</li>
+
 				<!-- Herald Staff -->
 
 				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">

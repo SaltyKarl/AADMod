@@ -5,5 +5,6 @@
 		<li>1.4</li>
 		<li>Common</li>
 		<li IfModActive="IssacZhuang.MuzzleFlash">1.4/Mods/Muzzle Flash</li>
+		<li IfModActive="OskarPotocki.VFE.Pirates">1.4/Mods/Pirates</li>
 	</v1.4>
 </loadFolders>

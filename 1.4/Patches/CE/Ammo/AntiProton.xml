@@ -17,6 +17,14 @@
 					<parent>AmmoAdvanced</parent>
 					<iconPath>Things/Ammo/AntiprotonAmmo/APAmmo_c</iconPath>
 				</ThingCategoryDef>
+				
+				<!-- === AmmoClassDef === -->
+				<CombatExtended.AmmoCategoryDef>
+					<defName>AADAntiProton</defName>
+					<label>Anti-proton</label>
+					<description>A self powered device to contain antiproton packets, favorited by Iconian Heralds.</description>
+					<advanced>true</advanced>
+				</CombatExtended.AmmoCategoryDef>
 
 				<!-- === AmmoSetDefs === -->
 				<CombatExtended.AmmoSetDef>
@@ -74,7 +82,7 @@
 					<thingCategories>
 						<li>AmmoAADAntiprotonCells</li>
 					</thingCategories>
-					<ammoClass>Plasma</ammoClass>
+					<ammoClass>AADAntiProton</ammoClass>
 					<comps>
 						<li Class="CombatExtended.CompProperties_ExplosiveCE">
 							<damageAmountBase>20</damageAmountBase>

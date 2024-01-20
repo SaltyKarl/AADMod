@@ -67,18 +67,52 @@
 	</Operation>
 
 	<Operation Class="SafePatcher.PatchOperationSetModExtension">
-		<xpath>Defs/ThingDef[
-			defName = "AAD_Gun_Mace" or
-			defName = "AAD_Gun_AR" or
-			defName = "AAD_Gun_BR" or
-			defName = "AAD_Gun_AMR"
-		]</xpath>
+		<xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.05,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_AR"]</xpath>
 		<value>
 			<li Class="MuzzleFlash.MuzzleFlashProps">
 				<def>AAD_HeraldMF4x5</def>
 				<drawSize>(1.5,1.5)</drawSize>
 				<offsets>
 					<li>(-0.31,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_BR"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(-0.31,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_AMR"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.06,0)</li>
 				</offsets>
 			</li>
 		</value>

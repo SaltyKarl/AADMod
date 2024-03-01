@@ -4,7 +4,7 @@
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_AmbushPortal</defName>
 		<label>Ambush portal</label>
-		<description>text.todo.</description>
+		<description>Use the gate network to move, Behind the target pawn, will stun if targeted enemy.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/AmbushPortal</iconPath>
 		<castTime>60</castTime>
@@ -26,7 +26,7 @@
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployShieldRecharger</defName>
 		<label>Deploy shield recharger</label>
-		<description>text.todo.</description>
+		<description>Deploy shield recharger via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployShieldRecharger</iconPath>
 		<castTime>60</castTime>
@@ -48,7 +48,7 @@
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeploySolarBeamTurret</defName>
 		<label>Deploy solar turret</label>
-		<description>text.todo.</description>
+		<description>Deploy a powerful solar turret via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeploySolarBeamTurret</iconPath>
 		<castTime>60</castTime>
@@ -70,7 +70,7 @@
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployAntiprotonMines</defName>
 		<label>Deploy antiproton mines</label>
-		<description>text.todo.</description>
+		<description>Deploy antiproton mines via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployAntiprotonMines</iconPath>
 		<castTime>60</castTime>
@@ -98,8 +98,8 @@
 
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployMilitors</defName>
-		<label>Deploy militors</label>
-		<description>text.todo.</description>
+		<label>Deploy Retrofitted Militors</label>
+		<description>Deploy Retrofitted Militors via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployMilitors</iconPath>
 		<castTime>60</castTime>
@@ -118,8 +118,8 @@
 
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployPikemen</defName>
-		<label>Deploy Pikemen</label>
-		<description>text.todo.</description>
+		<label>Deploy Retrofitted Pikemen</label>
+		<description>Deploy Retrofitted Pikemen via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployPikemen</iconPath>
 		<castTime>60</castTime>
@@ -138,8 +138,8 @@
 
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployCentipedes</defName>
-		<label>Deploy Centipedes</label>
-		<description>text.todo.</description>
+		<label>Deploy Retrofitted Centipedes</label>
+		<description>Deploy Retrofitted Centipedes via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployCentipedes</iconPath>
 		<castTime>60</castTime>
@@ -158,8 +158,8 @@
 
 	<VFECore.Abilities.AbilityDef>
 		<defName>AAD_DeployDiaboluses</defName>
-		<label>Deploy Diaboluses</label>
-		<description>text.todo.</description>
+		<label>Deploy Retrofitted Diaboluses</label>
+		<description>Deploy Retrofitted Diaboluses via the iconian gateway.</description>
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployDiaboluses</iconPath>
 		<castTime>60</castTime>

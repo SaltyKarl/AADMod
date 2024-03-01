@@ -16,9 +16,9 @@
 
 	<ThingDef ParentName="BaseMeleeWeapon">
 		<defName>AAD_Melee_Spear</defName>
-		<label>ToDo</label>
-		<description>ToDo.</description>
-		<techLevel>Spacer</techLevel>
+		<label>Spear of Vengeance</label>
+		<description>"Our masters will return and they will have their vengeance." is inscribed on the handle of the spear.</description>
+		<techLevel>Ultra</techLevel>
 		<weaponClasses>
 			<li>MeleePiercer</li>
 		</weaponClasses>
@@ -59,7 +59,7 @@
 					<li>Blunt</li>
 					<li>Poke</li>
 				</capacities>
-				<power>15</power>
+				<power>20</power>
 				<cooldownTime>2.3</cooldownTime>
 			</li>
 			<li>
@@ -67,8 +67,8 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>25</power>
-				<armorPenetration>0.75</armorPenetration>
+				<power>35</power>
+				<armorPenetration>1.05</armorPenetration>
 				<cooldownTime>2.3</cooldownTime>
 			</li>
 		</tools>

@@ -5,9 +5,9 @@
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketHelmetBase" MayRequire="OskarPotocki.VFE.Pirates">
 		<defName>AAD_WarcasketHelmet_Herald</defName>
-		<label>Herald warcasket helmet</label>
-		<shortDescription>ToDo</shortDescription>
-		<description>ToDo</description>
+		<label>Helmet of Defiler</label>
+		<shortDescription>Helmet usually wear by Defiler</shortDescription>
+		<description>Less of an Helmet more of a set of "life support" and combat computer, with a wetware component.</description>
 		<graphicData>
 			<texPath>Things/Item/HeraldWarcasket/HeraldWarcasketHelmet</texPath>
 		</graphicData>
@@ -53,13 +53,39 @@
 				</abilities>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="VFECore.ApparelExtension">
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<minLevel>1.5</minLevel>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<minLevel>1.5</minLevel>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<minLevel>1.5</minLevel>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>1.5</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+		</modExtensions>
 	</VFEPirates.WarcasketDef>
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketArmorBase" MayRequire="OskarPotocki.VFE.Pirates">
 		<defName>AAD_Warcasket_Herald</defName>
-		<label>Herald warcasket</label>
-		<shortDescription>ToDo</shortDescription>
-		<description>ToDo</description>
+		<label>Defiler Sarcophagus</label>
+		<shortDescription>Defiler Sarcophagus</shortDescription>
+		<description>for an Herald to embody their master's wratrh is to be emtombed into such a Warmachine.</description>
 		<graphicData>
 			<texPath>Things/Item/HeraldWarcasket/HeraldWarcasket</texPath>
 		</graphicData>
@@ -122,11 +148,11 @@
 				<pawnCapacityMinLevels>
 					<li>
 						<capacity>Moving</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1.5</minLevel>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1.5</minLevel>
 					</li>
 				</pawnCapacityMinLevels>
 			</li>
@@ -135,9 +161,9 @@
 
 	<VFEPirates.WarcasketDef ParentName="VFEP_WarcasketShoulderPadBase" MayRequire="OskarPotocki.VFE.Pirates">
 		<defName>AAD_WarcasketShoulders_Herald</defName>
-		<label>Herald warcasket shoulders</label>
-		<shortDescription>ToDo</shortDescription>
-		<description>ToDo</description>
+		<label>Defiler Sarcophagus shoulders</label>
+		<shortDescription>Defiler shoulders</shortDescription>
+		<description>Defiler Sarcophagus shoulder armor</description>
 		<graphicData>
 			<texPath>Things/Item/HeraldWarcasket/HeraldWarcasketShoulders</texPath>
 		</graphicData>

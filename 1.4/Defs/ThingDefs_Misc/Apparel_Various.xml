@@ -5,13 +5,13 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>AAD_Apparel_HeraldPack</defName>
-		<label>Herald pack</label>
-		<description>ToDo</description>
+		<label>Herald Backpack</label>
+		<description>A mostly Decorative Backpack can be used to deploy shield recharger.</description>
 		<graphicData>
 			<texPath>Things/Item/HeraldPack/Herald_Pack_UI</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -27,7 +27,7 @@
 		</costList>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>CataphractArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -48,7 +48,6 @@
 				<li>Belt</li>
 			</layers>
 			<tags>
-				<li>HeraldT1</li>
 				<li>HeraldT2</li>
 			</tags>
 			<defaultOutfitTags>
@@ -74,10 +73,9 @@
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>AAD_Apparel_HeraldLieutenantHelmet</defName>
-		<label>Herald Lieutenant helmet</label>
-		<description>ToDo</description>
-
-		<techLevel>Spacer</techLevel>
+		<label>Herald Helmet</label>
+		<description>A helmet that uses gravitational manipulation to protect the wearer, used by most Heralds.</description>
+		<techLevel>Ultra</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
@@ -152,13 +150,13 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>AAD_Apparel_HeraldLieutenantArmor</defName>
-		<label>Herald Lieutenant armor</label>
-		<description>ToDo</description>
+		<label>Voice of TKet Armor</label>
+		<description>Ceremonial armor for the Voice of TKet, the Regional commander of the Herald.</description>
 		<tickerType>Normal</tickerType>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>CataphractArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -185,7 +183,7 @@
 			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.4</MoveSpeed>
+			<MoveSpeed>0.2</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<thingCategories>
@@ -241,9 +239,9 @@
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>AAD_Apparel_ArmorHelmetHerald</defName>
-		<label>Herald helmet</label>
-		<description>ToDo</description>
-		<techLevel>Spacer</techLevel>
+		<label>Voice of TKet Helmet</label>
+		<description>Ceremonial Helmet for the first Herald, the wearer is trated as the Voice of TKet.</description>
+		<techLevel>Ultra</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>CataphractArmor</researchPrerequisite>
@@ -311,13 +309,13 @@
 
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>AAD_Apparel_ArmorHerald</defName>
-		<label>Herald armor</label>
-		<description>ToDo</description>
+		<label>Herald Armor</label>
+		<description>Standard power armor used by Heralds.</description>
 		<tickerType>Normal</tickerType>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>

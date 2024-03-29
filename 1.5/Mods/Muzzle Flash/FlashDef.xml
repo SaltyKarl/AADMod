@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>AAD_SluggerMF2x5</defName>
+        <texture>Effects/SluggerMuzzleFlash2x5</texture>
+        <defaultSize>(1.2,1.2)</defaultSize>
+        <splits>(5,2)</splits>
+        <drawOffsetMultiplier>(0.2,0)</drawOffsetMultiplier>
+        <duration>8</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.2</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>AAD_BlasterMF4x5</defName>
+        <texture>Effects/BlastMuzzleFlash4x5</texture>
+        <defaultSize>(1.2,1.2)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.4,0)</drawOffsetMultiplier>
+        <duration>6</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.2</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>AAD_HBlasterMF4x5</defName>
+        <texture>Effects/HeavyBlastMuzzleFlash4x5</texture>
+        <defaultSize>(1.2,1.2)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.4,0)</drawOffsetMultiplier>
+        <duration>6</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.2</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>AAD_HeraldMF4x5</defName>
+        <texture>Effects/MuzzlePortal4x5</texture>
+        <defaultSize>(0.6,0.6)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.4,0)</drawOffsetMultiplier>
+        <duration>6</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>1.2</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+
+</Defs>

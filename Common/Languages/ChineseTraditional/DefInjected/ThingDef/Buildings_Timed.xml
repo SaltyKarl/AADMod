@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AAD_ShieldRegen.label>Shield Regenerator</AAD_ShieldRegen.label>
+  <AAD_ShieldRegen.description>...</AAD_ShieldRegen.description>
+
+
+  <!-- Mine -->
+
+  <AAD_APMine.label>Herald Gravimetric Mine</AAD_APMine.label>
+  <AAD_APMine.description>...</AAD_APMine.description>
+  <AAD_APMine_Blueprint_Install.label>Herald Gravimetric Mine (blueprint)</AAD_APMine_Blueprint_Install.label>
+
+
+  <!-- Beam Turret Base -->
+
+  <AAD_SolarBeamTurret.label>Stellar Beam Sweaper</AAD_SolarBeamTurret.label>
+  <AAD_SolarBeamTurret.description>...</AAD_SolarBeamTurret.description>
+
+  <Gun_SolarBeamTurret.label>Stellar Beam Sweaper</Gun_SolarBeamTurret.label>
+  <Gun_SolarBeamTurret.description>...</Gun_SolarBeamTurret.description>
+  <Gun_SolarBeamTurret.tools.0.label>barrel</Gun_SolarBeamTurret.tools.0.label>
+
+
+</LanguageData>

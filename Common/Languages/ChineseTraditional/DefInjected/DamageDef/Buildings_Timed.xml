@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Beam Turret Base -->
+
+  <AAD_SolarBeam.label>beam</AAD_SolarBeam.label>
+  <AAD_SolarBeam.deathMessage>{0} has been beamed to death.</AAD_SolarBeam.deathMessage>
+
+
+</LanguageData>

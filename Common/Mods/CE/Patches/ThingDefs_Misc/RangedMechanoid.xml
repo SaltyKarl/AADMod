@@ -90,7 +90,7 @@
 				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 					<defName>AAD_Gun_MiniShotgun</defName>
 					<statBases>
-						<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+						<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 						<SightsEfficiency>1</SightsEfficiency>
 						<ShotSpread>0.15</ShotSpread>
 						<SwayFactor>0.53</SwayFactor>
@@ -101,7 +101,7 @@
 						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_AAD_SmallAntiprotonScatter</defaultProjectile>
-						<warmupTime>0.8</warmupTime>
+						<warmupTime>1.8</warmupTime>
 						<range>14</range>
 						<burstShotCount>4</burstShotCount>
 						<ticksBetweenBurstShots>5</ticksBetweenBurstShots>

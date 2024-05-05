@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Herald Pack -->
+
+  <AAD_Apparel_HeraldPack.label>Herald Backpack</AAD_Apparel_HeraldPack.label>
+  <AAD_Apparel_HeraldPack.description>A mostly Decorative Backpack can be used to deploy shield recharger.</AAD_Apparel_HeraldPack.description>
+
+
+  <!-- Power Armors -->
+
+  <AAD_Apparel_HeraldLieutenantHelmet.label>Herald Helmet</AAD_Apparel_HeraldLieutenantHelmet.label>
+  <AAD_Apparel_HeraldLieutenantHelmet.description>A helmet that uses gravitational manipulation to protect the wearer, used by most Heralds.</AAD_Apparel_HeraldLieutenantHelmet.description>
+
+  <AAD_Apparel_HeraldLieutenantArmor.label>Voice of TKet Armor</AAD_Apparel_HeraldLieutenantArmor.label>
+  <AAD_Apparel_HeraldLieutenantArmor.description>Ceremonial armor for the Voice of TKet, the Regional commander of the Herald.</AAD_Apparel_HeraldLieutenantArmor.description>
+
+  <AAD_Apparel_ArmorHelmetHerald.label>Voice of TKet Helmet</AAD_Apparel_ArmorHelmetHerald.label>
+  <AAD_Apparel_ArmorHelmetHerald.description>Ceremonial Helmet for the first Herald, the wearer is trated as the Voice of TKet.</AAD_Apparel_ArmorHelmetHerald.description>
+
+  <AAD_Apparel_ArmorHerald.label>Herald Armor</AAD_Apparel_ArmorHerald.label>
+  <AAD_Apparel_ArmorHerald.description>Standard power armor used by Heralds.</AAD_Apparel_ArmorHerald.description>
+
+
+</LanguageData>

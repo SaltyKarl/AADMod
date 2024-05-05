@@ -67,6 +67,14 @@
 					</ammoTypes>
 				</CombatExtended.AmmoSetDef>
 
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_AADLaser</defName>
+					<label>anti-proton cells</label>
+					<ammoTypes>
+						<Ammo_AAD_AntiprotonCell>Bullet_AADLaser</Ammo_AAD_AntiprotonCell>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+
 				<!-- === Ammo === -->
 				<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase" Name="AADAntiprotonCellsBase" Abstract="True">
 					<description>Anti-proton cells</description>
@@ -229,6 +237,27 @@
 							<li>
 								<def>EMP</def>
 								<amount>4</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseLaserBullet">
+					<defName>Bullet_AADLaser</defName>
+					<label>anti-proton laser</label>
+					<textures>
+						<li>Things/Projectile/Laser_Purple</li>
+					</textures>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>40</damageAmountBase>
+						<armorPenetrationSharp>500</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.01</armorPenetrationBlunt>
+						<empShieldBreakChance>1</empShieldBreakChance>
+						<secondaryDamage>
+							<li>
+								<def>EMP</def>
+								<amount>10</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>

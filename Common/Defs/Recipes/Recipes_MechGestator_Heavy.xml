@@ -52,7 +52,7 @@
 		<defName>Mech_DiabolusHerald_B</defName>
 		<label>gestate diabolus annihilator</label>
 		<description>Gestate a diabolus annihilator mech.</description>
-		<gestationCycles>14</gestationCycles>
+		<gestationCycles>12</gestationCycles>
 		<researchPrerequisite>UltraMechtech</researchPrerequisite>
 		<ingredients Inherit="False">
 			<li>
@@ -77,7 +77,7 @@
 						<li>SignalChip</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>

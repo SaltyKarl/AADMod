@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Herald's Wrath -->
+
+  <AAD_Gun_HellsphereCannon.label>Herald's Wrath cannon</AAD_Gun_HellsphereCannon.label>
+  <AAD_Gun_HellsphereCannon.description>A Heavily modified hellsphere cannon that darws it's energy from Heralds dyson sphere gateway networks making it much more devastating.</AAD_Gun_HellsphereCannon.description>
+  <AAD_Gun_HellsphereCannon.tools.0.label>barrel</AAD_Gun_HellsphereCannon.tools.0.label>
+
+  <AAD_Bullet_HellsphereCannonGun.label>Herald's Wrath shot</AAD_Bullet_HellsphereCannonGun.label>
+
+
+  <!-- Quad Shotgun -->
+
+  <AAD_Gun_MiniShotgun.label>Black Thunder</AAD_Gun_MiniShotgun.label>
+  <AAD_Gun_MiniShotgun.description>A heavily modified Mini-shotgun, now fires anti-proton packets with it's 4 barrels.</AAD_Gun_MiniShotgun.description>
+
+  <AAD_Bullet_MiniShotgun.label>shotgun blast</AAD_Bullet_MiniShotgun.label>
+
+  <AAD_Gun_MiniShotgunTurret.label>Quad mini shotgun</AAD_Gun_MiniShotgunTurret.label>
+  <AAD_Gun_MiniShotgunTurret.description>A heavily modified Mini-shotgun, now fires anti-proton packets with it's 4 barrels.</AAD_Gun_MiniShotgunTurret.description>
+
+
+  <!-- Rain of Pain -->
+
+  <AAD_Gun_ChargeBlasterHeavy.label>Herald Stormer</AAD_Gun_ChargeBlasterHeavy.label>
+  <AAD_Gun_ChargeBlasterHeavy.description>Charge Blaster, but with the firing cooling and all the important parts on the other side of the gateway network.</AAD_Gun_ChargeBlasterHeavy.description>
+
+  <AAD_Bullet_ChargeBlasterHeavy.label>stormer shot</AAD_Bullet_ChargeBlasterHeavy.label>
+
+
+  <!-- Scalpel -->
+
+  <AAD_Gun_ChargeLance.label>Herald Scalpel</AAD_Gun_ChargeLance.label>
+  <AAD_Gun_ChargeLance.description>Charge Lance, but with a mile lone acceleration system on the gateway network.</AAD_Gun_ChargeLance.description>
+
+  <AAD_Bullet_ChargeLance.label>Scalpel shot</AAD_Bullet_ChargeLance.label>
+
+
+</LanguageData>

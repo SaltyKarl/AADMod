@@ -33,7 +33,7 @@
 	<PawnKindDef ParentName="MechCentipedeBase">
 		<defName>Mech_CentipedeHerald_B</defName>
 		<label>centipede crusher</label>
-		<race>Mech_CentipedeHerald</race>
+		<race>Mech_CentipedeHerald_B</race>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages Inherit="False">
 			<li MayRequire="Ludeon.RimWorld.Biotech">
@@ -115,7 +115,7 @@
 	<PawnKindDef ParentName="LightMechanoidKind">
 		<defName>Mech_MilitorHerald_B</defName>
 		<label>militor assaultor</label>
-		<race>Mech_MilitorHerald</race>
+		<race>Mech_MilitorHerald_B</race>
 		<combatPower>90</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages Inherit="False">
@@ -235,7 +235,7 @@
 		<defName>Mech_PikemanHerald_B</defName>
 		<label>pikeman demoralizer</label>
 		<labelPlural>pikemen demoralizers</labelPlural>
-		<race>Mech_PikemanHerald</race>
+		<race>Mech_PikemanHerald_B</race>
 		<combatPower>165</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
@@ -270,20 +270,63 @@
 		</weaponTags>
 	</PawnKindDef>
 
-	<ThingDef ParentName="MechDiabolus" MayRequire="Ludeon.Rimworld.Biotech">
+	<ThingDef Name="Mech_DiabolusHerald_B" ParentName="SuperHeavyMechanoid" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>Mech_DiabolusHerald_B</defName>
 		<label>diabolus annihilator</label>
 		<description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</description>
 		<race>
 			<body>Mech_Diabolus</body>
 			<baseBodySize>4</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+			</lifeStageAges>
 			<baseHealthScale>9</baseHealthScale>
 		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
 		<comps Inherit="False">
 			<li Class="CompProperties_TargetingBeam" />
 			<li Class="CompProperties_TurretGun">
 				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
 				<angleOffset>-90</angleOffset>
+				<renderNodeProperties>
+					<li>
+						<nodeClass>PawnRenderNode_TurretGun</nodeClass>
+						<workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+						<parentTagDef>Body</parentTagDef>
+						<overrideMeshSize>(1, 1)</overrideMeshSize>
+						<baseLayer>20</baseLayer>
+						<pawnType>Any</pawnType>
+						<drawData>
+							<dataWest>
+								<rotationOffset>180</rotationOffset>
+							</dataWest>
+						</drawData>
+					</li>
+				</renderNodeProperties>
 			</li>
 			<li Class="CompProperties_Shield">
 				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
@@ -308,10 +351,10 @@
 		</statBases>
 	</ThingDef>
 
-	<PawnKindDef ParentName="MechDiabolusKind" MayRequire="Ludeon.Rimworld.Biotech">
+	<PawnKindDef Name="Mech_DiabolusHerald_BKind" ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>Mech_DiabolusHerald_B</defName>
 		<label>diabolus annihilator</label>
-		<race>Mech_DiabolusHerald</race>
+		<race>Mech_DiabolusHerald_B</race>
 		<combatPower>1000</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages Inherit="False">

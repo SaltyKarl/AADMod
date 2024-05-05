@@ -145,9 +145,8 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-		<fillPercent>0.5</fillPercent>
-		<hasTooltip>true</hasTooltip>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<fillPercent>0.85</fillPercent>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
 			<buildingTags>
 				<li>AAD_Turret</li>
@@ -178,7 +177,14 @@
 			<drawSize>(1.5, 1.5)</drawSize>
 		</graphicData>
 		<statBases>
-			<AccuracyLong>0.08</AccuracyLong>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.84</AccuracyMedium>
+			<AccuracyLong>0.84</AccuracyLong>
+			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
 		</statBases>
 		<verbs>
 			<li>

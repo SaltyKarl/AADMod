@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Spear -->
+
+  <AAD_UnfinishedPoweredMeleeWeapon.label>unfinished powered melee weapon</AAD_UnfinishedPoweredMeleeWeapon.label>
+  <AAD_UnfinishedPoweredMeleeWeapon.description>An unfinished powered melee weapon.</AAD_UnfinishedPoweredMeleeWeapon.description>
+
+  <AAD_Melee_Spear.label>Spear of Vengeance</AAD_Melee_Spear.label>
+  <AAD_Melee_Spear.description>"Our masters will return and they will have their vengeance." is inscribed on the handle of the spear.</AAD_Melee_Spear.description>
+  <AAD_Melee_Spear.tools.0.label>shaft</AAD_Melee_Spear.tools.0.label>
+  <AAD_Melee_Spear.tools.1.label>point</AAD_Melee_Spear.tools.1.label>
+
+
+</LanguageData>

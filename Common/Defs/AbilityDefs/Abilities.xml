@@ -8,7 +8,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/AmbushPortal</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>15000</cooldownTime>
+		<cooldownTime>5000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -30,7 +30,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployShieldRecharger</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>15000</cooldownTime>
+		<cooldownTime>5000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -52,7 +52,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeploySolarBeamTurret</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>540000</cooldownTime>
+		<cooldownTime>180000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>
@@ -74,7 +74,7 @@
 		<abilityClass>AADMod.Ability_Portal</abilityClass>
 		<iconPath>UI/Abilities/DeployAntiprotonMines</iconPath>
 		<castTime>60</castTime>
-		<cooldownTime>60000</cooldownTime>
+		<cooldownTime>20000</cooldownTime>
 		<needsTicking>true</needsTicking>
 		<showUndrafted>true</showUndrafted>
 		<range>45</range>

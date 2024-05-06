@@ -307,7 +307,7 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<comps Inherit="False">
+		<comps>
 			<li Class="CompProperties_TargetingBeam" />
 			<li Class="CompProperties_TurretGun">
 				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
@@ -351,7 +351,7 @@
 		</statBases>
 	</ThingDef>
 
-	<PawnKindDef Name="Mech_DiabolusHerald_BKind" ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
+	<PawnKindDef Name="MechDiabolusKind" ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>Mech_DiabolusHerald_B</defName>
 		<label>diabolus annihilator</label>
 		<race>Mech_DiabolusHerald_B</race>

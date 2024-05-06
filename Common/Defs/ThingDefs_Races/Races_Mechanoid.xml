@@ -303,7 +303,7 @@
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>9</baseHealthScale>
 		</race>
-		<comps Inherit="False">
+		<comps>
 			<li Class="CompProperties_TargetingBeam" />
 			<li Class="CompProperties_TurretGun">
 				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>

@@ -64,6 +64,7 @@
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
 					<li>AAD_DeployShieldRecharger</li>
+					<li>AAD_Shockwave</li>
 				</abilities>
 			</li>
 		</comps>

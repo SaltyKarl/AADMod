@@ -175,4 +175,25 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_Shockwave</defName>
+		<label>Shockwave</label>
+		<description>text.todo.</description>
+		<abilityClass>AADMod.Ability_Explosion</abilityClass>
+		<iconPath>UI/Abilities/DeployDiaboluses</iconPath>
+		<castTime>60</castTime>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<cooldownTime>2500</cooldownTime>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.ExplosionExtension">
+				<damageDef>Bomb</damageDef>
+				<arc>45</arc>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
 </Defs>

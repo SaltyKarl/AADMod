@@ -4,6 +4,8 @@ using Ability = VFECore.Abilities.Ability;
 
 namespace AADMod
 {
+
+
     public class Ability_Portal : Ability
     {
         public override void Tick()

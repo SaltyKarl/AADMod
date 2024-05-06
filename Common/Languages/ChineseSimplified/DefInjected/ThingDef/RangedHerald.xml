@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mace -->
+
+  <AAD_Bullet_ShotgunBlast.label>Mace blast</AAD_Bullet_ShotgunBlast.label>
+
+  <AAD_Gun_Mace.label>Mace of Defiler</AAD_Gun_Mace.label>
+  <AAD_Gun_Mace.description>An elegant instrument of destruction, Looks heavy but can be lifted by a human child, with onboard spatial and graviometric manipulators to contain and direct large amount of anti-proton directionally, also Serves as an excellent melee weapon.</AAD_Gun_Mace.description>
+  <AAD_Gun_Mace.tools.0.label>handle</AAD_Gun_Mace.tools.0.label>
+  <AAD_Gun_Mace.tools.1.label>head</AAD_Gun_Mace.tools.1.label>
+
+
+  <!-- AR -->
+
+  <AAD_Bullet_ChargedBlast.label>Staff blast</AAD_Bullet_ChargedBlast.label>
+
+  <AAD_Gun_AR.label>Herald anti-proton Staff.</AAD_Gun_AR.label>
+  <AAD_Gun_AR.description>The basic Herald weapons, Usually welded by constructs.</AAD_Gun_AR.description>
+  <AAD_Gun_AR.tools.0.label>handle</AAD_Gun_AR.tools.0.label>
+  <AAD_Gun_AR.tools.1.label>head</AAD_Gun_AR.tools.1.label>
+
+
+  <!-- BR -->
+
+  <AAD_Bullet_HeavyChargedBlast.label>Staff blast</AAD_Bullet_HeavyChargedBlast.label>
+
+  <AAD_Gun_BR.label>Staff of Harbinger</AAD_Gun_BR.label>
+  <AAD_Gun_BR.description>Before the fall, only iconian warriors ever carries such a staff and few have seen one, far more people got to see it after the fall but not many ever get to tell the tale.</AAD_Gun_BR.description>
+  <AAD_Gun_BR.tools.0.label>handle</AAD_Gun_BR.tools.0.label>
+  <AAD_Gun_BR.tools.1.label>head</AAD_Gun_BR.tools.1.label>
+
+
+  <!-- AMR -->
+
+  <AAD_Bullet_SuperChargedBlast.label>Scepter blast</AAD_Bullet_SuperChargedBlast.label>
+
+  <AAD_Gun_AMR.label>Scepter of the Herald</AAD_Gun_AMR.label>
+  <AAD_Gun_AMR.description>This used to be a musical instrument, the Herald would play their master's favorite songs and entire choirs will perform with it, but now it only signals the ends of civilizations.</AAD_Gun_AMR.description>
+  <AAD_Gun_AMR.tools.0.label>handle</AAD_Gun_AMR.tools.0.label>
+  <AAD_Gun_AMR.tools.1.label>head</AAD_Gun_AMR.tools.1.label>
+
+
+</LanguageData>

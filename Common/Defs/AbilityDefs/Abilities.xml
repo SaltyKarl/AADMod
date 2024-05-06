@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_AmbushPortal</defName>
+		<label>Ambush portal</label>
+		<description>Use the gate network to move, Behind the target pawn, will stun if targeted enemy.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/AmbushPortal</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>5000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetPawns>true</canTargetPawns>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<teleportCaster>true</teleportCaster>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployShieldRecharger</defName>
+		<label>Deploy shield recharger</label>
+		<description>Deploy shield recharger via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployShieldRecharger</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>5000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<thingDef>AAD_ShieldRegen</thingDef>
+				<count>1</count>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeploySolarBeamTurret</defName>
+		<label>Deploy solar turret</label>
+		<description>Deploy a powerful solar turret via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeploySolarBeamTurret</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>180000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<thingDef>AAD_SolarBeamTurret</thingDef>
+				<count>1</count>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployAntiprotonMines</defName>
+		<label>Deploy antiproton mines</label>
+		<description>Deploy antiproton mines via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployAntiprotonMines</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>20000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<range>45</range>
+		<targetingParameters>
+			<canTargetLocations>true</canTargetLocations>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<thingDef>AAD_APMine</thingDef>
+				<count>5</count>
+				<pattern>
+					<li>(0, 0)</li>
+					<li>(2, 0)</li>
+					<li>(-2, 0)</li>
+					<li>(1, 1)</li>
+					<li>(-1, 1)</li>
+				</pattern>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployMilitors</defName>
+		<label>Deploy Retrofitted Militors</label>
+		<description>Deploy Retrofitted Militors via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployMilitors</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>300000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_MilitorHerald</pawnKind>
+				<count>6</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployPikemen</defName>
+		<label>Deploy Retrofitted Pikemen</label>
+		<description>Deploy Retrofitted Pikemen via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployPikemen</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>420000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_PikemanHerald</pawnKind>
+				<count>4</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployCentipedes</defName>
+		<label>Deploy Retrofitted Centipedes</label>
+		<description>Deploy Retrofitted Centipedes via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployCentipedes</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>540000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_CentipedeHerald</pawnKind>
+				<count>2</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef>
+		<defName>AAD_DeployDiaboluses</defName>
+		<label>Deploy Retrofitted Diaboluses</label>
+		<description>Deploy Retrofitted Diaboluses via the iconian gateway.</description>
+		<abilityClass>AADMod.Ability_Portal</abilityClass>
+		<iconPath>UI/Abilities/DeployDiaboluses</iconPath>
+		<castTime>60</castTime>
+		<targetMode>Self</targetMode>
+		<cooldownTime>660000</cooldownTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<modExtensions>
+			<li Class="AADMod.PortalExtension">
+				<pawnKind>Mech_DiabolusHerald</pawnKind>
+				<count>1</count>
+				<durationTicks>60000</durationTicks>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+</Defs>

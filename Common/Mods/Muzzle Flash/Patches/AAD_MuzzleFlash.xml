@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_ChargeBlasterHeavy"]</xpath>
+		<!--Gun Def.-->
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HBlasterMF4x5</def>
+				<!--Charged muzzle flash for spacer weapons.-->
+				<drawSize>(3.1,3.1)</drawSize>
+				<!--Size of the Muzzle flash.-->
+				<offsets>
+					<li>(-0.31,0)</li>
+					<!--Where you want to put the flash. X and Y plane.-->
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_HellsphereCannon"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_BlasterMF4x5</def>
+				<drawSize>(2.9,2.9)</drawSize>
+				<offsets>
+					<li>(0.145,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_MiniShotgun"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_SluggerMF2x5</def>
+				<drawSize>(2,2)</drawSize>
+				<offsets>
+					<li>(0.15,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_MiniShotgunTurret"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_SluggerMF2x5</def>
+				<drawSize>(2,2)</drawSize>
+				<offsets>
+					<li>(0.15,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_ChargeLance"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_BlasterMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(-0.37,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.05,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_AR"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(-0.31,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_BR"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(-0.31,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="SafePatcher.PatchOperationSetModExtension">
+		<xpath>Defs/ThingDef[defName="AAD_Gun_AMR"]</xpath>
+		<value>
+			<li Class="MuzzleFlash.MuzzleFlashProps">
+				<def>AAD_HeraldMF4x5</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.06,0)</li>
+				</offsets>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

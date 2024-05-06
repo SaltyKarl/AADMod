@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AAD_AmbushPortal.label>Ambush portal</AAD_AmbushPortal.label>
+  <AAD_AmbushPortal.description>Use the gate network to move, Behind the target pawn, will stun if targeted enemy.</AAD_AmbushPortal.description>
+
+  <AAD_DeployShieldRecharger.label>Deploy shield recharger</AAD_DeployShieldRecharger.label>
+  <AAD_DeployShieldRecharger.description>Deploy shield recharger via the iconian gateway.</AAD_DeployShieldRecharger.description>
+
+  <AAD_DeploySolarBeamTurret.label>Deploy solar turret</AAD_DeploySolarBeamTurret.label>
+  <AAD_DeploySolarBeamTurret.description>Deploy a powerful solar turret via the iconian gateway.</AAD_DeploySolarBeamTurret.description>
+
+  <AAD_DeployAntiprotonMines.label>Deploy antiproton mines</AAD_DeployAntiprotonMines.label>
+  <AAD_DeployAntiprotonMines.description>Deploy antiproton mines via the iconian gateway.</AAD_DeployAntiprotonMines.description>
+
+  <AAD_DeployMilitors.label>Deploy Retrofitted Militors</AAD_DeployMilitors.label>
+  <AAD_DeployMilitors.description>Deploy Retrofitted Militors via the iconian gateway.</AAD_DeployMilitors.description>
+
+  <AAD_DeployPikemen.label>Deploy Retrofitted Pikemen</AAD_DeployPikemen.label>
+  <AAD_DeployPikemen.description>Deploy Retrofitted Pikemen via the iconian gateway.</AAD_DeployPikemen.description>
+
+  <AAD_DeployCentipedes.label>Deploy Retrofitted Centipedes</AAD_DeployCentipedes.label>
+  <AAD_DeployCentipedes.description>Deploy Retrofitted Centipedes via the iconian gateway.</AAD_DeployCentipedes.description>
+
+  <AAD_DeployDiaboluses.label>Deploy Retrofitted Diaboluses</AAD_DeployDiaboluses.label>
+  <AAD_DeployDiaboluses.description>Deploy Retrofitted Diaboluses via the iconian gateway.</AAD_DeployDiaboluses.description>
+
+
+</LanguageData>

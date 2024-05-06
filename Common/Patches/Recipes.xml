@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/ThingDef[defName="MechGestator"]/recipes</xpath>
+		<value>
+			<li>Mech_MilitorHerald_B</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+		<value>
+			<li>Mech_CentipedeHerald_B</li>
+			<li>Mech_PikemanHerald_B</li>
+			<li>Mech_DiabolusHerald_B</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Mech_MilitorHerald_B</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/RecipeDef[defName="ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Mech_PikemanHerald_B</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/RecipeDef[defName="ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Mech_CentipedeHerald_B</li>
+			<li>Corpse_Mech_DiabolusHerald_B</li>
+		</value>
+	</Operation>
+</Patch>

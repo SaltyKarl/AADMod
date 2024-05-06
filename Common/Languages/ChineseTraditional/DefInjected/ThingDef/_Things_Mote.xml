@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- These are Mote ThingDefs. Remain the same, DO NOT translate them. -->
+
+  <AAD_MiniMineExplosion.label>Mote</AAD_MiniMineExplosion.label>
+  <AAD_MiniMineExplosionDots.label>Mote</AAD_MiniMineExplosionDots.label>
+  <Mote_AADSolarBeam.label>Mote</Mote_AADSolarBeam.label>
+  <FleckAADTeleportRing.label>Mote</FleckAADTeleportRing.label>
+  <FleckAADInkEffect.label>Mote</FleckAADInkEffect.label>
+  <AAD_MiniTorpedoExplosion.label>Mote</AAD_MiniTorpedoExplosion.label>
+  <AAD_MiniTorpedoExplosionDots.label>Mote</AAD_MiniTorpedoExplosionDots.label>
+
+
+</LanguageData>

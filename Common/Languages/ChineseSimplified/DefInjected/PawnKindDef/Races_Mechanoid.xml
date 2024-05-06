@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Centipede - Herald -->
+
+  <Mech_CentipedeHerald.label>centipede crusher</Mech_CentipedeHerald.label>
+  <Mech_CentipedeHerald.labelPlural>centipede crushers</Mech_CentipedeHerald.labelPlural>
+  <Mech_CentipedeHerald.lifeStages.0.label>centipede crusher</Mech_CentipedeHerald.lifeStages.0.label>
+  <Mech_CentipedeHerald.lifeStages.0.labelPlural>centipede crusher</Mech_CentipedeHerald.lifeStages.0.labelPlural>
+  <Mech_CentipedeHerald.lifeStages.1.label>centipede crusher</Mech_CentipedeHerald.lifeStages.1.label>
+  <Mech_CentipedeHerald.lifeStages.1.labelPlural>centipede crusher</Mech_CentipedeHerald.lifeStages.1.labelPlural>
+  <Mech_CentipedeHerald.lifeStages.2.label>centipede crusher</Mech_CentipedeHerald.lifeStages.2.label>
+  <Mech_CentipedeHerald.lifeStages.2.labelPlural>centipede crusher</Mech_CentipedeHerald.lifeStages.2.labelPlural>
+  <Mech_CentipedeHerald.lifeStages.3.label>centipede crusher</Mech_CentipedeHerald.lifeStages.3.label>
+  <Mech_CentipedeHerald.lifeStages.3.labelPlural>centipede crusher</Mech_CentipedeHerald.lifeStages.3.labelPlural>
+
+
+  <!-- Militor - Herald -->
+
+  <Mech_MilitorHerald.label>militor assaultor</Mech_MilitorHerald.label>
+  <Mech_MilitorHerald.labelPlural>militor assaultors</Mech_MilitorHerald.labelPlural>
+  <Mech_MilitorHerald.lifeStages.0.label>militor assaultor</Mech_MilitorHerald.lifeStages.0.label>
+  <Mech_MilitorHerald.lifeStages.0.labelPlural>militor assaultor</Mech_MilitorHerald.lifeStages.0.labelPlural>
+  <Mech_MilitorHerald.lifeStages.0.labelMale>male militor assaultor</Mech_MilitorHerald.lifeStages.0.labelMale>
+  <Mech_MilitorHerald.lifeStages.0.labelMalePlural>male militor assaultors</Mech_MilitorHerald.lifeStages.0.labelMalePlural>
+  <Mech_MilitorHerald.lifeStages.0.labelFemale>female militor assaultor</Mech_MilitorHerald.lifeStages.0.labelFemale>
+  <Mech_MilitorHerald.lifeStages.0.labelFemalePlural>female militor assaultors</Mech_MilitorHerald.lifeStages.0.labelFemalePlural>
+  <Mech_MilitorHerald.lifeStages.1.label>militor assaultor</Mech_MilitorHerald.lifeStages.1.label>
+  <Mech_MilitorHerald.lifeStages.1.labelPlural>militor assaultor</Mech_MilitorHerald.lifeStages.1.labelPlural>
+  <Mech_MilitorHerald.lifeStages.1.labelMale>male militor assaultor</Mech_MilitorHerald.lifeStages.1.labelMale>
+  <Mech_MilitorHerald.lifeStages.1.labelMalePlural>male militor assaultors</Mech_MilitorHerald.lifeStages.1.labelMalePlural>
+  <Mech_MilitorHerald.lifeStages.1.labelFemale>female militor assaultor</Mech_MilitorHerald.lifeStages.1.labelFemale>
+  <Mech_MilitorHerald.lifeStages.1.labelFemalePlural>female militor assaultors</Mech_MilitorHerald.lifeStages.1.labelFemalePlural>
+  <Mech_MilitorHerald.labelMale>male militor assaultor</Mech_MilitorHerald.labelMale>
+  <Mech_MilitorHerald.labelMalePlural>male militor assaultors</Mech_MilitorHerald.labelMalePlural>
+  <Mech_MilitorHerald.labelFemale>female militor assaultor</Mech_MilitorHerald.labelFemale>
+  <Mech_MilitorHerald.labelFemalePlural>female militor assaultors</Mech_MilitorHerald.labelFemalePlural>
+
+  <Mech_PikemanHerald.label>pikeman demoralizer</Mech_PikemanHerald.label>
+  <Mech_PikemanHerald.labelPlural>pikemen demoralizers</Mech_PikemanHerald.labelPlural>
+  <Mech_PikemanHerald.lifeStages.0.label>pikeman demoralizer</Mech_PikemanHerald.lifeStages.0.label>
+  <Mech_PikemanHerald.lifeStages.0.labelPlural>pikemen demoralizers</Mech_PikemanHerald.lifeStages.0.labelPlural>
+  <Mech_PikemanHerald.lifeStages.1.label>pikeman demoralizer</Mech_PikemanHerald.lifeStages.1.label>
+  <Mech_PikemanHerald.lifeStages.1.labelPlural>pikemen demoralizers</Mech_PikemanHerald.lifeStages.1.labelPlural>
+
+  <Mech_DiabolusHerald.label>diabolus annihilator</Mech_DiabolusHerald.label>
+  <Mech_DiabolusHerald.labelPlural>diabolus annihilators</Mech_DiabolusHerald.labelPlural>
+  <Mech_DiabolusHerald.lifeStages.0.label>diabolus annihilator</Mech_DiabolusHerald.lifeStages.0.label>
+  <Mech_DiabolusHerald.lifeStages.0.labelPlural>diabolus annihilator</Mech_DiabolusHerald.lifeStages.0.labelPlural>
+  <Mech_DiabolusHerald.lifeStages.0.labelMale>male diabolus annihilator</Mech_DiabolusHerald.lifeStages.0.labelMale>
+  <Mech_DiabolusHerald.lifeStages.0.labelMalePlural>male diabolus annihilators</Mech_DiabolusHerald.lifeStages.0.labelMalePlural>
+  <Mech_DiabolusHerald.lifeStages.0.labelFemale>female diabolus annihilator</Mech_DiabolusHerald.lifeStages.0.labelFemale>
+  <Mech_DiabolusHerald.lifeStages.0.labelFemalePlural>female diabolus annihilators</Mech_DiabolusHerald.lifeStages.0.labelFemalePlural>
+  <Mech_DiabolusHerald.lifeStages.1.label>diabolus annihilator</Mech_DiabolusHerald.lifeStages.1.label>
+  <Mech_DiabolusHerald.lifeStages.1.labelPlural>diabolus annihilator</Mech_DiabolusHerald.lifeStages.1.labelPlural>
+  <Mech_DiabolusHerald.lifeStages.1.labelMale>male diabolus annihilator</Mech_DiabolusHerald.lifeStages.1.labelMale>
+  <Mech_DiabolusHerald.lifeStages.1.labelMalePlural>male diabolus annihilators</Mech_DiabolusHerald.lifeStages.1.labelMalePlural>
+  <Mech_DiabolusHerald.lifeStages.1.labelFemale>female diabolus annihilator</Mech_DiabolusHerald.lifeStages.1.labelFemale>
+  <Mech_DiabolusHerald.lifeStages.1.labelFemalePlural>female diabolus annihilators</Mech_DiabolusHerald.lifeStages.1.labelFemalePlural>
+  <Mech_DiabolusHerald.labelMale>male diabolus annihilator</Mech_DiabolusHerald.labelMale>
+  <Mech_DiabolusHerald.labelMalePlural>male diabolus annihilators</Mech_DiabolusHerald.labelMalePlural>
+  <Mech_DiabolusHerald.labelFemale>female diabolus annihilator</Mech_DiabolusHerald.labelFemale>
+  <Mech_DiabolusHerald.labelFemalePlural>female diabolus annihilators</Mech_DiabolusHerald.labelFemalePlural>
+
+
+</LanguageData>

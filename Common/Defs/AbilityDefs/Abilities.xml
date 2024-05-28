@@ -197,8 +197,8 @@
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
 
-	<AbilityDef Name="MYDE_Ability_Killzone">
-		<defName>MYDE_Ability_Killzone</defName>
+	<AbilityDef Name="AAD_Killzone">
+		<defName>AAD_Killzone</defName>
 		<label>KillZone</label>
 		<description>KillZone</description><!--这个应该不用改，炼狱魔王里写的是这个：CastAbilityOnThingWithoutWeapon，看xml只是对显示武器那些做了一些调整-->
 		<jobDef>CastAbilityOnThing</jobDef>
@@ -209,6 +209,7 @@
 		<targetRequired>true</targetRequired>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted><!--看机翻是显示进度-->
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<verbProperties><!--这个应该不用改-->
 			<verbClass>Verb_CastAbility</verbClass><!--这个是那个喷油的特效-->
@@ -220,15 +221,16 @@
 			</targetParams>
 		</verbProperties>
 		<comps>
-			<li Class="MYDE_float_Mod.CompProperties_Ability_Killzone">
+			<li Class="AADMod.CompProperties_Ability_Killzone">
 				<ZoneRadius>19</ZoneRadius>
 				<MoteDef>Mote_AADSolarBeam</MoteDef>
 				<beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
 				<beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
 				<LaserNum>8</LaserNum>
-				<SpawnThingDef>AAD_APMine</SpawnThingDef>
+				<SpawnThingDef>AAD_APTimedBomb</SpawnThingDef>
 				<SpawnChance>0.01</SpawnChance>
 				<Speed>0.020</Speed>
+				<StunDuration>2400</StunDuration>
 			</li>
 		</comps>
 	</AbilityDef>

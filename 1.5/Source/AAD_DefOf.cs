@@ -8,5 +8,6 @@ namespace AADMod
     {
         public static EffecterDef AAD_TeleportEffect;
         public static HediffDef AAD_MechControllable;
+        public static ThingDef AAD_APMine;
     }
 }

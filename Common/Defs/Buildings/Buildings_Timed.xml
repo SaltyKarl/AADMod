@@ -31,7 +31,31 @@
 			<li Class="AADMod.CompProperties_DestroyOnCasterDowned" />
 		</comps>
 	</ThingDef>
+
+	<!--Timed Bomb-->
+
+	<ThingDef ParentName="TrapIEDBase">
+		<defName>AAD_APTimedBomb</defName>
+		<label>Herald Gravimetric Timed Bomb</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
+		</graphicData>
+		<designationCategory Inherit="False" />
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<countdownTicks>15</countdownTicks>
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>AAD_BombSuper</explosiveDamageType>
+				<explosionEffect>AAD_MiniMine</explosionEffect>
+				<!-- <wickTicks>30</wickTicks> -->
+			</li>
+		</comps>
+		<specialDisplayRadius>1.9</specialDisplayRadius>
+	</ThingDef>
+
 	<!--Mine-->
+
 	<ThingDef ParentName="TrapIEDBase">
 		<defName>AAD_APMine</defName>
 		<label>Herald Gravimetric Mine</label>
@@ -56,7 +80,9 @@
 		</comps>
 		<specialDisplayRadius>1.9</specialDisplayRadius>
 	</ThingDef>
+
 	<!--Mine Effect and Mote-->
+
 	<EffecterDef>
 		<defName>AAD_MiniMine</defName>
 		<children>
@@ -113,6 +139,7 @@
 	</ThingDef>
 
 	<!-- Beam Turret Base -->
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>AAD_SolarBeamTurret</defName>
 		<label>Stellar Beam Sweaper</label>

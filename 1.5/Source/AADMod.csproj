@@ -57,7 +57,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4085">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4104">
     </PackageReference>
     <PackageReference Include="Lib.Harmony" Version="2.*">
       <ExcludeAssets>runtime</ExcludeAssets>
@@ -71,7 +71,9 @@
     <Compile Include="Ability_Explosion.cs" />
     <Compile Include="Ability_Portal.cs" />
     <Compile Include="CompDestroyOnCasterDowned.cs" />
+    <Compile Include="CompProperties_Ability_Killzone.cs" />
     <Compile Include="CompShieldEMPImmune.cs" />
+    <Compile Include="Comp_AbilityEffect_Killzone.cs" />
     <Compile Include="Comp_ShieldRegen.cs" />
     <Compile Include="FloatMenuMakerMap_CanTakeOrder_Patch.cs" />
     <Compile Include="Hediff_MechControllable.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveComps.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="VectorHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

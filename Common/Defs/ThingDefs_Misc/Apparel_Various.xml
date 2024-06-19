@@ -18,6 +18,12 @@
 			<Mass>1.5</Mass>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<RangedCooldownFactor>-0.2</RangedCooldownFactor>
 		</equippedStatOffsets>
@@ -64,7 +70,6 @@
 			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
 					<li>AAD_DeployShieldRecharger</li>
-					<li>AAD_Shockwave</li>
 				</abilities>
 			</li>
 		</comps>
@@ -108,8 +113,18 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -143,6 +158,9 @@
 					<li>AAD_DeployPikemen</li>
 				</abilities>
 			</li>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -173,7 +191,7 @@
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>340</MaxHitPoints>
 			<Mass>12</Mass>
-			<Flammability>0.4</Flammability>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.54</ArmorRating_Heat>
@@ -183,9 +201,19 @@
 			<EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.2</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -232,6 +260,9 @@
 					<li>AAD_DeployAntiprotonMines</li>
 				</abilities>
 			</li>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -266,7 +297,7 @@
 			<WorkToMake>26250</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Mass>2</Mass>
-			<Flammability>0.4</Flammability>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
@@ -274,6 +305,18 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>6</EquipDelay>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
+		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
 			<Plasteel>50</Plasteel>
@@ -301,6 +344,9 @@
 					<li>AAD_DeployCentipedes</li>
 					<li>AAD_DeployDiaboluses</li>
 				</abilities>
+			</li>
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
 			</li>
 		</comps>
 		<thingSetMakerTags>
@@ -343,8 +389,18 @@
 			<EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>2.0</EnergyShieldEnergyMax>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.2</MoveSpeed>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>Armor</li>
@@ -390,6 +446,9 @@
 				</abilities>
 			</li>
 			<li Class="CompProperties_Biocodable" />
+			<li MayRequire="kentington.saveourship2">
+				<compClass>SaveOurShip2.CompEVA</compClass>
+			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>

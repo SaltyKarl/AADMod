@@ -5,11 +5,11 @@ namespace AADMod
 {
     public class CompProperties_Ability_Killzone : CompProperties_AbilityEffect
     {
+        public float InitialRadius = 0f;
+
         public float ZoneRadius = 6f;
 
         public ThingDef SpawnThingDef;
-
-        public float SpawnChance = 0.1f;
 
         public ThingDef MoteDef;
 

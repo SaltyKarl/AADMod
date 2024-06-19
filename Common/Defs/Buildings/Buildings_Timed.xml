@@ -36,22 +36,22 @@
 
 	<ThingDef ParentName="TrapIEDBase">
 		<defName>AAD_APTimedBomb</defName>
-		<label>Herald Gravimetric Timed Bomb</label>
-		<description>...</description>
+		<label>Gravimetricly Unstable Ground</label>
+		<description>will go boom soon, run.</description>
 		<graphicData>
-			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
+			<texPath>Effects/UnstableMote</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<designationCategory Inherit="False" />
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<countdownTicks>15</countdownTicks>
-				<explosiveRadius>2.9</explosiveRadius>
+				<countdownTicks>75</countdownTicks>
+				<explosiveRadius>1</explosiveRadius>
 				<explosiveDamageType>AAD_BombSuper</explosiveDamageType>
 				<explosionEffect>AAD_MiniMine</explosionEffect>
 				<!-- <wickTicks>30</wickTicks> -->
 			</li>
 		</comps>
-		<specialDisplayRadius>1.9</specialDisplayRadius>
 	</ThingDef>
 
 	<!--Mine-->
@@ -59,7 +59,7 @@
 	<ThingDef ParentName="TrapIEDBase">
 		<defName>AAD_APMine</defName>
 		<label>Herald Gravimetric Mine</label>
-		<description>...</description>
+		<description>An Herald Gravimetric Mine.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
 		</graphicData>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_HeraldLieutenantHelmet"]/statBases/Insulation_Cold</xpath>
+		<value>
+			<Insulation_Cold>50</Insulation_Cold>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_HeraldLieutenantHelmet"]/statBases/Insulation_Heat</xpath>
+		<value>
+			<Insulation_Heat>25</Insulation_Heat>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_HeraldLieutenantArmor"]/statBases/Insulation_Cold</xpath>
+		<value>
+			<Insulation_Cold>100</Insulation_Cold>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_HeraldLieutenantArmor"]/statBases/Insulation_Heat</xpath>
+		<value>
+			<Insulation_Heat>25</Insulation_Heat>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]/statBases/Insulation_Cold</xpath>
+		<value>
+			<Insulation_Cold>50</Insulation_Cold>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]/statBases/Insulation_Heat</xpath>
+		<value>
+			<Insulation_Heat>25</Insulation_Heat>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHerald"]/statBases/Insulation_Cold</xpath>
+		<value>
+			<Insulation_Cold>100</Insulation_Cold>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace" MayRequire="kentington.saveourship2">
+		<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHerald"]/statBases/Insulation_Heat</xpath>
+		<value>
+			<Insulation_Heat>25</Insulation_Heat>
+		</value>
+	</Operation>
+
+
+</Patch>

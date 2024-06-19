@@ -17,13 +17,23 @@
 			<ArmorRating_Sharp>2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.15</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -100,9 +110,19 @@
 			<EnergyShieldRechargeRate>0.3</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>5</EnergyShieldEnergyMax>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.25</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentIndustrial>5</ComponentIndustrial>
@@ -171,13 +191,23 @@
 			<ArmorRating_Sharp>2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
-			<Insulation_Cold>22</Insulation_Cold>
-			<Insulation_Heat>22</Insulation_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.15</MoveSpeed>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<Steel>75</Steel>

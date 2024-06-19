@@ -6,7 +6,7 @@
 		<defaultDamage>1100</defaultDamage>
 		<soundExplosion>AAD_Explosion</soundExplosion>
 		<defaultStoppingPower>2.0</defaultStoppingPower>
-		<defaultArmorPenetration>1.30</defaultArmorPenetration>
+		<defaultArmorPenetration>500000</defaultArmorPenetration>
 		<explosionCellFleck>BlastEMP</explosionCellFleck>
 	</DamageDef>
 

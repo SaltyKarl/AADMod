@@ -120,7 +120,7 @@
 				<ThingDef Name="BaseAADAntiprotonBullet" ParentName="BaseBulletCE" Abstract="true">
 					<thingClass>CombatExtended.BulletCE</thingClass>
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
-						<damageDef>Burn</damageDef>
+						<damageDef>Bomb</damageDef>
 						<speed>150</speed>
 					</projectile>
 				</ThingDef>
@@ -137,15 +137,14 @@
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<speed>100</speed>
 						<damageAmountBase>4</damageAmountBase>
-						<armorPenetrationSharp>6</armorPenetrationSharp>
-						<armorPenetrationBlunt>6</armorPenetrationBlunt>
+						<armorPenetrationSharp>22</armorPenetrationSharp>
+						<armorPenetrationBlunt>48</armorPenetrationBlunt>
 						<pelletCount>6</pelletCount>
 						<spreadMult>17.8</spreadMult>
-						<empShieldBreakChance>0.2</empShieldBreakChance>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>1</amount>
+								<def>Burn</def>
+								<amount>4</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>
@@ -162,15 +161,14 @@
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<speed>120</speed>
 						<damageAmountBase>12</damageAmountBase>
-						<armorPenetrationSharp>20</armorPenetrationSharp>
-						<armorPenetrationBlunt>20</armorPenetrationBlunt>
+						<armorPenetrationSharp>22</armorPenetrationSharp>
+						<armorPenetrationBlunt>48</armorPenetrationBlunt>
 						<pelletCount>20</pelletCount>
 						<spreadMult>71.2</spreadMult>
-						<empShieldBreakChance>0.2</empShieldBreakChance>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>3</amount>
+								<def>Burn</def>
+								<amount>12</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>
@@ -186,13 +184,12 @@
 					</graphicData>
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<damageAmountBase>14</damageAmountBase>
-						<armorPenetrationSharp>10</armorPenetrationSharp>
-						<armorPenetrationBlunt>10</armorPenetrationBlunt>
-						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<armorPenetrationSharp>20</armorPenetrationSharp>
+						<armorPenetrationBlunt>90</armorPenetrationBlunt>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>3</amount>
+								<def>Burn</def>
+								<amount>14</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>
@@ -208,13 +205,12 @@
 					</graphicData>
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<damageAmountBase>17</damageAmountBase>
-						<armorPenetrationSharp>12</armorPenetrationSharp>
-						<armorPenetrationBlunt>15</armorPenetrationBlunt>
-						<empShieldBreakChance>0.2</empShieldBreakChance>
+						<armorPenetrationSharp>24</armorPenetrationSharp>
+						<armorPenetrationBlunt>120</armorPenetrationBlunt>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>3</amount>
+								<def>Burn</def>
+								<amount>17</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>
@@ -230,13 +226,12 @@
 					</graphicData>
 					<projectile Class="CombatExtended.ProjectilePropertiesCE">
 						<damageAmountBase>25</damageAmountBase>
-						<armorPenetrationSharp>18</armorPenetrationSharp>
-						<armorPenetrationBlunt>25</armorPenetrationBlunt>
-						<empShieldBreakChance>0.25</empShieldBreakChance>
+						<armorPenetrationSharp>36</armorPenetrationSharp>
+						<armorPenetrationBlunt>150</armorPenetrationBlunt>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>4</amount>
+								<def>Burn</def>
+								<amount>25</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>
@@ -253,11 +248,10 @@
 						<damageAmountBase>40</damageAmountBase>
 						<armorPenetrationSharp>500</armorPenetrationSharp>
 						<armorPenetrationBlunt>0.01</armorPenetrationBlunt>
-						<empShieldBreakChance>1</empShieldBreakChance>
 						<secondaryDamage>
 							<li>
-								<def>EMP</def>
-								<amount>10</amount>
+								<def>Burn</def>
+								<amount>40</amount>
 							</li>
 						</secondaryDamage>
 					</projectile>

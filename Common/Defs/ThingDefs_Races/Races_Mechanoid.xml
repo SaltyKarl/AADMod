@@ -14,10 +14,30 @@
 			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">5</EnergyShieldEnergyMax>
 			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">6</BandwidthCost>
 			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.125</MechEnergyLossPerHP>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<race>
 			<baseHealthScale>6.48</baseHealthScale>
 		</race>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
 		<comps>
 			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
 				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
@@ -31,8 +51,8 @@
 		<modExtensions>
 			<li Class="AADMod.RemoveComps">
 				<compProps>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
 				</compProps>
 			</li>
 		</modExtensions>
@@ -88,7 +108,15 @@
 			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">1.5</EnergyShieldEnergyMax>
 			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
 		<race>
 			<lifeStageAges>
 				<li>
@@ -121,8 +149,8 @@
 		<modExtensions>
 			<li Class="AADMod.RemoveComps">
 				<compProps>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
 				</compProps>
 			</li>
 		</modExtensions>
@@ -178,8 +206,16 @@
 			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">2</EnergyShieldEnergyMax>
 			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 		</statBases>
-		<tools>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tools Inherit="False">
 			<li>
 				<label>front left leg</label>
 				<capacities>
@@ -216,7 +252,7 @@
 			<baseHealthScale>1.275</baseHealthScale>
 			<body>Pikeman</body>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitPawn</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 			<lifeStageAges Inherit="False">
 				<li>
@@ -248,8 +284,8 @@
 		<modExtensions>
 			<li Class="AADMod.RemoveComps">
 				<compProps>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
 				</compProps>
 			</li>
 		</modExtensions>
@@ -294,20 +330,69 @@
 		</weaponTags>
 	</PawnKindDef>
 
-	<ThingDef ParentName="MechDiabolus" MayRequire="Ludeon.Rimworld.Biotech">
+	<ThingDef ParentName="SuperHeavyMechanoid" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>Mech_DiabolusHerald</defName>
 		<label>diabolus annihilator</label>
 		<description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</description>
 		<race>
 			<body>Mech_Diabolus</body>
 			<baseBodySize>4</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+				</li>
+			</lifeStageAges>
 			<baseHealthScale>9</baseHealthScale>
 		</race>
+		<damageMultipliers>
+			<li>
+				<damageDef>AAD_BombSuper</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tools Inherit="False">
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
 		<comps>
 			<li Class="CompProperties_TargetingBeam" />
 			<li Class="CompProperties_TurretGun">
 				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
 				<angleOffset>-90</angleOffset>
+				<renderNodeProperties>
+					<li>
+						<nodeClass>PawnRenderNode_TurretGun</nodeClass>
+						<workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+						<parentTagDef>Body</parentTagDef>
+						<overrideMeshSize>(1, 1)</overrideMeshSize>
+						<baseLayer>20</baseLayer>
+						<pawnType>Any</pawnType>
+						<drawData>
+							<dataWest>
+								<rotationOffset>180</rotationOffset>
+							</dataWest>
+						</drawData>
+					</li>
+				</renderNodeProperties>
 			</li>
 			<li Class="CompProperties_Shield">
 				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
@@ -320,27 +405,27 @@
 			</li>
 		</comps>
 		<statBases>
-			<BandwidthCost>10</BandwidthCost>
 			<EMPResistance>0.8</EMPResistance>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
-			<EnergyShieldRechargeRate>1.5</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
-			<MechEnergyLossPerHP>0.125</MechEnergyLossPerHP>
+			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">1.75</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">15</EnergyShieldEnergyMax>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 		</statBases>
 		<modExtensions>
 			<li Class="AADMod.RemoveComps">
 				<compProps>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_OverseerSubject</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">CompProperties_MechRepairable</li>
 				</compProps>
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="MechDiabolusKind" MayRequire="Ludeon.Rimworld.Biotech">
+	<PawnKindDef ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
 		<defName>Mech_DiabolusHerald</defName>
 		<label>diabolus annihilator</label>
 		<race>Mech_DiabolusHerald</race>
@@ -369,6 +454,9 @@
 		<weaponTags Inherit="False">
 			<li>AADWrathCannon</li>
 		</weaponTags>
+		<abilities>
+			<li>AAD_Killzone</li>
+		</abilities>
 	</PawnKindDef>
 
 </Defs>

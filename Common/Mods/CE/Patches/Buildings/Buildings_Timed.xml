@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_SolarBeamTurret"]/statBases/ShootingAccuracyTurret</xpath>
-					<value>
-						<ShootingAccuracyTurret>1.56</ShootingAccuracyTurret>
-					</value>
-				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AAD_SolarBeamTurret"]/statBases/ShootingAccuracyTurret</xpath>
+                    <value>
+                        <ShootingAccuracyTurret>1.56</ShootingAccuracyTurret>
+                    </value>
+                </li>
 
-				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-					<defName>Gun_SolarBeamTurret</defName>
-					<statBases>
-						<Mass>4.20</Mass>
-						<Bulk>13.00</Bulk>
-						<SwayFactor>1.19</SwayFactor>
-						<ShotSpread>0.04</ShotSpread>
-						<SightsEfficiency>2.48</SightsEfficiency>
-						<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
-						<NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
-					</statBases>
-					<Properties>
-						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-						<hasStandardCommand>True</hasStandardCommand>
-						<defaultProjectile>Bullet_AADLaser</defaultProjectile>
-						<warmupTime>1.7</warmupTime>
-						<range>81</range>
-						<ammoConsumedPerShotCount>0</ammoConsumedPerShotCount>
-						<soundCast>VWE_LaserShot_Heavy</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<muzzleFlashScale>9</muzzleFlashScale>
-					</Properties>
-					<AmmoUser>
-						<magazineSize>10</magazineSize>
-						<reloadTime>4</reloadTime>
-						<ammoSet>AmmoSet_AADLaser</ammoSet>
-					</AmmoUser>
-					<FireModes>
-						<aiAimMode>AimedShot</aiAimMode>
-					</FireModes>
-				</li>
+                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                    <defName>Gun_SolarBeamTurret</defName>
+                    <statBases>
+                        <Mass>4.20</Mass>
+                        <Bulk>13.00</Bulk>
+                        <SwayFactor>1.19</SwayFactor>
+                        <ShotSpread>0.04</ShotSpread>
+                        <SightsEfficiency>2.48</SightsEfficiency>
+                        <RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+                        <NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
+                    </statBases>
+                    <Properties>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                        <hasStandardCommand>True</hasStandardCommand>
+                        <defaultProjectile>Bullet_AADLaser</defaultProjectile>
+                        <warmupTime>1.7</warmupTime>
+                        <range>81</range>
+                        <ammoConsumedPerShotCount>0</ammoConsumedPerShotCount>
+                        <soundCast>VWE_LaserShot_Heavy</soundCast>
+                        <soundCastTail>GunTail_Heavy</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </Properties>
+                    <AmmoUser>
+                        <magazineSize>10</magazineSize>
+                        <reloadTime>4</reloadTime>
+                        <ammoSet>AmmoSet_AADLaser</ammoSet>
+                    </AmmoUser>
+                    <FireModes>
+                        <aiAimMode>AimedShot</aiAimMode>
+                    </FireModes>
+                </li>
 
-			</operations>
-		</match>
-	</Operation>
+            </operations>
+        </match>
+    </Operation>
 
 </Patch>

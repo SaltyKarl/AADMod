@@ -1,174 +1,200 @@
-﻿using RimWorld;
-using RimWorld.Planet;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 using VFECore.Abilities;
+using Ability = VFECore.Abilities.Ability;
 
-namespace AADMod
+namespace AADMod;
+
+[HotSwappable]
+public class PortalExtension : AbilityExtension_AbilityMod
 {
-    [HotSwappable]
-    public class PortalExtension : AbilityExtension_AbilityMod
+    public List<ThingDef> allowedBuildings;
+    public int count;
+    public int durationTicks;
+    public List<IntVec2> pattern;
+    public PawnKindDef pawnKind;
+    public bool teleportCaster;
+    public ThingDef thingDef;
+
+    public override void Cast(GlobalTargetInfo[] targets, Ability ability)
     {
-        public ThingDef thingDef;
-        public PawnKindDef pawnKind;
-        public int count;
-        public bool teleportCaster;
-        public List<IntVec2> pattern;
-        public int durationTicks;
-        public override void Cast(GlobalTargetInfo[] targets, VFECore.Abilities.Ability ability)
+        base.Cast(targets, ability);
+
+        GlobalTargetInfo target = targets[0];
+        IntVec3 cellToTeleport = GetCellToTeleport(ability, target);
+
+        if (teleportCaster)
         {
-            base.Cast(targets, ability);
-            var target = targets[0];
-            var cellToTeleport = GetCellToTeleport(ability, target);
-            if (teleportCaster)
+            Effecter portalEffecter = AAD_DefOf.AAD_TeleportEffect.Spawn(cellToTeleport, ability.pawn.Map, new Vector3(0, 3, 0));
+            ability.AddEffecterToMaintain(portalEffecter, cellToTeleport, 180, ability.pawn.Map);
+            Effecter portalEffecter2 = AAD_DefOf.AAD_TeleportEffect.Spawn(ability.pawn.Position, ability.pawn.Map, new Vector3(0, 3, 0));
+            ability.AddEffecterToMaintain(portalEffecter2, ability.pawn.Position, 180, ability.pawn.Map);
+            foreach (SubEffecter_Sprayer sub in portalEffecter2.children.OfType<SubEffecter_Sprayer>())
             {
-                var portalEffecter = AAD_DefOf.AAD_TeleportEffect.Spawn(cellToTeleport, ability.pawn.Map, new Vector3(0, 3, 0));
-                ability.AddEffecterToMaintain(portalEffecter, cellToTeleport, 180, ability.pawn.Map);
-                var portalEffecter2 = AAD_DefOf.AAD_TeleportEffect.Spawn(ability.pawn.Position, ability.pawn.Map, new Vector3(0, 3, 0));
-                ability.AddEffecterToMaintain(portalEffecter2, ability.pawn.Position, 180, ability.pawn.Map);
-                foreach (var sub in portalEffecter2.children.OfType<SubEffecter_Sprayer>())
+                if (sub.mote != null)
                 {
-                    if (sub?.mote != null)
-                    {
-                        sub.mote.yOffset -= 6.2f;
-                    }
-                }
-                ability.pawn.Position = cellToTeleport;
-                ability.pawn.Notify_Teleported(true, true);
-                if (target.Thing is Pawn pawnTarget && pawnTarget.HostileTo(ability.pawn))
-                {
-                    pawnTarget.stances?.stunner.StunFor(180, ability.pawn);
+                    sub.mote.yOffset -= 6.2f;
                 }
             }
-            else
+
+            ability.pawn.Position = cellToTeleport;
+            ability.pawn.Notify_Teleported();
+            if (target.Thing is Pawn pawnTarget && pawnTarget.HostileTo(ability.pawn))
             {
-                if (pattern != null)
-                {
-                    var things = GetThingsToTeleport();
-                    var cells = AffectedCells(cellToTeleport, ability.pawn.Map).ToList();
-                    for (var i = 0; i < cells.Count; i++)
-                    {
-                        DoTeleport(ability, things[i], cells[i]);
-                    }
-                }
-                else
-                {
-                    foreach (var thing in GetThingsToTeleport())
-                    {
-                        DoTeleport(ability, thing, cellToTeleport);
-                    }
-                }
+                pawnTarget.stances?.stunner.StunFor(180, ability.pawn);
+            }
+        }
+        else if (pattern != null)
+        {
+            List<Thing> things = GetThingsToTeleport();
+            List<IntVec3> cells = AffectedCells(cellToTeleport, ability.pawn.Map).ToList();
+            for (int i = 0; i < cells.Count; i++)
+            {
+                DoTeleport(ability, things[i], cells[i]);
+            }
+        }
+        else
+        {
+            foreach (Thing thing in GetThingsToTeleport())
+            {
+                DoTeleport(ability, thing, cellToTeleport);
+            }
+        }
+    }
+
+    private void DoTeleport(Ability ability, Thing thing, IntVec3 cell)
+    {
+        cell = AdjustCell(ability, cell, thing);
+        TeleportThing(ability, cell, thing);
+        Effecter portalEffecter = AAD_DefOf.AAD_TeleportEffect.Spawn(cell, ability.pawn.Map, new Vector3(0, 3, 0));
+        ability.AddEffecterToMaintain(portalEffecter, cell, 180, ability.pawn.Map);
+    }
+
+    private void TeleportThing(Ability ability, IntVec3 cellToTeleport, Thing thing)
+    {
+        if (thing.def.CanHaveFaction)
+        {
+            thing.SetFaction(ability.pawn.Faction);
+        }
+
+        CompDestroyOnCasterDowned comp = thing.TryGetComp<CompDestroyOnCasterDowned>();
+        if (comp != null)
+        {
+            comp.caster = ability.pawn;
+        }
+
+        if (thing is Pawn pawn && durationTicks > 0)
+        {
+            Hediff hediff = pawn.health.AddHediff(AAD_DefOf.AAD_MechControllable);
+            hediff.TryGetComp<HediffComp_Disappears>().ticksToDisappear = durationTicks;
+            PawnComponentsUtility.AddAndRemoveDynamicComponents(pawn);
+        }
+
+        GenPlace.TryPlaceThing(thing, cellToTeleport, ability.pawn.Map, ThingPlaceMode.Direct);
+
+        CompExplosive compExplosive = thing.TryGetComp<CompExplosive>();
+        if (compExplosive == null)
+        {
+            return;
+        }
+
+        compExplosive.wickTicksLeft = 60 * 90;
+        compExplosive.StartWick(ability.pawn);
+    }
+
+    private IntVec3 AdjustCell(Ability ability, IntVec3 cellToTeleport, Thing thing)
+    {
+        if (!CanTeleport(cellToTeleport))
+        {
+            RCellFinder.TryFindRandomCellNearWith(
+                cellToTeleport,
+                CanTeleport,
+                ability.pawn.Map,
+                out cellToTeleport,
+                1,
+                1000
+            );
+        }
+
+        return cellToTeleport;
+
+
+        bool CanTeleport(IntVec3 cell)
+        {
+            return thing is Pawn ? CanTeleportPawnTo(cell, ability) : CanTeleportThingTo(cell, ability);
+        }
+    }
+
+    private static bool CanTeleportPawnTo(IntVec3 cell, Ability ability)
+    {
+        // check pawns can walk on the cell
+        if (!cell.WalkableBy(ability.pawn.Map, ability.pawn))
+        {
+            return false;
+        }
+
+        // check there is no pawn
+        return cell.GetFirstPawn(ability.pawn.Map) == null;
+    }
+
+    private bool CanTeleportThingTo(IntVec3 cell, Ability ability)
+    {
+        // check there is no building or it is an allowed building
+        Building building = cell.GetFirstBuilding(ability.pawn.Map);
+        if (building is not null && !allowedBuildings.Contains(building.def))
+        {
+            return false;
+        }
+
+        // check there is no item
+        return cell.GetFirstItem(ability.pawn.Map) == null;
+    }
+
+    private List<Thing> GetThingsToTeleport()
+    {
+        List<Thing> things = [];
+        if (pawnKind != null)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                Pawn pawn = PawnGenerator.GeneratePawn(pawnKind);
+                things.Add(pawn);
+            }
+        }
+        else
+        {
+            int countToMake = count;
+            while (countToMake > 0)
+            {
+                int curStack = Mathf.Min(thingDef.stackLimit, countToMake);
+                countToMake -= curStack;
+                Thing thing = ThingMaker.MakeThing(thingDef);
+                thing.stackCount = curStack;
+                things.Add(thing);
             }
         }
 
-        private void DoTeleport(VFECore.Abilities.Ability ability, Thing thing, IntVec3 cell)
+        return things;
+    }
+
+    private static IntVec3 GetCellToTeleport(Ability ability, GlobalTargetInfo target)
+    {
+        if (!target.HasThing)
         {
-            cell = AdjustCell(ability, cell, thing);
-            TeleportThing(ability, cell, thing);
-            var portalEffecter = AAD_DefOf.AAD_TeleportEffect.Spawn(cell, ability.pawn.Map, new Vector3(0, 3, 0));
-            ability.AddEffecterToMaintain(portalEffecter, cell, 180, ability.pawn.Map);
-        }
-
-        private void TeleportThing(VFECore.Abilities.Ability ability, IntVec3 cellToTeleport, Thing thing)
-        {
-            if (thing.def.CanHaveFaction)
-            {
-                thing.SetFaction(ability.pawn.Faction);
-            }
-            var comp = thing.TryGetComp<CompDestroyOnCasterDowned>();
-            if (comp != null)
-            {
-                comp.caster = ability.pawn;
-            }
-            if (thing is Pawn pawn && durationTicks > 0)
-            {
-                var hediff = pawn.health.AddHediff(AAD_DefOf.AAD_MechControllable);
-                hediff.TryGetComp<HediffComp_Disappears>().ticksToDisappear = durationTicks;
-                PawnComponentsUtility.AddAndRemoveDynamicComponents(pawn);
-            }
-
-            GenPlace.TryPlaceThing(thing, cellToTeleport, ability.pawn.Map, ThingPlaceMode.Direct);
-            var compExplosive = thing.TryGetComp<CompExplosive>();
-            if (compExplosive != null)
-            {
-                compExplosive.StartWick(ability.pawn);
-                compExplosive.wickTicksLeft = 60 * 90;
-            }
-        }
-
-        private static IntVec3 AdjustCell(VFECore.Abilities.Ability ability, IntVec3 cellToTeleport, Thing thing)
-        {
-            if (thing is Pawn pawn)
-            {
-                if (cellToTeleport.WalkableBy(ability.pawn.Map, ability.pawn) is false || cellToTeleport.GetFirstPawn(ability.pawn.Map) is not null)
-                {
-                    RCellFinder.TryFindRandomCellNearWith(cellToTeleport, (IntVec3 x) => x.WalkableBy(ability.pawn.Map, ability.pawn)
-                        && x.GetFirstPawn(ability.pawn.Map) is null, ability.pawn.Map, out cellToTeleport, startingSearchRadius: 1);
-                }
-            }
-            else
-            {
-                if (cellToTeleport.GetFirstBuilding(ability.pawn.Map) is not null || cellToTeleport.GetFirstItem(ability.pawn.Map) is not null)
-                {
-                    RCellFinder.TryFindRandomCellNearWith(cellToTeleport, (IntVec3 x) => x.GetFirstBuilding(ability.pawn.Map) is null
-                       && x.GetFirstItem(ability.pawn.Map) is null, ability.pawn.Map, out cellToTeleport, startingSearchRadius: 1);
-                }
-            }
-
-            return cellToTeleport;
-        }
-
-        private List<Thing> GetThingsToTeleport()
-        {
-            List<Thing> things = new List<Thing>();
-            if (pawnKind != null)
-            {
-                for (var i = 0; i < count; i++)
-                {
-                    var pawn = PawnGenerator.GeneratePawn(pawnKind);
-                    things.Add(pawn);
-                }
-            }
-            else
-            {
-                var countToMake = count;
-                while (countToMake > 0)
-                {
-                    var curStack = Mathf.Min(thingDef.stackLimit, countToMake);
-                    countToMake -= curStack;
-                    var thing = ThingMaker.MakeThing(thingDef);
-                    thing.stackCount = curStack;
-                    things.Add(thing);
-                }
-            }
-            return things;
-        }
-
-        private IntVec3 GetCellToTeleport(VFECore.Abilities.Ability ability, GlobalTargetInfo target)
-        {
-            if (target.HasThing)
-            {
-                var pos = target.Cell + target.Thing.Rotation.Opposite.FacingCell;
-                if (pos.WalkableBy(ability.pawn.Map, ability.pawn))
-                {
-                    return pos;
-                }
-            }
             return target.Cell;
         }
 
-        private IEnumerable<IntVec3> AffectedCells(LocalTargetInfo target, Map map)
-        {
-            foreach (IntVec2 item in pattern)
-            {
-                IntVec3 intVec = target.Cell + new IntVec3(item.x, 0, item.z);
-                if (intVec.InBounds(map))
-                {
-                    yield return intVec;
-                }
-            }
-        }
+        IntVec3 pos = target.Cell + target.Thing.Rotation.Opposite.FacingCell;
+        return pos.WalkableBy(ability.pawn.Map, ability.pawn) ? pos : target.Cell;
+    }
+
+    private IEnumerable<IntVec3> AffectedCells(LocalTargetInfo target, Map map)
+    {
+        return pattern.Select(item => target.Cell + new IntVec3(item.x, 0, item.z))
+            .Where(intVec => intVec.InBounds(map));
     }
 }

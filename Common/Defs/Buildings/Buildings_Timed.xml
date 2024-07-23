@@ -1,296 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>AAD_ShieldRegen</defName>
-		<label>Shield Regenerator</label>
-		<description>...</description>
-		<thingClass>Building</thingClass>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Buildings/ShieldRegenerator</texPath>
-			<drawSize>(1.25,1.25)</drawSize>
-		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<fillPercent>0.5</fillPercent>
-		<rotatable>false</rotatable>
-		<tickerType>Normal</tickerType>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Mass>5</Mass>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>15000</lifespanTicks> <!--2500 * 6 (6hours)-->
-				<expireEffect>AAD_TeleportEffect</expireEffect>
-			</li>
-			<li Class="AADMod.CompProperties_ShieldRegen">
-				<radius>9.9</radius>
-				<energyChargeRate>0.1</energyChargeRate>
-			</li>
-			<li Class="AADMod.CompProperties_DestroyOnCasterDowned" />
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AAD_ShieldRegen</defName>
+        <label>Shield Regenerator</label>
+        <description>...</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Buildings/ShieldRegenerator</texPath>
+            <drawSize>(1.25,1.25)</drawSize>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Mass>5</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>15000</lifespanTicks> <!--2500 * 6 (6hours)-->
+                <expireEffect>AAD_TeleportEffect</expireEffect>
+            </li>
+            <li Class="AADMod.CompProperties_ShieldRegen">
+                <radius>9.9</radius>
+                <energyChargeRate>0.1</energyChargeRate>
+            </li>
+            <li Class="AADMod.CompProperties_DestroyOnCasterDowned"/>
+        </comps>
+    </ThingDef>
 
-	<!--Timed Bomb-->
+    <!--Timed Bomb-->
 
-	<ThingDef ParentName="TrapIEDBase">
-		<defName>AAD_APTimedBomb</defName>
-		<label>Gravimetricly Unstable Ground</label>
-		<description>will go boom soon, run.</description>
-		<graphicData>
-			<texPath>Effects/UnstableMote</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<designationCategory Inherit="False" />
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<countdownTicks>75</countdownTicks>
-				<explosiveRadius>1</explosiveRadius>
-				<explosiveDamageType>AAD_BombSuper</explosiveDamageType>
-				<explosionEffect>AAD_MiniMine</explosionEffect>
-				<!-- <wickTicks>30</wickTicks> -->
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="TrapIEDBase">
+        <defName>AAD_APTimedBomb</defName>
+        <label>Gravimetricly Unstable Ground</label>
+        <description>will go boom soon, run.</description>
+        <graphicData>
+            <texPath>Effects/UnstableMote</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <designationCategory Inherit="False"/>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <countdownTicks>75</countdownTicks>
+                <explosiveRadius>1</explosiveRadius>
+                <explosiveDamageType>AAD_BombSuper</explosiveDamageType>
+                <explosionEffect>AAD_MiniMine</explosionEffect>
+                <!-- <wickTicks>30</wickTicks> -->
+            </li>
+        </comps>
+    </ThingDef>
 
-	<!--Mine-->
+    <!--Mine-->
 
-	<ThingDef ParentName="TrapIEDBase">
-		<defName>AAD_APMine</defName>
-		<label>Herald Gravimetric Mine</label>
-		<description>An Herald Gravimetric Mine.</description>
-		<graphicData>
-			<texPath>Things/Ammo/Antiproton/APAbomb</texPath>
-		</graphicData>
-		<designationCategory Inherit="False" />
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>2.9</explosiveRadius>
-				<explosiveDamageType>AAD_BombSuper</explosiveDamageType>
-				<explosionEffect>AAD_MiniMine</explosionEffect>
-				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+    <ThingDef ParentName="TrapIEDBase">
+        <defName>AAD_APMine</defName>
+        <label>Herald Gravimetric Mine</label>
+        <description>An Herald Gravimetric Mine.</description>
+        <graphicData>
+            <texPath>Things/Ammo/Antiproton/APAbomb</texPath>
+        </graphicData>
+        <designationCategory Inherit="False"/>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.9</explosiveRadius>
+                <explosiveDamageType>AAD_BombSuper</explosiveDamageType>
+                <explosionEffect>AAD_MiniMine</explosionEffect>
+                <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<countdownTicks>25</countdownTicks>
-				<startWickOnDamageTaken>
-					<li>Bullet</li>
-					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
-				</startWickOnDamageTaken>
-			</li>
-		</comps>
+                <startWickOnDamageTaken>
+                    <li>Bullet</li>
+                    <li>Arrow</li>
+                    <li>ArrowHighVelocity</li>
+                </startWickOnDamageTaken>
+            </li>
+        </comps>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
-	</ThingDef>
+    </ThingDef>
 
-	<!--Mine Effect and Mote-->
+    <!--Mine Effect and Mote-->
 
-	<EffecterDef>
-		<defName>AAD_MiniMine</defName>
-		<children>
-			<li>
-				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<moteDef>AAD_MiniMineExplosion</moteDef>
-				<scale>1.5</scale>
-				<burstCount>1</burstCount>
-				<spawnLocType>OnSource</spawnLocType>
-				<attachToSpawnThing>true</attachToSpawnThing>
-			</li>
-			<li>
-				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<moteDef>AAD_MiniMineExplosionDots</moteDef>
-				<scale>2</scale>
-				<color>(1, 1, 1, 0.5)</color>
-				<burstCount>1</burstCount>
-				<spawnLocType>OnSource</spawnLocType>
-				<attachToSpawnThing>true</attachToSpawnThing>
-			</li>
-		</children>
-	</EffecterDef>
+    <EffecterDef>
+        <defName>AAD_MiniMine</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <moteDef>AAD_MiniMineExplosion</moteDef>
+                <scale>1.5</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <moteDef>AAD_MiniMineExplosionDots</moteDef>
+                <scale>2</scale>
+                <color>(1, 1, 1, 0.5)</color>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+        </children>
+    </EffecterDef>
 
-	<ThingDef ParentName="MoteBase">
-		<defName>AAD_MiniMineExplosion</defName>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<thingClass>MoteAttached</thingClass>
-		<mote>
-			<fadeInTime>0.06</fadeInTime>
-			<solidTime>0.08</solidTime>
-			<fadeOutTime>0.2</fadeOutTime>
-			<growthRate>5</growthRate>
-		</mote>
-		<graphicData>
-			<texPath>Things/Motes/Explosion</texPath>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-	</ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>AAD_MiniMineExplosion</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <thingClass>MoteAttached</thingClass>
+        <mote>
+            <fadeInTime>0.06</fadeInTime>
+            <solidTime>0.08</solidTime>
+            <fadeOutTime>0.2</fadeOutTime>
+            <growthRate>5</growthRate>
+        </mote>
+        <graphicData>
+            <texPath>Things/Motes/Explosion</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+    </ThingDef>
 
-	<ThingDef ParentName="MoteBase">
-		<defName>AAD_MiniMineExplosionDots</defName>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<thingClass>MoteAttached</thingClass>
-		<mote>
-			<fadeInTime>0.04</fadeInTime>
-			<solidTime>0.08</solidTime>
-			<fadeOutTime>0.4</fadeOutTime>
-			<growthRate>9</growthRate>
-		</mote>
-		<graphicData>
-			<texPath>Things/Motes/Explosion_Dots</texPath>
-			<shaderType>MoteGlow</shaderType>
-		</graphicData>
-	</ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>AAD_MiniMineExplosionDots</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <thingClass>MoteAttached</thingClass>
+        <mote>
+            <fadeInTime>0.04</fadeInTime>
+            <solidTime>0.08</solidTime>
+            <fadeOutTime>0.4</fadeOutTime>
+            <growthRate>9</growthRate>
+        </mote>
+        <graphicData>
+            <texPath>Things/Motes/Explosion_Dots</texPath>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+    </ThingDef>
 
-	<!-- Beam Turret Base -->
+    <!-- Beam Turret Base -->
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>AAD_SolarBeamTurret</defName>
-		<label>Stellar Beam Sweaper</label>
-		<description>...</description>
-		<thingClass>Building_TurretGun</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData>
-			<texPath>Buildings/Null</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5, 1.5)</drawSize>
-			<drawOffset>(0,0,-0.1)</drawOffset>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<stealable>false</stealable>
-		<rotatable>false</rotatable>
-		<size>(1,1)</size>
-		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Flammability>0</Flammability>
-			<Mass>100</Mass>
-			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-			<Beauty>-20</Beauty>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>Flame</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<tickerType>Normal</tickerType>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
-		<fillPercent>0.85</fillPercent>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<building>
-			<buildingTags>
-				<li>AAD_Turret</li>
-			</buildingTags>
-			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_SolarBeamTurret</turretGunDef>
-			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
-			<turretTopDrawSize>2.5</turretTopDrawSize>
-			<turretTopOffset>(0, 0)</turretTopOffset>
-		</building>
-		<uiIconScale>0.95</uiIconScale>
-		<comps>
-			<li Class="AADMod.CompProperties_DestroyOnCasterDowned" />
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>60000</lifespanTicks>
-				<expireEffect>AAD_TeleportEffect</expireEffect>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AAD_SolarBeamTurret</defName>
+        <label>Stellar Beam Sweaper</label>
+        <description>...</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Buildings/Null</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5, 1.5)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <size>(1,1)</size>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>100</Mass>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+            <Beauty>-20</Beauty>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>Flame</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.85</fillPercent>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <building>
+            <buildingTags>
+                <li>AAD_Turret</li>
+            </buildingTags>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>Gun_SolarBeamTurret</turretGunDef>
+            <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+            <turretTopDrawSize>2.5</turretTopDrawSize>
+            <turretTopOffset>(0, 0)</turretTopOffset>
+        </building>
+        <uiIconScale>0.95</uiIconScale>
+        <comps>
+            <li Class="AADMod.CompProperties_DestroyOnCasterDowned"/>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>60000</lifespanTicks>
+                <expireEffect>AAD_TeleportEffect</expireEffect>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
-		<defName>Gun_SolarBeamTurret</defName>
-		<label>Stellar Beam Sweaper</label>
-		<description>...</description>
-		<graphicData>
-			<texPath>Buildings/AlienLaserTurret_Top</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5, 1.5)</drawSize>
-		</graphicData>
-		<statBases>
-			<AccuracyTouch>0.70</AccuracyTouch>
-			<AccuracyShort>0.77</AccuracyShort>
-			<AccuracyMedium>0.84</AccuracyMedium>
-			<AccuracyLong>0.84</AccuracyLong>
-			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
-			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>5</Mass>
-			<Flammability>0</Flammability>
-		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_ShootBeam</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>1.0</warmupTime>
-				<range>45.9</range>
-				<minRange>3.9</minRange>
-				<beamFullWidthRange>6.9</beamFullWidthRange>
-				<burstShotCount>25</burstShotCount>
-				<beamWidth>6</beamWidth>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<beamDamageDef>AAD_SolarBeam</beamDamageDef>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<soundCastBeam>AAD_SunbeamLoop</soundCastBeam>
-				<beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
-				<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
-				<beamMaxDeviation>1.5</beamMaxDeviation>
-				<beamCurvature>0.6</beamCurvature>
-				<beamMoteDef>Mote_AADSolarBeam</beamMoteDef>
-				<beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
-				<beamChanceToStartFire>0.85</beamChanceToStartFire>
-				<beamChanceToAttachFire>0.85</beamChanceToAttachFire>
-				<beamFireSizeRange>0.55~0.85</beamFireSizeRange>
-				<beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
-				<beamStartOffset>0</beamStartOffset>
-				<beamLineFleckChanceCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.65, 0.4)</li>
-						<li>(1, 0.75)</li>
-					</points>
-				</beamLineFleckChanceCurve>
-			</li>
-		</verbs>
-	</ThingDef>
+    <ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
+        <defName>Gun_SolarBeamTurret</defName>
+        <label>Stellar Beam Sweaper</label>
+        <description>...</description>
+        <graphicData>
+            <texPath>Buildings/AlienLaserTurret_Top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5, 1.5)</drawSize>
+        </graphicData>
+        <statBases>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.84</AccuracyMedium>
+            <AccuracyLong>0.84</AccuracyLong>
+            <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_ShootBeam</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>1.0</warmupTime>
+                <range>45.9</range>
+                <minRange>3.9</minRange>
+                <beamFullWidthRange>6.9</beamFullWidthRange>
+                <burstShotCount>25</burstShotCount>
+                <beamWidth>6</beamWidth>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <beamDamageDef>AAD_SolarBeam</beamDamageDef>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <soundCastBeam>AAD_SunbeamLoop</soundCastBeam>
+                <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+                <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+                <beamMaxDeviation>1.5</beamMaxDeviation>
+                <beamCurvature>0.6</beamCurvature>
+                <beamMoteDef>Mote_AADSolarBeam</beamMoteDef>
+                <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+                <beamChanceToStartFire>0.85</beamChanceToStartFire>
+                <beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+                <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+                <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+                <beamStartOffset>0</beamStartOffset>
+                <beamLineFleckChanceCurve>
+                    <points>
+                        <li>(0, 0)</li>
+                        <li>(0.65, 0.4)</li>
+                        <li>(1, 0.75)</li>
+                    </points>
+                </beamLineFleckChanceCurve>
+            </li>
+        </verbs>
+    </ThingDef>
 
-	<ThingDef ParentName="MoteBase">
-		<defName>Mote_AADSolarBeam</defName>
-		<thingClass>MoteDualAttached</thingClass>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<mote>
-			<fadeInTime>0.2</fadeInTime>
-			<fadeOutTime>0.3</fadeOutTime>
-			<solidTime>999999</solidTime>
-			<needsMaintenance>True</needsMaintenance>
-			<rotateTowardsTarget>True</rotateTowardsTarget>
-			<scaleToConnectTargets>True</scaleToConnectTargets>
-			<fadeOutUnmaintained>True</fadeOutUnmaintained>
-		</mote>
-		<drawOffscreen>true</drawOffscreen>
-		<graphicData>
-			<texPath>Things/Projectiles/Laser_Purple</texPath>
-			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
-			<shaderType>MoteBeam</shaderType>
-			<shaderParameters>
-				<_Intensity>2</_Intensity>
-			</shaderParameters>
-		</graphicData>
-	</ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_AADSolarBeam</defName>
+        <thingClass>MoteDualAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.2</fadeInTime>
+            <fadeOutTime>0.3</fadeOutTime>
+            <solidTime>999999</solidTime>
+            <needsMaintenance>True</needsMaintenance>
+            <rotateTowardsTarget>True</rotateTowardsTarget>
+            <scaleToConnectTargets>True</scaleToConnectTargets>
+            <fadeOutUnmaintained>True</fadeOutUnmaintained>
+        </mote>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+            <texPath>Things/Projectiles/Laser_Purple</texPath>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <shaderType>MoteBeam</shaderType>
+            <shaderParameters>
+                <_Intensity>2</_Intensity>
+            </shaderParameters>
+        </graphicData>
+    </ThingDef>
 
-	<DamageDef>
-		<defName>AAD_SolarBeam</defName>
-		<label>beam</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
-		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been beamed to death.</deathMessage>
-		<hediff>BeamWound</hediff>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Bullet</impactSoundType>
-		<armorCategory>Heat</armorCategory>
-		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-		<isRanged>true</isRanged>
-		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<defaultDamage>5</defaultDamage>
-		<defaultArmorPenetration>2</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
-	</DamageDef>
+    <DamageDef>
+        <defName>AAD_SolarBeam</defName>
+        <label>beam</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been beamed to death.</deathMessage>
+        <hediff>BeamWound</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Heat</armorCategory>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <defaultDamage>5</defaultDamage>
+        <defaultArmorPenetration>2</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    </DamageDef>
 
 </Defs>

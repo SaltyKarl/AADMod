@@ -2,18 +2,17 @@
 using RimWorld;
 using Verse;
 
-namespace AADMod
+namespace AADMod;
+
+[HarmonyPatch(typeof(FloatMenuMakerMap), "CanTakeOrder")]
+public static class FloatMenuMakerMap_CanTakeOrder_Patch
 {
-    [HarmonyPatch(typeof(FloatMenuMakerMap), "CanTakeOrder")]
-    public static class FloatMenuMakerMap_CanTakeOrder_Patch
+    [HarmonyPriority(int.MinValue)]
+    public static void Postfix(Pawn pawn, ref bool __result)
     {
-        [HarmonyPriority(int.MinValue)]
-        public static void Postfix(Pawn pawn, ref bool __result)
+        if (__result is false && pawn.IsMechanoidHacked())
         {
-            if (__result is false && pawn.IsMechanoidHacked())
-            {
-                __result = true;
-            }
+            __result = true;
         }
     }
 }

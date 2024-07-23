@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Centipede - Herald -->
+    <!-- Centipede - Herald -->
 
-  <Mech_CentipedeHerald.label>centipede crusher</Mech_CentipedeHerald.label>
-  <Mech_CentipedeHerald.description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carapace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</Mech_CentipedeHerald.description>
-  <Mech_CentipedeHerald.tools.0.label>head</Mech_CentipedeHerald.tools.0.label>
-  <!-- Flesh Type: Mechanoid -->
-  <Mech_CentipedeHerald_Corpse.label>centipede crusher corpse</Mech_CentipedeHerald_Corpse.label>
-  <Mech_CentipedeHerald_Corpse.description>centipede crusher corpse</Mech_CentipedeHerald_Corpse.description>
-
-
-  <!-- Militor - Herald -->
-
-  <Mech_MilitorHerald.label>militor_assaultor</Mech_MilitorHerald.label>
-  <Mech_MilitorHerald.description>A small combat mechanoid armed with a low-power mini-shotgun. Roughly four feet tall, militors lack the power, range, and toughness of more senior combat mechs. However, it is cheap to gestate and maintain, and so is often used as a rear guard or swarm attacker.\n\nIn war, mech armies are known to send militors into urban ruins to hunt down survivors after breaking the human defenses. For this reason, they are considered by some to be the most cruel of all mechanoid patterns.</Mech_MilitorHerald.description>
-
-  <Mech_PikemanHerald.label>pikeman demoralizer</Mech_PikemanHerald.label>
-  <Mech_PikemanHerald.description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</Mech_PikemanHerald.description>
-  <Mech_PikemanHerald.tools.0.label>front left leg</Mech_PikemanHerald.tools.0.label>
-  <Mech_PikemanHerald.tools.1.label>front right leg</Mech_PikemanHerald.tools.1.label>
-  <Mech_PikemanHerald.tools.2.label>head</Mech_PikemanHerald.tools.2.label>
-  <!-- Flesh Type: Mechanoid -->
-  <Mech_PikemanHerald_Corpse.label>pikeman demoralizer corpse</Mech_PikemanHerald_Corpse.label>
-  <Mech_PikemanHerald_Corpse.description>pikeman demoralizer corpse</Mech_PikemanHerald_Corpse.description>
+    <Mech_CentipedeHerald.label>centipede crusher</Mech_CentipedeHerald.label>
+    <Mech_CentipedeHerald.description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carapace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</Mech_CentipedeHerald.description>
+    <Mech_CentipedeHerald.tools.0.label>head</Mech_CentipedeHerald.tools.0.label>
+    <!-- Flesh Type: Mechanoid -->
+    <Mech_CentipedeHerald_Corpse.label>centipede crusher corpse</Mech_CentipedeHerald_Corpse.label>
+    <Mech_CentipedeHerald_Corpse.description>centipede crusher corpse</Mech_CentipedeHerald_Corpse.description>
 
 
-  <!-- Militor - Herald -->
+    <!-- Militor - Herald -->
 
-  <Mech_DiabolusHerald.label>diabolus annihilator</Mech_DiabolusHerald.label>
-  <Mech_DiabolusHerald.description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</Mech_DiabolusHerald.description>
+    <Mech_MilitorHerald.label>militor_assaultor</Mech_MilitorHerald.label>
+    <Mech_MilitorHerald.description>A small combat mechanoid armed with a low-power mini-shotgun. Roughly four feet tall, militors lack the power, range, and toughness of more senior combat mechs. However, it is cheap to gestate and maintain, and so is often used as a rear guard or swarm attacker.\n\nIn war, mech armies are known to send militors into urban ruins to hunt down survivors after breaking the human defenses. For this reason, they are considered by some to be the most cruel of all mechanoid patterns.</Mech_MilitorHerald.description>
+
+    <Mech_PikemanHerald.label>pikeman demoralizer</Mech_PikemanHerald.label>
+    <Mech_PikemanHerald.description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</Mech_PikemanHerald.description>
+    <Mech_PikemanHerald.tools.0.label>front left leg</Mech_PikemanHerald.tools.0.label>
+    <Mech_PikemanHerald.tools.1.label>front right leg</Mech_PikemanHerald.tools.1.label>
+    <Mech_PikemanHerald.tools.2.label>head</Mech_PikemanHerald.tools.2.label>
+    <!-- Flesh Type: Mechanoid -->
+    <Mech_PikemanHerald_Corpse.label>pikeman demoralizer corpse</Mech_PikemanHerald_Corpse.label>
+    <Mech_PikemanHerald_Corpse.description>pikeman demoralizer corpse</Mech_PikemanHerald_Corpse.description>
+
+
+    <!-- Militor - Herald -->
+
+    <Mech_DiabolusHerald.label>diabolus annihilator</Mech_DiabolusHerald.label>
+    <Mech_DiabolusHerald.description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</Mech_DiabolusHerald.description>
 
 
 </LanguageData>

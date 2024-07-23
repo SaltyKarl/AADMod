@@ -1,30 +1,27 @@
-﻿using HarmonyLib;
+﻿using System.Linq;
 using RimWorld;
-using System.Linq;
-using System.Reflection;
 using Verse;
 
-namespace AADMod
+namespace AADMod;
+
+[StaticConstructorOnStartup]
+public static class Utils
 {
-    [StaticConstructorOnStartup]
-    public static class Utils
+    static Utils()
     {
-        static Utils()
+        foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
         {
-            foreach (var def in DefDatabase<ThingDef>.AllDefs)
+            RemoveComps ext = def.GetModExtension<RemoveComps>();
+            if (def.comps != null && ext != null)
             {
-                var ext = def.GetModExtension<RemoveComps>();
-                if (def.comps != null && ext != null)
-                {
-                    def.comps = def.comps.Where((CompProperties c) => !ext.compProps.Contains(c.GetType())).ToList();
-                }
+                def.comps = def.comps.Where(c => !ext.compProps.Contains(c.GetType())).ToList();
             }
         }
+    }
 
-        public static bool IsMechanoidHacked(this Pawn pawn)
-        {
-            return pawn.Faction != null && pawn.Faction == Faction.OfPlayerSilentFail
-                            && pawn.health.hediffSet.GetFirstHediffOfDef(AAD_DefOf.AAD_MechControllable) != null;
-        }
+    public static bool IsMechanoidHacked(this Pawn pawn)
+    {
+        return pawn.Faction != null && pawn.Faction == Faction.OfPlayerSilentFail
+                                    && pawn.health.hediffSet.GetFirstHediffOfDef(AAD_DefOf.AAD_MechControllable) != null;
     }
 }

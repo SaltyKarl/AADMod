@@ -102,7 +102,6 @@ public class PortalExtension : AbilityExtension_AbilityMod
             return;
         }
 
-        compExplosive.wickTicksLeft = 60 * 90;
         compExplosive.StartWick(ability.pawn);
     }
 

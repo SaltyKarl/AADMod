@@ -20,9 +20,13 @@ public class Ability_Explosion : Ability
             affectedAngle: new FloatRange(
                 num - explosionExtension.arc,
                 num + explosionExtension.arc
-            ), center: position,
-            map: caster.MapHeld, radius: distance + 1, damType: explosionExtension.damageDef,
-            instigator: caster, doVisualEffects: false
+            ),
+            center: position,
+            map: caster.MapHeld,
+            radius: distance + 1,
+            damType: explosionExtension.damageDef,
+            instigator: caster,
+            doVisualEffects: false
         );
         Explosion explosion = position.GetFirstThing<Explosion>(caster.MapHeld);
         explosion.doVisualEffects = true;

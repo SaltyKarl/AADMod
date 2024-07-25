@@ -124,7 +124,7 @@
             <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
             <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
             <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
         </equippedStatOffsets>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
@@ -310,7 +310,7 @@
             <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
             <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
             <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
         </equippedStatOffsets>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
@@ -395,7 +395,7 @@
             <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
             <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
             <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
         </equippedStatOffsets>
         <tradeTags>
             <li>Armor</li>

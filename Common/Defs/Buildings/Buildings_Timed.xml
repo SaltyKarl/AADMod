@@ -70,7 +70,7 @@
                 <explosiveDamageType>AAD_BombSuper</explosiveDamageType>
                 <explosionEffect>AAD_MiniMine</explosionEffect>
                 <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<countdownTicks>25</countdownTicks>
+                <countdownTicks>25</countdownTicks>
                 <wickTicks>5400</wickTicks>
                 <startWickOnDamageTaken>
                     <li>Bullet</li>
@@ -79,7 +79,7 @@
                 </startWickOnDamageTaken>
             </li>
         </comps>
-		<specialDisplayRadius>2.9</specialDisplayRadius>
+        <specialDisplayRadius>2.9</specialDisplayRadius>
     </ThingDef>
 
     <!--Mine Effect and Mote-->

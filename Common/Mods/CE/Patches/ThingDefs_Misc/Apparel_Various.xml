@@ -22,7 +22,7 @@
                     <xpath>Defs/ThingDef[defName="AAD_Apparel_HeraldPack"]/equippedStatOffsets</xpath>
                     <value>
                         <equippedStatOffsets>
-							<CarryBulk>40</CarryBulk>
+                            <CarryBulk>40</CarryBulk>
                             <ReloadSpeed>0.2</ReloadSpeed>
                         </equippedStatOffsets>
                     </value>
@@ -346,10 +346,10 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]/equippedStatOffsets</xpath>
+                    <xpath>Defs/ThingDef[defName="AAD_Apparel_ArmorHelmetHerald"]/equippedStatOffsets</xpath>
                     <value>
-                            <AimingAccuracy>0.15</AimingAccuracy>
-                            <SmokeSensitivity>-1</SmokeSensitivity>
+                        <AimingAccuracy>0.15</AimingAccuracy>
+                        <SmokeSensitivity>-1</SmokeSensitivity>
                     </value>
                 </li>
 

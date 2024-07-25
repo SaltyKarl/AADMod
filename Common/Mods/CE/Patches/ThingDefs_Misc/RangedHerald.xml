@@ -85,9 +85,9 @@
                     <xpath>Defs/ThingDef[defName="AAD_Gun_Mace"]</xpath>
                     <value>
                         <equippedStatOffsets>
-							<MeleeCritChance>1.85</MeleeCritChance>
-							<MeleeParryChance>0.6</MeleeParryChance>
-							<MeleeDodgeChance>0.6</MeleeDodgeChance>
+                            <MeleeCritChance>1.85</MeleeCritChance>
+                            <MeleeParryChance>0.6</MeleeParryChance>
+                            <MeleeDodgeChance>0.6</MeleeDodgeChance>
                         </equippedStatOffsets>
                     </value>
                 </li>

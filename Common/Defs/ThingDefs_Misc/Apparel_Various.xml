@@ -124,7 +124,7 @@
 			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -209,11 +209,6 @@
 		</damageMultipliers>
 		<equippedStatOffsets>
 			<MoveSpeed>0.2</MoveSpeed>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
-			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -315,7 +310,7 @@
 			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -400,7 +395,7 @@
 			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">6</VacuumSpeedMultiplier>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>Armor</li>

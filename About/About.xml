@@ -26,6 +26,7 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>OskarPotocki.VFE.Pirates</li>
 		<li>CETeam.CombatExtended</li>
 		<li>Ludeon.RimWorld.Biotech</li>

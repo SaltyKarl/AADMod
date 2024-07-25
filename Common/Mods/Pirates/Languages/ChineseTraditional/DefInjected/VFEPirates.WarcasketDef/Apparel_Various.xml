@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Warcasket -->
+    <!-- Warcasket -->
 
-  <AAD_WarcasketHelmet_Herald.label>Helmet of Defiler</AAD_WarcasketHelmet_Herald.label>
-  <AAD_WarcasketHelmet_Herald.description>Less of an Helmet more of a set of "life support" and combat computer, with a wetware component.</AAD_WarcasketHelmet_Herald.description>
+    <AAD_WarcasketHelmet_Herald.label>Helmet of Defiler</AAD_WarcasketHelmet_Herald.label>
+    <AAD_WarcasketHelmet_Herald.description>Less of an Helmet more of a set of "life support" and combat computer, with a wetware component.</AAD_WarcasketHelmet_Herald.description>
 
-  <AAD_Warcasket_Herald.label>Defiler Sarcophagus</AAD_Warcasket_Herald.label>
-  <AAD_Warcasket_Herald.description>for an Herald to embody their master's wratrh is to be emtombed into such a Warmachine.</AAD_Warcasket_Herald.description>
+    <AAD_Warcasket_Herald.label>Defiler Sarcophagus</AAD_Warcasket_Herald.label>
+    <AAD_Warcasket_Herald.description>for an Herald to embody their master's wratrh is to be emtombed into such a Warmachine.</AAD_Warcasket_Herald.description>
 
-  <AAD_WarcasketShoulders_Herald.label>Defiler Sarcophagus shoulders</AAD_WarcasketShoulders_Herald.label>
-  <AAD_WarcasketShoulders_Herald.description>Defiler Sarcophagus shoulder armor</AAD_WarcasketShoulders_Herald.description>
+    <AAD_WarcasketShoulders_Herald.label>Defiler Sarcophagus shoulders</AAD_WarcasketShoulders_Herald.label>
+    <AAD_WarcasketShoulders_Herald.description>Defiler Sarcophagus shoulder armor</AAD_WarcasketShoulders_Herald.description>
 
 
 </LanguageData>

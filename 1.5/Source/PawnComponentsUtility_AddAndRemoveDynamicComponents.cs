@@ -2,25 +2,16 @@
 using RimWorld;
 using Verse;
 
-namespace AADMod
-{
-    [HarmonyPatch(typeof(PawnComponentsUtility), "AddAndRemoveDynamicComponents")]
-    public static class PawnComponentsUtility_AddAndRemoveDynamicComponents
-    {
-        public static void Postfix(Pawn pawn)
-        {
-            if (pawn.IsMechanoidHacked())
-            {
-                AssignMechComponents(pawn);
-            }
-        }
+namespace AADMod;
 
-        public static void AssignMechComponents(Pawn pawn)
+[HarmonyPatch(typeof(PawnComponentsUtility), "AddAndRemoveDynamicComponents")]
+public static class PawnComponentsUtility_AddAndRemoveDynamicComponents
+{
+    public static void Postfix(Pawn pawn)
+    {
+        if (pawn.IsMechanoidHacked())
         {
-            if (pawn.drafter is null)
-            {
-                pawn.drafter = new Pawn_DraftController(pawn);
-            }
+            pawn.drafter ??= new Pawn_DraftController(pawn);
         }
     }
 }

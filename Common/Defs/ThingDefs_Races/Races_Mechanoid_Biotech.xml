@@ -1,432 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Centipede - Herald -->
-	<ThingDef ParentName="MechCentipede">
-		<defName>Mech_CentipedeHerald_B</defName>
-		<label>centipede crusher</label>
-		<description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carapace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
-		<statBases>
-			<MoveSpeed>2.35</MoveSpeed>
-			<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
-			<PsychicSensitivity>0.50</PsychicSensitivity>
-			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.75</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">5</EnergyShieldEnergyMax>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">6</BandwidthCost>
-			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.125</MechEnergyLossPerHP>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<race>
-			<baseHealthScale>6.48</baseHealthScale>
-		</race>
-		<tools Inherit="False">
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>18</power>
-				<cooldownTime>2.6</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			</li>
-		</tools>
-		<comps>
-			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
-				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
-				<minDrawSize>2.8</minDrawSize>
-				<maxDrawSize>3.1</maxDrawSize>
-				<energyLossPerDamage>0.01</energyLossPerDamage>
-				<energyOnReset>5.0</energyOnReset>
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-			</li>
-		</comps>
-	</ThingDef>
+    <!-- Centipede - Herald -->
+    <ThingDef ParentName="MechCentipede">
+        <defName>Mech_CentipedeHerald_B</defName>
+        <label>centipede crusher</label>
+        <description>Heavy combat mechanoids that glide on dozens of tiny legs. Their thick carapace and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
+        <statBases>
+            <MoveSpeed>2.35</MoveSpeed>
+            <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+            <PsychicSensitivity>0.50</PsychicSensitivity>
+            <EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.75</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">5</EnergyShieldEnergyMax>
+            <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">6</BandwidthCost>
+            <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.125</MechEnergyLossPerHP>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <race>
+            <baseHealthScale>6.48</baseHealthScale>
+        </race>
+        <tools Inherit="False">
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+                <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+                <minDrawSize>2.8</minDrawSize>
+                <maxDrawSize>3.1</maxDrawSize>
+                <energyLossPerDamage>0.01</energyLossPerDamage>
+                <energyOnReset>5.0</energyOnReset>
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<PawnKindDef ParentName="MechCentipedeBase">
-		<defName>Mech_CentipedeHerald_B</defName>
-		<label>centipede crusher</label>
-		<race>Mech_CentipedeHerald_B</race>
-		<allowInMechClusters>false</allowInMechClusters>
-		<lifeStages Inherit="False">
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Centipede</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Centipede</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>3</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.8, 0.6)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Centipede</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Centipede</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>3</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.8, 0.6)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-		<combatPower>600</combatPower>
-		<weaponTags>
-			<li>AAD_HMGM</li>
-		</weaponTags>
-	</PawnKindDef>
+    <PawnKindDef ParentName="MechCentipedeBase">
+        <defName>Mech_CentipedeHerald_B</defName>
+        <label>centipede crusher</label>
+        <race>Mech_CentipedeHerald_B</race>
+        <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages Inherit="False">
+            <li MayRequire="Ludeon.RimWorld.Biotech">
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Centipede</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Centipede</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Centipede</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Centipede</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <combatPower>600</combatPower>
+        <weaponTags>
+            <li>AAD_HMGM</li>
+        </weaponTags>
+    </PawnKindDef>
 
-	<!-- Militor - Herald -->
-	<ThingDef ParentName="LightMechanoid">
-		<defName>Mech_MilitorHerald_B</defName>
-		<label>militor assaultor</label>
-		<description>A small combat mechanoid armed with a low-power mini-shotgun. Roughly four feet tall, militors lack the power, range, and toughness of more senior combat mechs. However, it is cheap to gestate and maintain, and so is often used as a rear guard or swarm attacker.\n\nIn war, mech armies are known to send militors into urban ruins to hunt down survivors after breaking the human defenses. For this reason, they are considered by some to be the most cruel of all mechanoid patterns.</description>
-		<statBases>
-			<MoveSpeed>3.8</MoveSpeed>
-			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-			<PsychicSensitivity>0.50</PsychicSensitivity>
-			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">1.5</EnergyShieldEnergyMax>
-			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<race>
-			<lifeStageAges>
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
-					<soundCall>Pawn_Mech_Militor_Call</soundCall>
-				</li>
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>100</minAge>
-					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
-					<soundCall>Pawn_Mech_Militor_Call</soundCall>
-				</li>
-			</lifeStageAges>
-			<baseHealthScale>1.15</baseHealthScale>
-		</race>
-		<comps>
-			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
-				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
-				<minDrawSize>1.5</minDrawSize>
-				<maxDrawSize>1.8</maxDrawSize>
-				<energyLossPerDamage>0.01</energyLossPerDamage>
-				<energyOnReset>1.5</energyOnReset>
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-			</li>
-		</comps>
-	</ThingDef>
+    <!-- Militor - Herald -->
+    <ThingDef ParentName="LightMechanoid">
+        <defName>Mech_MilitorHerald_B</defName>
+        <label>militor assaultor</label>
+        <description>A small combat mechanoid armed with a low-power mini-shotgun. Roughly four feet tall, militors lack the power, range, and toughness of more senior combat mechs. However, it is cheap to gestate and maintain, and so is often used as a rear guard or swarm attacker.\n\nIn war, mech armies are known to send militors into urban ruins to hunt down survivors after breaking the human defenses. For this reason, they are considered by some to be the most cruel of all mechanoid patterns.</description>
+        <statBases>
+            <MoveSpeed>3.8</MoveSpeed>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+            <PsychicSensitivity>0.50</PsychicSensitivity>
+            <EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">1.5</EnergyShieldEnergyMax>
+            <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.33</MechEnergyLossPerHP>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <race>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Militor_Call</soundCall>
+                </li>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>100</minAge>
+                    <soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Militor_Call</soundCall>
+                </li>
+            </lifeStageAges>
+            <baseHealthScale>1.15</baseHealthScale>
+        </race>
+        <comps>
+            <li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+                <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+                <minDrawSize>1.5</minDrawSize>
+                <maxDrawSize>1.8</maxDrawSize>
+                <energyLossPerDamage>0.01</energyLossPerDamage>
+                <energyOnReset>1.5</energyOnReset>
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<PawnKindDef ParentName="LightMechanoidKind">
-		<defName>Mech_MilitorHerald_B</defName>
-		<label>militor assaultor</label>
-		<race>Mech_MilitorHerald_B</race>
-		<combatPower>90</combatPower>
-		<allowInMechClusters>false</allowInMechClusters>
-		<lifeStages Inherit="False">
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Militor</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Militor</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.25</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Militor</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Militor</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.25</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-		<weaponTags>
-			<li>AADQuadShot</li>
-		</weaponTags>
-	</PawnKindDef>
+    <PawnKindDef ParentName="LightMechanoidKind">
+        <defName>Mech_MilitorHerald_B</defName>
+        <label>militor assaultor</label>
+        <race>Mech_MilitorHerald_B</race>
+        <combatPower>90</combatPower>
+        <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages Inherit="False">
+            <li MayRequire="Ludeon.RimWorld.Biotech">
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Militor</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Militor</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Militor</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Militor</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags>
+            <li>AADQuadShot</li>
+        </weaponTags>
+    </PawnKindDef>
 
-	<ThingDef ParentName="BaseMechanoidWalker">
-		<defName>Mech_PikemanHerald_B</defName>
-		<label>pikeman demoralizer</label>
-		<description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</description>
-		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">2</EnergyShieldEnergyMax>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<tools Inherit="False">
-			<li>
-				<label>front left leg</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>12.0</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-			</li>
-			<li>
-				<label>front right leg</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>12.0</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>8.5</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-		<race>
-			<baseHealthScale>1.275</baseHealthScale>
-			<body>Pikeman</body>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitPawn</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-			<lifeStageAges Inherit="False">
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
-					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
-				</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">
-					<def>MechanoidFullyFormed</def>
-					<minAge>100</minAge>
-					<soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
-					<soundCall>Pawn_Mech_Pikeman_Call</soundCall>
-				</li>
-			</lifeStageAges>
-		</race>
-		<comps>
-			<li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
-				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
-				<minDrawSize>2.0</minDrawSize>
-				<maxDrawSize>2.3</maxDrawSize>
-				<energyLossPerDamage>0.01</energyLossPerDamage>
-				<energyOnReset>2.0</energyOnReset>
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="BaseMechanoidWalker">
+        <defName>Mech_PikemanHerald_B</defName>
+        <label>pikeman demoralizer</label>
+        <description>A clunky multi-legged combat mechanoid specialized as a long-range weapons platform. While effective at distance, it is weak in close-range fights and in melee combat.\n\nVeterans of mechanoid wars know that often, the safest place to be around a pikeman is touching it.</description>
+        <statBases>
+            <MoveSpeed>3</MoveSpeed>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">0.25</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">2</EnergyShieldEnergyMax>
+            <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <tools Inherit="False">
+            <li>
+                <label>front left leg</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li>
+                <label>front right leg</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.0</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8.5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <baseHealthScale>1.275</baseHealthScale>
+            <body>Pikeman</body>
+            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitPawn</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <lifeStageAges Inherit="False">
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+                </li>
+                <li MayRequire="Ludeon.Rimworld.Biotech">
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>100</minAge>
+                    <soundWounded>Pawn_Mech_Pikeman_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Pikeman_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Pikeman_Call</soundCall>
+                </li>
+            </lifeStageAges>
+        </race>
+        <comps>
+            <li Class="CompProperties_Shield" MayRequire="Ludeon.Rimworld.Biotech">
+                <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+                <minDrawSize>2.0</minDrawSize>
+                <maxDrawSize>2.3</maxDrawSize>
+                <energyLossPerDamage>0.01</energyLossPerDamage>
+                <energyOnReset>2.0</energyOnReset>
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
-		<defName>Mech_PikemanHerald_B</defName>
-		<label>pikeman demoralizer</label>
-		<labelPlural>pikemen demoralizers</labelPlural>
-		<race>Mech_PikemanHerald_B</race>
-		<combatPower>165</combatPower>
-		<allowInMechClusters>false</allowInMechClusters>
-		<lifeStages>
-			<li MayRequire="Ludeon.Rimworld.Biotech">
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Pikeman</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Pikeman</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>2.4</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.8, 0.4)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Pikeman</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Pikeman</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>2.4</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.8, 0.4)</volume>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-		<weaponMoney>9999~9999</weaponMoney>
-		<weaponTags>
-			<li>AADLanceM</li>
-		</weaponTags>
-	</PawnKindDef>
+    <PawnKindDef ParentName="BaseMechanoidKind">
+        <defName>Mech_PikemanHerald_B</defName>
+        <label>pikeman demoralizer</label>
+        <labelPlural>pikemen demoralizers</labelPlural>
+        <race>Mech_PikemanHerald_B</race>
+        <combatPower>165</combatPower>
+        <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages>
+            <li MayRequire="Ludeon.Rimworld.Biotech">
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Pikeman</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Pikeman</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>2.4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Pikeman</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Pikeman</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>2.4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponMoney>9999~9999</weaponMoney>
+        <weaponTags>
+            <li>AADLanceM</li>
+        </weaponTags>
+    </PawnKindDef>
 
-	<ThingDef Name="Mech_DiabolusHerald_B" ParentName="SuperHeavyMechanoid" MayRequire="Ludeon.Rimworld.Biotech">
-		<defName>Mech_DiabolusHerald_B</defName>
-		<label>diabolus annihilator</label>
-		<description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</description>
-		<race>
-			<body>Mech_Diabolus</body>
-			<baseBodySize>4</baseBodySize>
-			<lifeStageAges>
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
-					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
-				</li>
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>100</minAge>
-					<soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
-					<soundCall>Pawn_Mech_Diabolus_Call</soundCall>
-				</li>
-			</lifeStageAges>
-			<baseHealthScale>9</baseHealthScale>
-		</race>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<tools Inherit="False">
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>18</power>
-				<cooldownTime>2.6</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			</li>
-		</tools>
-		<comps>
-			<li Class="CompProperties_TargetingBeam" />
-			<li Class="CompProperties_TurretGun">
-				<turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
-				<angleOffset>-90</angleOffset>
-				<renderNodeProperties>
-					<li>
-						<nodeClass>PawnRenderNode_TurretGun</nodeClass>
-						<workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
-						<parentTagDef>Body</parentTagDef>
-						<overrideMeshSize>(1, 1)</overrideMeshSize>
-						<baseLayer>20</baseLayer>
-						<pawnType>Any</pawnType>
-						<drawData>
-							<dataWest>
-								<rotationOffset>180</rotationOffset>
-							</dataWest>
-						</drawData>
-					</li>
-				</renderNodeProperties>
-			</li>
-			<li Class="CompProperties_Shield">
-				<startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
-				<minDrawSize>2.5</minDrawSize>
-				<maxDrawSize>2.8</maxDrawSize>
-				<energyLossPerDamage>0.01</energyLossPerDamage>
-				<energyOnReset>10.0</energyOnReset>
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-				<compClass>AADMod.CompShieldEMPImmune</compClass>
-			</li>
-		</comps>
-		<statBases>
-			<EMPResistance>0.8</EMPResistance>
-			<MoveSpeed>2.5</MoveSpeed>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-			<PsychicSensitivity>0.5</PsychicSensitivity>
-			<EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">1.75</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">15</EnergyShieldEnergyMax>
-			<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>
-			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.125</MechEnergyLossPerHP>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-		</statBases>
-	</ThingDef>
+    <ThingDef Name="Mech_DiabolusHerald_B" ParentName="SuperHeavyMechanoid" MayRequire="Ludeon.Rimworld.Biotech">
+        <defName>Mech_DiabolusHerald_B</defName>
+        <label>diabolus annihilator</label>
+        <description>An ultra-heavy mechanoid with an ultra-powerful hellsphere cannon. Made for siegebreaking, its hellsphere cannon takes time to charge up a shot, but can melt concrete and vaporize bone. The diabolus dissipates the hellsphere cannon's waste power in a heat column mounted on its back, which can pulse to ignite flammable objects nearby.\n\nThis mech's name comes from a thousand-year-old poem written by a Haspian monk who survived the erasure of his monastery. His religiously-tinged work describes a razor-bodied fiend pulsing with flesh-searing heat as it crushed scorched bodies under massive claws. The few who have faced a diabolus and survived tend to agree with this depiction.</description>
+        <race>
+            <body>Mech_Diabolus</body>
+            <baseBodySize>4</baseBodySize>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+                </li>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>100</minAge>
+                    <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+                </li>
+            </lifeStageAges>
+            <baseHealthScale>9</baseHealthScale>
+        </race>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <tools Inherit="False">
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_TargetingBeam"/>
+            <li Class="CompProperties_TurretGun">
+                <turretDef>AAD_Gun_MiniShotgunTurret</turretDef>
+                <angleOffset>-90</angleOffset>
+                <renderNodeProperties>
+                    <li>
+                        <nodeClass>PawnRenderNode_TurretGun</nodeClass>
+                        <workerClass>PawnRenderNodeWorker_TurretGun</workerClass>
+                        <parentTagDef>Body</parentTagDef>
+                        <overrideMeshSize>(1, 1)</overrideMeshSize>
+                        <baseLayer>20</baseLayer>
+                        <pawnType>Any</pawnType>
+                        <drawData>
+                            <dataWest>
+                                <rotationOffset>180</rotationOffset>
+                            </dataWest>
+                        </drawData>
+                    </li>
+                </renderNodeProperties>
+            </li>
+            <li Class="CompProperties_Shield">
+                <startingTicksToReset>36000</startingTicksToReset><!-- 10 mins -->
+                <minDrawSize>2.5</minDrawSize>
+                <maxDrawSize>2.8</maxDrawSize>
+                <energyLossPerDamage>0.01</energyLossPerDamage>
+                <energyOnReset>10.0</energyOnReset>
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+                <compClass>AADMod.CompShieldEMPImmune</compClass>
+            </li>
+        </comps>
+        <statBases>
+            <EMPResistance>0.8</EMPResistance>
+            <MoveSpeed>2.5</MoveSpeed>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+            <PsychicSensitivity>0.5</PsychicSensitivity>
+            <EnergyShieldRechargeRate MayRequire="Ludeon.Rimworld.Biotech">1.75</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax MayRequire="Ludeon.Rimworld.Biotech">15</EnergyShieldEnergyMax>
+            <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">10</BandwidthCost>
+            <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.125</MechEnergyLossPerHP>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+        </statBases>
+    </ThingDef>
 
-	<PawnKindDef ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
-		<defName>Mech_DiabolusHerald_B</defName>
-		<label>diabolus annihilator</label>
-		<race>Mech_DiabolusHerald_B</race>
-		<combatPower>1000</combatPower>
-		<allowInMechClusters>false</allowInMechClusters>
-		<lifeStages Inherit="False">
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Diabolus</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Diabolus</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>3</drawSize>
-				</bodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Meches/AAD_Diabolus</texPath>
-					<maskPath>Things/Meches/AllegianceOverlays/AAD_Diabolus</maskPath>
-					<shaderType>CutoutWithOverlay</shaderType>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>3</drawSize>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-		<weaponTags Inherit="False">
-			<li>AADWrathCannon</li>
-		</weaponTags>
-		<abilities Inherit="False">
-			<li>AAD_Killzone</li>
-		</abilities>
-	</PawnKindDef>
+    <PawnKindDef ParentName="HeavyMechanoidKind" MayRequire="Ludeon.Rimworld.Biotech">
+        <defName>Mech_DiabolusHerald_B</defName>
+        <label>diabolus annihilator</label>
+        <race>Mech_DiabolusHerald_B</race>
+        <combatPower>1000</combatPower>
+        <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages Inherit="False">
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Diabolus</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Diabolus</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3</drawSize>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Meches/AAD_Diabolus</texPath>
+                    <maskPath>Things/Meches/AllegianceOverlays/AAD_Diabolus</maskPath>
+                    <shaderType>CutoutWithOverlay</shaderType>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3</drawSize>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponTags Inherit="False">
+            <li>AADWrathCannon</li>
+        </weaponTags>
+        <abilities Inherit="False">
+            <li>AAD_Killzone</li>
+        </abilities>
+    </PawnKindDef>
 
 </Defs>

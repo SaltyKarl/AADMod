@@ -1,32 +1,23 @@
 ﻿using Verse;
 
-namespace AADMod
+namespace AADMod;
+
+public class CompDestroyOnCasterDowned : ThingComp
 {
-    public class CompProperties_DestroyOnCasterDowned : CompProperties
+    public Pawn caster;
+
+    public override void CompTick()
     {
-        public CompProperties_DestroyOnCasterDowned()
+        base.CompTick();
+        if (caster is { Downed: true })
         {
-            this.compClass = typeof(CompDestroyOnCasterDowned);
+            parent.Destroy();
         }
     }
 
-    public class CompDestroyOnCasterDowned : ThingComp
+    public override void PostExposeData()
     {
-        public Pawn caster;
-
-        public override void CompTick()
-        {
-            base.CompTick();
-            if (caster != null && caster.Downed) 
-            {
-                this.parent.Destroy();
-            }
-        }
-
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_References.Look(ref caster, "caster");
-        }
+        base.PostExposeData();
+        Scribe_References.Look(ref caster, "caster");
     }
 }

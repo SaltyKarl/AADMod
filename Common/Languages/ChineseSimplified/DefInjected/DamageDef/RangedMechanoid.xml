@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Wrath Damage -->
+    <!-- Wrath Damage -->
 
-  <AAD_BombSuper.label>bomb</AAD_BombSuper.label>
-  <AAD_BombSuper.deathMessage>{0} has died in an explosion.</AAD_BombSuper.deathMessage>
+    <AAD_BombSuper.label>bomb</AAD_BombSuper.label>
+    <AAD_BombSuper.deathMessage>{0} has died in an explosion.</AAD_BombSuper.deathMessage>
 
 
 </LanguageData>

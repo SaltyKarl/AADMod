@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-  	<v1.4>
-		<li>/</li>
-		<li>1.4</li>
-		<li>Common</li>
-		<li IfModActive="CETeam.CombatExtended">Common/Mods/CE</li>
-		<li IfModActive="OskarPotocki.VFE.Pirates">Common/Mods/Pirates</li>
-		<li IfModActive="IssacZhuang.MuzzleFlash">Common/Mods/Muzzle Flash</li>
-	</v1.4>
-  	<v1.5>
-		<li>/</li>
-		<li>1.5</li>
-		<li>Common</li>
-		<li IfModActive="CETeam.CombatExtended">Common/Mods/CE</li>
-		<li IfModActive="OskarPotocki.VFE.Pirates">Common/Mods/Pirates</li>
-		<li IfModActive="IssacZhuang.MuzzleFlash">Common/Mods/Muzzle Flash</li>
-	</v1.5>
+    <v1.4>
+        <li>/</li>
+        <li>1.4</li>
+        <li>Common</li>
+        <li IfModActive="CETeam.CombatExtended">Common/Mods/CE</li>
+        <li IfModActive="OskarPotocki.VFE.Pirates">Common/Mods/Pirates</li>
+        <li IfModActive="IssacZhuang.MuzzleFlash">Common/Mods/Muzzle Flash</li>
+    </v1.4>
+    <v1.5>
+        <li>/</li>
+        <li>1.5</li>
+        <li>Common</li>
+        <li IfModActive="CETeam.CombatExtended">Common/Mods/CE</li>
+        <li IfModActive="OskarPotocki.VFE.Pirates">Common/Mods/Pirates</li>
+        <li IfModActive="IssacZhuang.MuzzleFlash">Common/Mods/Muzzle Flash</li>
+    </v1.5>
 </loadFolders>

@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
 
-				<!-- Herald Spear -->
+                <!-- Herald Spear -->
 
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]/tools</xpath>
-					<value>
-						<tools>
-							<li Class="CombatExtended.ToolCE">
-								<label>shaft</label>
-								<capacities>
-									<li>Blunt</li>
-								</capacities>
-								<power>10</power>
-								<cooldownTime>1.24</cooldownTime>
-								<chanceFactor>0.15</chanceFactor>
-								<armorPenetrationBlunt>3.613</armorPenetrationBlunt>
-								<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-							</li>
-							<li Class="CombatExtended.ToolCE">
-								<label>shaft</label>
-								<capacities>
-									<li>Poke</li>
-								</capacities>
-								<power>6</power>
-								<cooldownTime>1.57</cooldownTime>
-								<chanceFactor>0.05</chanceFactor>
-								<armorPenetrationBlunt>1.8</armorPenetrationBlunt>
-								<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-							</li>
-							<li Class="CombatExtended.ToolCE">
-								<label>head</label>
-								<capacities>
-									<li>Stab</li>
-								</capacities>
-								<power>21</power>
-								<cooldownTime>1.11</cooldownTime>
-								<armorPenetrationBlunt>3.613</armorPenetrationBlunt>
-								<armorPenetrationSharp>18.07</armorPenetrationSharp>
-								<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
-							</li>
-						</tools>
-					</value>
-				</li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>shaft</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.24</cooldownTime>
+                                <chanceFactor>0.15</chanceFactor>
+                                <armorPenetrationBlunt>3.613</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>shaft</label>
+                                <capacities>
+                                    <li>Poke</li>
+                                </capacities>
+                                <power>6</power>
+                                <cooldownTime>1.57</cooldownTime>
+                                <chanceFactor>0.05</chanceFactor>
+                                <armorPenetrationBlunt>1.8</armorPenetrationBlunt>
+                                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Stab</li>
+                                </capacities>
+                                <power>21</power>
+                                <cooldownTime>1.11</cooldownTime>
+                                <armorPenetrationBlunt>3.613</armorPenetrationBlunt>
+                                <armorPenetrationSharp>18.07</armorPenetrationSharp>
+                                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]/statBases</xpath>
-					<value>
-						<Bulk>10</Bulk>
-						<MeleeCounterParryBonus>1.34</MeleeCounterParryBonus>
-					</value>
-				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]/statBases</xpath>
+                    <value>
+                        <Bulk>10</Bulk>
+                        <MeleeCounterParryBonus>1.34</MeleeCounterParryBonus>
+                    </value>
+                </li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]</xpath>
-					<value>
-						<equippedStatOffsets>
-							<MeleeCritChance>0.13</MeleeCritChance>
-							<MeleeParryChance>1.16</MeleeParryChance>
-							<MeleeDodgeChance>0.9</MeleeDodgeChance>
-						</equippedStatOffsets>
-					</value>
-				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AAD_Melee_Spear"]</xpath>
+                    <value>
+                        <equippedStatOffsets>
+                            <MeleeCritChance>0.13</MeleeCritChance>
+                            <MeleeParryChance>1.16</MeleeParryChance>
+                            <MeleeDodgeChance>0.9</MeleeDodgeChance>
+                        </equippedStatOffsets>
+                    </value>
+                </li>
 
-			</operations>
-		</match>
-	</Operation>
+            </operations>
+        </match>
+    </Operation>
 
 </Patch>

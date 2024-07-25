@@ -1,453 +1,453 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ==================== Herald Pack ==================== -->
+    <!-- ==================== Herald Pack ==================== -->
 
-	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>AAD_Apparel_HeraldPack</defName>
-		<label>Herald Backpack</label>
-		<description>A mostly Decorative Backpack can be used to deploy shield recharger.</description>
-		<graphicData>
-			<texPath>Things/Item/HeraldPack/Herald_Pack_UI</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Ultra</techLevel>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>1.5</Mass>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<equippedStatOffsets>
-			<RangedCooldownFactor>-0.2</RangedCooldownFactor>
-		</equippedStatOffsets>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>40</Plasteel>
-		</costList>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<thingCategories>
-			<li>ApparelMisc</li>
-		</thingCategories>
-		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<wornGraphicPath>Things/Item/HeraldPack/Herald_Pack</wornGraphicPath>
-			<bodyPartGroups>
-				<li>Waist</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Belt</li>
-			</layers>
-			<tags>
-				<li>HeraldT2</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-				<li>Nudist</li>
-			</defaultOutfitTags>
-			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-		</apparel>
-		<tradeTags>
-			<li>Armor</li>
-		</tradeTags>
-		<comps>
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-				<abilities>
-					<li>AAD_DeployShieldRecharger</li>
-				</abilities>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>AAD_Apparel_HeraldPack</defName>
+        <label>Herald Backpack</label>
+        <description>A mostly Decorative Backpack can be used to deploy shield recharger.</description>
+        <graphicData>
+            <texPath>Things/Item/HeraldPack/Herald_Pack_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Ultra</techLevel>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <equippedStatOffsets>
+            <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>CataphractArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <wornGraphicPath>Things/Item/HeraldPack/Herald_Pack</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>HeraldT2</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+                <li>Nudist</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <comps>
+            <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+                <abilities>
+                    <li>AAD_DeployShieldRecharger</li>
+                </abilities>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<!-- ==================== Power Armors ==================== -->
+    <!-- ==================== Power Armors ==================== -->
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>AAD_Apparel_HeraldLieutenantHelmet</defName>
-		<label>Herald Helmet</label>
-		<description>A helmet that uses gravitational manipulation to protect the wearer, used by most Heralds.</description>
-		<techLevel>Ultra</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Item/HeraldLieutenantHelmet/Hearld_Lieutenant_Helmet_UI</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.25</uiIconScale>
-		<tradeTags>
-			<li>HiTechArmor</li>
-			<li>Armor</li>
-		</tradeTags>
-		<statBases>
-			<WorkToMake>21000</WorkToMake>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>1.5</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
-			<EquipDelay>4</EquipDelay>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<equippedStatOffsets>
-			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
-		</equippedStatOffsets>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>40</Plasteel>
-		</costList>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HeraldLieutenantHelmet/Hearld_Lieutenant_Helmet</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>HeraldT1</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-			<forceEyesVisibleForRotations>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-			</forceEyesVisibleForRotations>
-		</apparel>
-		<comps>
-			<li Class="CompProperties_Biocodable" />
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-				<abilities>
-					<li>AAD_DeployPikemen</li>
-				</abilities>
-			</li>
-			<li MayRequire="kentington.saveourship2">
-				<compClass>SaveOurShip2.CompEVA</compClass>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>AAD_Apparel_HeraldLieutenantHelmet</defName>
+        <label>Herald Helmet</label>
+        <description>A helmet that uses gravitational manipulation to protect the wearer, used by most Heralds.</description>
+        <techLevel>Ultra</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Item/HeraldLieutenantHelmet/Hearld_Lieutenant_Helmet_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>21000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/HeraldLieutenantHelmet/Hearld_Lieutenant_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>HeraldT1</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <forceEyesVisibleForRotations>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </forceEyesVisibleForRotations>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+                <abilities>
+                    <li>AAD_DeployPikemen</li>
+                </abilities>
+            </li>
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
-	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>AAD_Apparel_HeraldLieutenantArmor</defName>
-		<label>Voice of TKet Armor</label>
-		<description>Ceremonial armor for the Voice of TKet, the Regional commander of the Herald.</description>
-		<tickerType>Normal</tickerType>
-		<techLevel>Ultra</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Item/HeraldSuit/Herald_Suit_UI</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<WorkToMake>60000</WorkToMake>
-			<MaxHitPoints>340</MaxHitPoints>
-			<Mass>12</Mass>
-			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>34</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
-			<EquipDelay>14</EquipDelay>
-			<EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<equippedStatOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
-		</equippedStatOffsets>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
-		<tradeTags>
-			<li>HiTechArmor</li>
-			<li>Armor</li>
-		</tradeTags>
-		<costList>
-			<ComponentSpacer>4</ComponentSpacer>
-			<Plasteel>100</Plasteel>
-			<Uranium>20</Uranium>
-		</costList>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HeraldSuit/Herald_Suit</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>HeraldT2</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-		</apparel>
-		<comps>
-			<li Class="CompProperties_Shield">
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-				<compClass>AADMod.CompShieldEMPImmune</compClass>
-			</li>
-			<li Class="CompProperties_Biocodable" />
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-				<abilities>
-					<li>AAD_DeploySolarBeamTurret</li>
-					<li>AAD_DeployAntiprotonMines</li>
-				</abilities>
-			</li>
-			<li MayRequire="kentington.saveourship2">
-				<compClass>SaveOurShip2.CompEVA</compClass>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>AAD_Apparel_HeraldLieutenantArmor</defName>
+        <label>Voice of TKet Armor</label>
+        <description>Ceremonial armor for the Voice of TKet, the Regional commander of the Herald.</description>
+        <tickerType>Normal</tickerType>
+        <techLevel>Ultra</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>CataphractArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Item/HeraldSuit/Herald_Suit_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <MaxHitPoints>340</MaxHitPoints>
+            <Mass>12</Mass>
+            <Flammability>0</Flammability>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>34</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>14</EquipDelay>
+            <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <equippedStatOffsets>
+            <MoveSpeed>0.2</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+            <Uranium>20</Uranium>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/HeraldSuit/Herald_Suit</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>HeraldT2</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Shield">
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+                <compClass>AADMod.CompShieldEMPImmune</compClass>
+            </li>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+                <abilities>
+                    <li>AAD_DeploySolarBeamTurret</li>
+                    <li>AAD_DeployAntiprotonMines</li>
+                </abilities>
+            </li>
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>AAD_Apparel_ArmorHelmetHerald</defName>
-		<label>Voice of TKet Helmet</label>
-		<description>Ceremonial Helmet for the first Herald, the wearer is trated as the Voice of TKet.</description>
-		<techLevel>Ultra</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>CataphractArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Item/TKetHelmet/TKet_Helmet_UI</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.9, 0.9)</drawSize>
-		</graphicData>
-		<tradeTags>
-			<li>HiTechArmor</li>
-			<li>Armor</li>
-		</tradeTags>
-		<statBases>
-			<WorkToMake>26250</WorkToMake>
-			<MaxHitPoints>180</MaxHitPoints>
-			<Mass>2</Mass>
-			<Flammability>0</Flammability>
-			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
-			<EquipDelay>6</EquipDelay>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
-		</equippedStatOffsets>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>50</Plasteel>
-		</costList>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/TKetHelmet/TKet_Helmet</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>HeraldT2</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-		</apparel>
-		<comps>
-			<li Class="CompProperties_Biocodable" />
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-				<abilities>
-					<li>AAD_DeployCentipedes</li>
-					<li>AAD_DeployDiaboluses</li>
-				</abilities>
-			</li>
-			<li MayRequire="kentington.saveourship2">
-				<compClass>SaveOurShip2.CompEVA</compClass>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>AAD_Apparel_ArmorHelmetHerald</defName>
+        <label>Voice of TKet Helmet</label>
+        <description>Ceremonial Helmet for the first Herald, the wearer is trated as the Voice of TKet.</description>
+        <techLevel>Ultra</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>CataphractArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Item/TKetHelmet/TKet_Helmet_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.9, 0.9)</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>26250</WorkToMake>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/TKetHelmet/TKet_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>HeraldT2</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+                <abilities>
+                    <li>AAD_DeployCentipedes</li>
+                    <li>AAD_DeployDiaboluses</li>
+                </abilities>
+            </li>
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
-	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>AAD_Apparel_ArmorHerald</defName>
-		<label>Herald Armor</label>
-		<description>Standard power armor used by Heralds.</description>
-		<tickerType>Normal</tickerType>
-		<techLevel>Ultra</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Item/HeraldArmor/Herald_Armor_UI</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.25</uiIconScale>
-		<statBases>
-			<WorkToMake>75000</WorkToMake>
-			<MaxHitPoints>400</MaxHitPoints>
-			<Mass>15</Mass>
-			<Flammability>0.4</Flammability>
-			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
-			<Insulation_Cold>36</Insulation_Cold>
-			<Insulation_Heat>12</Insulation_Heat>
-			<EquipDelay>17</EquipDelay>
-			<EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>2.0</EnergyShieldEnergyMax>
-		</statBases>
-		<damageMultipliers>
-			<li>
-				<damageDef>AAD_BombSuper</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-		</damageMultipliers>
-		<equippedStatOffsets>
-			<MoveSpeed>0.2</MoveSpeed>
-			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
-			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
-			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
-		</equippedStatOffsets>
-		<tradeTags>
-			<li>Armor</li>
-			<li>HiTechArmor</li>
-		</tradeTags>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
-		<costList>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>150</Plasteel>
-			<Uranium>50</Uranium>
-		</costList>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/HeraldArmor/Herald_Armor</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>HeraldT1</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
-		</apparel>
-		<comps>
-			<li Class="CompProperties_Shield">
-				<blocksRangedWeapons>false</blocksRangedWeapons>
-				<compClass>AADMod.CompShieldEMPImmune</compClass>
-			</li>
-			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
-				<abilities>
-					<li>AAD_AmbushPortal</li>
-				</abilities>
-			</li>
-			<li Class="CompProperties_Biocodable" />
-			<li MayRequire="kentington.saveourship2">
-				<compClass>SaveOurShip2.CompEVA</compClass>
-			</li>
-		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>AAD_Apparel_ArmorHerald</defName>
+        <label>Herald Armor</label>
+        <description>Standard power armor used by Heralds.</description>
+        <tickerType>Normal</tickerType>
+        <techLevel>Ultra</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Item/HeraldArmor/Herald_Armor_UI</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <statBases>
+            <WorkToMake>75000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>15</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <Insulation_Cold>36</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>17</EquipDelay>
+            <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax>2.0</EnergyShieldEnergyMax>
+        </statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>AAD_BombSuper</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <equippedStatOffsets>
+            <MoveSpeed>0.2</MoveSpeed>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+            <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">3</VacuumSpeedMultiplier>
+        </equippedStatOffsets>
+        <tradeTags>
+            <li>Armor</li>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <costList>
+            <ComponentSpacer>6</ComponentSpacer>
+            <Plasteel>150</Plasteel>
+            <Uranium>50</Uranium>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/HeraldArmor/Herald_Armor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>HeraldT1</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Shield">
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+                <compClass>AADMod.CompShieldEMPImmune</compClass>
+            </li>
+            <li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
+                <abilities>
+                    <li>AAD_AmbushPortal</li>
+                </abilities>
+            </li>
+            <li Class="CompProperties_Biocodable"/>
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
 
 </Defs>

@@ -1,17 +1,16 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace AADMod
+namespace AADMod;
+
+[HarmonyPatch(typeof(Pawn), "IsColonyMech", MethodType.Getter)]
+public static class Pawn_IsColonyMech_Patch
 {
-    [HarmonyPatch(typeof(Pawn), "IsColonyMech", MethodType.Getter)]
-    public static class Pawn_IsColonyMech_Patch
+    public static void Postfix(ref bool __result, Pawn __instance)
     {
-        public static void Postfix(ref bool __result, Pawn __instance)
+        if (__result is false && __instance.Spawned && __instance.IsMechanoidHacked())
         {
-            if (!__result && __instance.Spawned && __instance.IsMechanoidHacked())
-            {
-                __result = true;
-            }
+            __result = true;
         }
     }
 }

@@ -12,27 +12,27 @@
         <DebugSymbols>false</DebugSymbols>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="VFECore">
+            <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
         <PackageReference Include="Krafs.Publicizer" Version="2.*">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*"/>
         <PackageReference Include="Lib.Harmony" Version="2.*">
             <ExcludeAssets>runtime</ExcludeAssets>
             <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+        <PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0"/>
     </ItemGroup>
     <ItemGroup>
-        <Publicize Include="Assembly-CSharp;VFECore" />
-    </ItemGroup>
-    <ItemGroup>
-      <Reference Include="VFECore">
-        <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
-        <Private>False</Private>
-      </Reference>
+        <Publicize Include="Assembly-CSharp;VFECore"/>
     </ItemGroup>
 </Project>
